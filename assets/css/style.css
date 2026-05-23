@@ -98,28 +98,35 @@ button { cursor: pointer; font-family: inherit; border: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 20px; /* ringkas, tapi cukup ruang untuk logo */
+  padding: 18px 20px; /* cukup untuk logo + breathing */
   max-width: 1280px;
   margin: 0 auto;
+  min-height: 56px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   font-family: var(--font-display);
   font-size: 24px;
   font-weight: 900;
   letter-spacing: 2px;
   color: var(--text-primary);
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 1.4;
 }
 
 .logo span {
+  /* SOLID gold color — gradient + background-clip:text bikin Bebas Neue ascender kepotong */
+  color: var(--accent) !important;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: var(--accent) !important;
   display: inline-block;
-  padding: 4px 0; /* breathing room untuk Bebas Neue ascender */
-  line-height: 1;
+  padding: 4px 0;
+  line-height: 1.2;
 }
 
 .logo-mark {
