@@ -1,12 +1,12 @@
 # Vapertize Robots.txt
-# https://vapertize.pages.dev/
+# https://vapertize.id/
 
 User-agent: *
 Allow: /
 Disallow: /member.html
 
 # Sitemap
-Sitemap: https://vapertize.pages.dev/sitemap.xml
+Sitemap: https://vapertize.id/sitemap.xml
 
 # Crawl delay (gentle)
 Crawl-delay: 1
