@@ -46,6 +46,8 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
+  /* Safe area for iOS bottom home indicator */
+  padding-bottom: env(safe-area-inset-bottom, 0);
 }
 
 /* Background gradient effect */
@@ -84,7 +86,12 @@ button { cursor: pointer; font-family: inherit; border: none; }
   z-index: 100;
   background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
+  /* Safe area for notch & status bar (iPhone X+) */
+  padding-top: env(safe-area-inset-top, 0);
+  padding-left: env(safe-area-inset-left, 0);
+  padding-right: env(safe-area-inset-right, 0);
 }
 
 .nav-inner {
@@ -1699,7 +1706,7 @@ button { cursor: pointer; font-family: inherit; border: none; }
 @media (max-width: 768px) {
   .nav-links {
     position: fixed;
-    top: 72px;
+    top: calc(72px + env(safe-area-inset-top, 0));
     left: 0;
     right: 0;
     background: var(--bg-secondary);
