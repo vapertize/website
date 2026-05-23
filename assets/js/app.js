@@ -42,6 +42,45 @@ function waUrl(channel = 'aiRisa', message = '') {
   return message ? `${url}?text=${encodeURIComponent(message)}` : url;
 }
 
+// Helper: pick the best WA channel for ordering a specific product
+// based on current branch selection + stock availability.
+// Returns { channel: 'bangil'|'pandaan'|'aiRisa', label: 'Vapertize Bangil'|... }
+function pickWAChannel(product) {
+  const branch = (typeof getCurrentBranch === 'function') ? getCurrentBranch() : 'all';
+  if (branch === 'bangil')  return { channel: 'bangil',  label: 'Vapertize Bangil' };
+  if (branch === 'pandaan') return { channel: 'pandaan', label: 'Vapertize Pandaan' };
+
+  // branch === 'all': smart routing by stock
+  const sB = product?.stock?.bangil  || 0;
+  const sP = product?.stock?.pandaan || 0;
+  if (sB > 0 && sP === 0) return { channel: 'bangil',  label: 'Vapertize Bangil' };
+  if (sP > 0 && sB === 0) return { channel: 'pandaan', label: 'Vapertize Pandaan' };
+  // both stock OR both habis → CS umum
+  return { channel: 'aiRisa', label: 'Vapertize' };
+}
+
+// Helper: pick the best WA channel for cart checkout
+// (cart can mix products from multiple branches)
+function pickWAChannelForCart(cart) {
+  const branch = (typeof getCurrentBranch === 'function') ? getCurrentBranch() : 'all';
+  if (branch === 'bangil')  return { channel: 'bangil',  label: 'Vapertize Bangil' };
+  if (branch === 'pandaan') return { channel: 'pandaan', label: 'Vapertize Pandaan' };
+
+  // branch === 'all': check if every item is only available at one branch
+  let onlyBangil = true, onlyPandaan = true;
+  for (const item of cart) {
+    const p = (typeof getProduct === 'function') ? getProduct(item.id) : null;
+    if (!p) continue;
+    const sB = p.stock?.bangil  || 0;
+    const sP = p.stock?.pandaan || 0;
+    if (sB === 0) onlyBangil = false;
+    if (sP === 0) onlyPandaan = false;
+  }
+  if (onlyBangil && !onlyPandaan)  return { channel: 'bangil',  label: 'Vapertize Bangil' };
+  if (onlyPandaan && !onlyBangil)  return { channel: 'pandaan', label: 'Vapertize Pandaan' };
+  return { channel: 'aiRisa', label: 'Vapertize' };
+}
+
 // ============================================
 // AGE GATE
 // ============================================
@@ -191,8 +230,9 @@ function checkoutWA() {
   const cart = getCart();
   if (cart.length === 0) return;
 
+  const { channel, label } = pickWAChannelForCart(cart);
   let msg = `*🛒 ORDER VAPERTIZE*\n\n`;
-  msg += `Halo admin, saya mau order:\n\n`;
+  msg += `Halo admin ${label}, saya mau order:\n\n`;
   cart.forEach((item, i) => {
     const p = getProduct(item.id);
     if (!p) return;
@@ -209,15 +249,15 @@ function checkoutWA() {
   }
   msg += `Mohon konfirmasi ketersediaan & ongkir ke alamat saya. Terima kasih!`;
 
-  // Checkout dikirim ke AI Risa (24/7 instant response) — bisa di-route ke retail nanti
-  window.open(waUrl('aiRisa', msg), '_blank');
+  window.open(waUrl(channel, msg), '_blank');
 }
 
 function orderProductWA(productId) {
   const p = getProduct(productId);
   if (!p) return;
-  const msg = `Halo Vapertize, saya tertarik dengan produk *${p.name}* (${formatRupiah(p.price)}). Apakah masih tersedia?`;
-  window.open(waUrl('aiRisa', msg), '_blank');
+  const { channel, label } = pickWAChannel(p);
+  const msg = `Halo ${label}, saya tertarik dengan produk *${p.name}* (${formatRupiah(p.price)}). Apakah masih tersedia?`;
+  window.open(waUrl(channel, msg), '_blank');
 }
 
 // ============================================
@@ -353,8 +393,11 @@ function buildFooter() {
             <ul>
               <li><a href="catalog.html?cat=liquid">Liquid</a></li>
               <li><a href="catalog.html?cat=device">Device</a></li>
-              <li><a href="catalog.html?cat=coil">Coil</a></li>
-              <li><a href="catalog.html?cat=access">Accessories</a></li>
+              <li><a href="catalog.html?cat=atomizer">Atomizer</a></li>
+              <li><a href="catalog.html?cat=coil-wire">Coil &amp; Wire</a></li>
+              <li><a href="catalog.html?cat=battery-charger">Battery &amp; Charger</a></li>
+              <li><a href="catalog.html?cat=cartridge-cotton">Cartridge &amp; Cotton</a></li>
+              <li><a href="catalog.html?cat=accessories">Accessories</a></li>
             </ul>
           </div>
           <div>
