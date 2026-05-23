@@ -98,9 +98,10 @@ button { cursor: pointer; font-family: inherit; border: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 24px;
+  padding: 20px 24px;
   max-width: 1280px;
   margin: 0 auto;
+  min-height: 44px;
 }
 
 .logo {
@@ -113,6 +114,13 @@ button { cursor: pointer; font-family: inherit; border: none; }
   letter-spacing: 2px;
   color: var(--text-primary);
   text-transform: uppercase;
+  line-height: 1;
+}
+
+.logo span {
+  display: inline-block;
+  padding-top: 4px; /* breathing room for Bebas Neue tall ascenders */
+  line-height: 1;
 }
 
 .logo-mark {
