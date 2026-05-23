@@ -61,7 +61,18 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/data/products.json assets/img/products/ 2>/dev/null || true
+
+          # Add products.json (always exists after sync)
+          git add assets/data/products.json
+
+          # Add images dir only if it has files (git ignores empty dirs)
+          if [ -d assets/img/products ] && [ -n "$(ls -A assets/img/products 2>/dev/null)" ]; then
+            git add assets/img/products/
+          fi
+
+          echo "=== Staged files ==="
+          git diff --staged --name-only
+
           if git diff --staged --quiet; then
             echo "No changes detected"
           else
