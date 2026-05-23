@@ -1,10 +1,12 @@
 {
-  "updated": "2026-05-23T19:13:06+07:00",
+  "updated": "2026-05-23T19:48:45+07:00",
   "totalProducts": 800,
   "categories": [
-    "access",
+    "accessories",
     "atomizer",
-    "coil",
+    "battery-charger",
+    "cartridge-cotton",
+    "coil-wire",
     "device",
     "liquid"
   ],
@@ -19,7 +21,7 @@
       "id": "4000173",
       "name": "Battery Wrap VRK All Edition",
       "brand": "Battery Wrap",
-      "category": "access",
+      "category": "accessories",
       "price": 0,
       "stock": {
         "bangil": 6,
@@ -32,111 +34,111 @@
       "id": "5000215",
       "name": "Cartridge Oxva Xlim V3 (2ML) - 0.6 Ohm",
       "brand": "Cartridge Oxva",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
         "bangil": 14,
         "pandaan": 10
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000215.webp"
     },
     {
       "id": "5000216",
       "name": "Cartridge Oxva Xlim V3 (2ML) - 0.8 Ohm",
       "brand": "Cartridge Oxva",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
         "bangil": 10,
         "pandaan": 11
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000216.webp"
     },
     {
       "id": "5000214",
       "name": "Cartridge Oxva Xlim V3 - 0.8 Ohm",
       "brand": "Cartridge Oxva",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
         "bangil": 6,
         "pandaan": 12
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000214.webp"
     },
     {
       "id": "5000200",
       "name": "Cartridge Oxva Xlim DNA SS - 0.8 Ohm",
       "brand": "Cartridge Oxva",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 45000,
       "stock": {
         "bangil": 8,
         "pandaan": 9
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000200.webp"
     },
     {
       "id": "5000212",
       "name": "Cartridge Oxva Xlim V3 - 0.4 Ohm",
       "brand": "Cartridge Oxva",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
         "bangil": 8,
         "pandaan": 9
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000212.webp"
     },
     {
       "id": "5000218",
       "name": "Cartridge ION Pod Lite - 0.8 Ohm",
       "brand": "Cartridge Ion",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 35000,
       "stock": {
         "bangil": 9,
         "pandaan": 6
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000218.webp"
     },
     {
       "id": "5000194",
       "name": "Cartridge Ursa - V3 0.8 Ohm",
       "brand": "Cartridge Ursa",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
         "bangil": 7,
         "pandaan": 8
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000194.webp"
     },
     {
       "id": "5000209",
       "name": "Cartridge VSEE One Pod kit - 0.4 Ohm",
       "brand": "Cartridge Vsee",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 35000,
       "stock": {
         "bangil": 6,
         "pandaan": 9
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000209.webp"
     },
     {
       "id": "4000210",
       "name": "Coil Power Built Bright",
       "brand": "Coil Power",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 65000,
       "stock": {
         "bangil": 8,
@@ -149,202 +151,202 @@
       "id": "5000193",
       "name": "Cartridge Ursa - V3 0.6 Ohm",
       "brand": "Cartridge Ursa",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
         "bangil": 7,
         "pandaan": 7
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000193.webp"
     },
     {
       "id": "5000211",
       "name": "Cartridge E Plus Top Fill - 0.6 Ohm",
       "brand": "Cartridge E",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
         "bangil": 5,
         "pandaan": 8
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000211.webp"
     },
     {
       "id": "5000219",
       "name": "Cartridge E Plus Top Fill - 0.8 Ohm",
       "brand": "Cartridge E",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
         "bangil": 5,
         "pandaan": 8
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000219.webp"
     },
     {
       "id": "5000188",
       "name": "Cartridge Oxva Nexlim - 0.8 Ohm",
       "brand": "Cartridge Oxva",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 45000,
       "stock": {
         "bangil": 4,
         "pandaan": 9
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000188.webp"
     },
     {
       "id": "5000220",
       "name": "Cartridge Oxva Xlim DNA SS - 0.4 Ohm",
       "brand": "Cartridge Oxva",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 45000,
       "stock": {
         "bangil": 7,
         "pandaan": 6
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000220.webp"
     },
     {
       "id": "5000197",
       "name": "Cartridge TRML T-Max - 0.8 Ohm",
       "brand": "Cartridge Trml",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 35000,
       "stock": {
         "bangil": 8,
         "pandaan": 5
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000197.webp"
     },
     {
       "id": "5000167",
       "name": "Cartridge Argus Pod Top Fill - 0.7 Ohm",
       "brand": "Cartridge Argus",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 45000,
       "stock": {
         "bangil": 6,
         "pandaan": 6
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000167.webp"
     },
     {
       "id": "6000084",
       "name": "Cartridge Foom X",
       "brand": "Cartridge Foom",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 34000,
       "stock": {
         "bangil": 5,
         "pandaan": 7
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/6000084.webp"
     },
     {
       "id": "5000187",
       "name": "Cartridge Oxva Nexlim - 0.6 Ohm",
       "brand": "Cartridge Oxva",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 45000,
       "stock": {
         "bangil": 4,
         "pandaan": 8
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000187.webp"
     },
     {
       "id": "6000149",
       "name": "Cartridge Oxva Oneo - 0.8 Ohm",
       "brand": "Cartridge Oxva",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 45000,
       "stock": {
         "bangil": 6,
         "pandaan": 6
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/6000149.webp"
     },
     {
       "id": "5000207",
       "name": "Cartridge TRML T-Max - 0.6 Ohm",
       "brand": "Cartridge Trml",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 35000,
       "stock": {
         "bangil": 7,
         "pandaan": 5
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000207.webp"
     },
     {
       "id": "5000201",
       "name": "Cartridge VSEE One Pod kit - 0.6 Ohm",
       "brand": "Cartridge Vsee",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 35000,
       "stock": {
         "bangil": 4,
         "pandaan": 8
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000201.webp"
     },
     {
       "id": "5000202",
       "name": "Cartridge VSEE One Pod kit - 0.8 Ohm",
       "brand": "Cartridge Vsee",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 35000,
       "stock": {
         "bangil": 4,
         "pandaan": 8
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000202.webp"
     },
     {
       "id": "5000210",
       "name": "Cartridge E Plus Top Fill - 0.3 Ohm",
       "brand": "Cartridge E",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
         "bangil": 5,
         "pandaan": 6
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000210.webp"
     },
     {
       "id": "6000148",
       "name": "Cartridge Oxva Oneo - 0.6 Ohm",
       "brand": "Cartridge Oxva",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 45000,
       "stock": {
         "bangil": 5,
         "pandaan": 6
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/6000148.webp"
     },
     {
       "id": "2000147",
       "name": "Perfect Build x Vapertize - 0.16 Ohm",
       "brand": "Perfect Build",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 80000,
       "stock": {
         "bangil": 10,
@@ -357,7 +359,7 @@
       "id": "4000213",
       "name": "The Fused Clapton AIO by Powerbuild",
       "brand": "The Fused",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 40000,
       "stock": {
         "bangil": 3,
@@ -370,7 +372,7 @@
       "id": "2000053",
       "name": "Vapertize Coil - Alien Electrical V3",
       "brand": "Vapertize Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 50000,
       "stock": {
         "bangil": 9,
@@ -383,33 +385,33 @@
       "id": "5000217",
       "name": "Cartridge ION Pod Lite - 0.5 Ohm",
       "brand": "Cartridge Ion",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 35000,
       "stock": {
         "bangil": 6,
         "pandaan": 4
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000217.webp"
     },
     {
       "id": "5000182",
       "name": "Cartridge Nixx Pod - 0.8 Ohm",
       "brand": "Cartridge Nixx",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
         "bangil": 6,
         "pandaan": 4
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000182.webp"
     },
     {
       "id": "2000141",
       "name": "Coil Nautilus 2s - 0.7 Ohm",
       "brand": "Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 30000,
       "stock": {
         "bangil": 5,
@@ -435,33 +437,33 @@
       "id": "6000147",
       "name": "Cartridge Oxva Oneo - 0.4 Ohm",
       "brand": "Cartridge Oxva",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 45000,
       "stock": {
         "bangil": 4,
         "pandaan": 5
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/6000147.webp"
     },
     {
       "id": "5000189",
       "name": "Cartridge Vaporesso Xros - 0.4 Ohm",
       "brand": "Cartridge",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
         "bangil": 5,
         "pandaan": 4
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000189.webp"
     },
     {
       "id": "4000201",
       "name": "Coil Baby Space",
       "brand": "Coil Baby",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 60000,
       "stock": {
         "bangil": 5,
@@ -474,7 +476,7 @@
       "id": "2000002",
       "name": "Cotton Bacon Prime",
       "brand": "Cotton Bacon",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 75000,
       "stock": {
         "bangil": 4,
@@ -487,7 +489,7 @@
       "id": "4000209",
       "name": "Tack Coil - Signature Fusion Matic Single",
       "brand": "Tack Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 55000,
       "stock": {
         "bangil": 5,
@@ -500,7 +502,7 @@
       "id": "4000212",
       "name": "The Fused Clapton by Powerbuild",
       "brand": "The Fused",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 40000,
       "stock": {
         "bangil": 1,
@@ -513,7 +515,7 @@
       "id": "2000049",
       "name": "Ultra Boost Coil - M3 0.15 ohm",
       "brand": "Ultra Boost",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 35000,
       "stock": {
         "bangil": 9,
@@ -523,36 +525,10 @@
       "image": "assets/img/products/2000049.webp"
     },
     {
-      "id": "5000208",
-      "name": "Cartridge Wasp Nano Pod - V2 0.6 Ohm",
-      "brand": "Cartridge Wasp",
-      "category": "access",
-      "price": 35000,
-      "stock": {
-        "bangil": 5,
-        "pandaan": 3
-      },
-      "icon": "⚙️",
-      "image": "assets/img/products/5000208.webp"
-    },
-    {
-      "id": "5000206",
-      "name": "Cartridge Wasp Nano Pod - V2 0.8 Ohm",
-      "brand": "Cartridge Wasp",
-      "category": "access",
-      "price": 35000,
-      "stock": {
-        "bangil": 3,
-        "pandaan": 5
-      },
-      "icon": "⚙️",
-      "image": "assets/img/products/5000206.webp"
-    },
-    {
       "id": "4000021",
       "name": "Kuken Tech BlackSmith Mini Tool Kit",
       "brand": "Kuken Tech",
-      "category": "access",
+      "category": "accessories",
       "price": 80000,
       "stock": {
         "bangil": 5,
@@ -561,10 +537,36 @@
       "icon": "⚙️"
     },
     {
+      "id": "5000208",
+      "name": "Cartridge Wasp Nano Pod - V2 0.6 Ohm",
+      "brand": "Cartridge Wasp",
+      "category": "cartridge-cotton",
+      "price": 35000,
+      "stock": {
+        "bangil": 5,
+        "pandaan": 3
+      },
+      "icon": "🧵",
+      "image": "assets/img/products/5000208.webp"
+    },
+    {
+      "id": "5000206",
+      "name": "Cartridge Wasp Nano Pod - V2 0.8 Ohm",
+      "brand": "Cartridge Wasp",
+      "category": "cartridge-cotton",
+      "price": 35000,
+      "stock": {
+        "bangil": 3,
+        "pandaan": 5
+      },
+      "icon": "🧵",
+      "image": "assets/img/products/5000206.webp"
+    },
+    {
       "id": "2000142",
       "name": "Coil Smok RPM - 0.23 Ohm",
       "brand": "Coil Smok",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 40000,
       "stock": {
         "bangil": 3,
@@ -577,7 +579,7 @@
       "id": "4000211",
       "name": "Tack Coil - Fusion Matic AIO",
       "brand": "Tack Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 50000,
       "stock": {
         "bangil": 5,
@@ -603,33 +605,33 @@
       "id": "6000050",
       "name": "Cartridge Aflo Pod",
       "brand": "Cartridge Aflo",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 33000,
       "stock": {
         "bangil": 3,
         "pandaan": 4
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/6000050.webp"
     },
     {
       "id": "5000204",
       "name": "Cartridge Pava - V2 0.6 Ohm",
       "brand": "Cartridge Pava",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
         "bangil": 3,
         "pandaan": 4
       },
-      "icon": "⚙️",
+      "icon": "🧵",
       "image": "assets/img/products/5000204.webp"
     },
     {
       "id": "2000174",
       "name": "Coil Crown M - 0.6 Ohm",
       "brand": "Coil Crown",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 37500,
       "stock": {
         "bangil": 4,
@@ -642,7 +644,7 @@
       "id": "4000207",
       "name": "Tack Coil - Baby Alien",
       "brand": "Tack Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 50000,
       "stock": {
         "bangil": 3,
@@ -716,7 +718,7 @@
       "id": "4000063",
       "name": "Lanyard Printing Vapertize",
       "brand": "Lanyard",
-      "category": "access",
+      "category": "accessories",
       "price": 30000,
       "stock": {
         "bangil": 3,
@@ -728,7 +730,7 @@
       "id": "4000127",
       "name": "Obeng Vave Baut (Plus Mur Vave/Obeng Vave)",
       "brand": "Obeng Vave",
-      "category": "access",
+      "category": "accessories",
       "price": 15000,
       "stock": {
         "bangil": 2,
@@ -740,7 +742,7 @@
       "id": "2000150",
       "name": "ITO Coil M0 - 0.5 Ohm",
       "brand": "Ito Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 36000,
       "stock": {
         "bangil": 5,
@@ -812,67 +814,67 @@
       "id": "7000083",
       "name": "Battery Blackcell DNA 18650 - 2000mAh",
       "brand": "Battery",
-      "category": "access",
+      "category": "battery-charger",
       "price": 50000,
       "stock": {
         "bangil": 3,
         "pandaan": 2
       },
-      "icon": "⚙️"
+      "icon": "⚡"
     },
     {
       "id": "5000178",
       "name": "Cartridge Foom Y",
       "brand": "Cartridge Foom",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 37000,
       "stock": {
         "bangil": 0,
         "pandaan": 5
       },
-      "icon": "⚙️"
+      "icon": "🧵"
     },
     {
       "id": "5000186",
       "name": "Cartridge Oxva VPrime - 0.2 Ohm",
       "brand": "Cartridge Oxva",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 50000,
       "stock": {
         "bangil": 3,
         "pandaan": 2
       },
-      "icon": "⚙️"
+      "icon": "🧵"
     },
     {
       "id": "5000164",
       "name": "Cotton Monster Premium",
       "brand": "Cotton",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 50000,
       "stock": {
         "bangil": 4,
         "pandaan": 1
       },
-      "icon": "⚙️"
+      "icon": "🧵"
     },
     {
       "id": "6000019",
       "name": "RPM Nord Cartridge",
       "brand": "Rpm Nord",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 50000,
       "stock": {
         "bangil": 5,
         "pandaan": 0
       },
-      "icon": "⚙️"
+      "icon": "🧵"
     },
     {
       "id": "2000114",
       "name": "Lust Luxury Cotton - Fiber",
       "brand": "Lust Luxury",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 55000,
       "stock": {
         "bangil": 5,
@@ -884,7 +886,7 @@
       "id": "2000016",
       "name": "Party Dog Prebuilt Coils - Alien Twisted Messes",
       "brand": "Party Dog",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 100000,
       "stock": {
         "bangil": 2,
@@ -896,7 +898,7 @@
       "id": "2000111",
       "name": "S Coil - 1.2 Ohm",
       "brand": "S Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 25000,
       "stock": {
         "bangil": 5,
@@ -908,7 +910,7 @@
       "id": "4000208",
       "name": "Tack Coil - Fusion Matic Dual",
       "brand": "Tack Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 50000,
       "stock": {
         "bangil": 3,
@@ -1064,103 +1066,103 @@
       "id": "7000066",
       "name": "Battery Charge Up - 2500mAh",
       "brand": "Battery Charge",
-      "category": "access",
+      "category": "battery-charger",
       "price": 80000,
       "stock": {
         "bangil": 0,
         "pandaan": 4
       },
-      "icon": "⚙️"
+      "icon": "⚡"
     },
     {
       "id": "6000041",
       "name": "Cartridge Air Go - 1.0 Ohm",
       "brand": "Cartridge Air",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 35000,
       "stock": {
         "bangil": 4,
         "pandaan": 0
       },
-      "icon": "⚙️"
+      "icon": "🧵"
     },
     {
       "id": "6000047",
       "name": "Cartridge Fetch Pro RGC Empty Pod",
       "brand": "Cartridge Fetch",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 45000,
       "stock": {
         "bangil": 4,
         "pandaan": 0
       },
-      "icon": "⚙️"
+      "icon": "🧵"
     },
     {
       "id": "6000070",
       "name": "Cartridge Frees X Pod",
       "brand": "Cartridge Frees",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 27000,
       "stock": {
         "bangil": 3,
         "pandaan": 1
       },
-      "icon": "⚙️"
+      "icon": "🧵"
     },
     {
       "id": "6000072",
       "name": "Cartridge Miso Pod - 1.0 Ohm",
       "brand": "Cartridge Miso",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 35000,
       "stock": {
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "⚙️"
+      "icon": "🧵"
     },
     {
       "id": "6000087",
       "name": "Cartridge Poprell P1 - 1.2 Ohm",
       "brand": "Cartridge",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
         "bangil": 0,
         "pandaan": 4
       },
-      "icon": "⚙️"
+      "icon": "🧵"
     },
     {
       "id": "6000138",
       "name": "Cartridge Vaporesso Xros - 1.2 Ohm",
       "brand": "Cartridge",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
         "bangil": 0,
         "pandaan": 4
       },
-      "icon": "⚙️"
+      "icon": "🧵"
     },
     {
       "id": "6000005",
       "name": "Oxva Origin Cartridge",
       "brand": "Oxva Origin",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 50000,
       "stock": {
         "bangil": 4,
         "pandaan": 0
       },
-      "icon": "⚙️"
+      "icon": "🧵"
     },
     {
       "id": "2000116",
       "name": "Coil R57",
       "brand": "Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 35000,
       "stock": {
         "bangil": 4,
@@ -1172,7 +1174,7 @@
       "id": "2000051",
       "name": "Ez Coil - 0.4 ohm",
       "brand": "Ez Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 25000,
       "stock": {
         "bangil": 4,
@@ -1184,7 +1186,7 @@
       "id": "2000031",
       "name": "Kendo Cotton - Gold Edition",
       "brand": "Kendo Cotton",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 80000,
       "stock": {
         "bangil": 1,
@@ -1196,7 +1198,7 @@
       "id": "2000029",
       "name": "Voopoo Coil - 1.0 Ohm",
       "brand": "Voopoo Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 40000,
       "stock": {
         "bangil": 4,
@@ -1580,127 +1582,127 @@
       "id": "7000079",
       "name": "Battery Blackcell DNA 18650 - 2500mAh",
       "brand": "Battery",
-      "category": "access",
+      "category": "battery-charger",
       "price": 70000,
       "stock": {
         "bangil": 1,
         "pandaan": 2
       },
-      "icon": "⚙️"
+      "icon": "⚡"
     },
     {
       "id": "7000080",
       "name": "Battery Blackcell DNA 18650 - 3000mAh",
       "brand": "Battery",
-      "category": "access",
+      "category": "battery-charger",
       "price": 100000,
       "stock": {
         "bangil": 2,
         "pandaan": 1
       },
-      "icon": "⚙️"
+      "icon": "⚡"
     },
     {
       "id": "7000067",
       "name": "Battery Charge Up - 3000mAh",
       "brand": "Battery Charge",
-      "category": "access",
+      "category": "battery-charger",
       "price": 120000,
       "stock": {
         "bangil": 2,
         "pandaan": 1
       },
-      "icon": "⚙️"
-    },
-    {
-      "id": "5000155",
-      "name": "Bear Cotton",
-      "brand": "Bear Cotton",
-      "category": "access",
-      "price": 50000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 3
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "5000205",
-      "name": "Cartridge Pava - V2 0.8 Ohm",
-      "brand": "Cartridge Pava",
-      "category": "access",
-      "price": 40000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 3
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000137",
-      "name": "Cartridge Smok RPM C - Empty 4ml",
-      "brand": "Cartridge Smok",
-      "category": "access",
-      "price": 40000,
-      "stock": {
-        "bangil": 3,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000036",
-      "name": "Cartridge Teros One",
-      "brand": "Cartridge Teros",
-      "category": "access",
-      "price": 60000,
-      "stock": {
-        "bangil": 3,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
+      "icon": "⚡"
     },
     {
       "id": "5000047",
       "name": "Charger Vapcell Q2S",
       "brand": "Charger",
-      "category": "access",
+      "category": "battery-charger",
       "price": 65000,
       "stock": {
         "bangil": 2,
         "pandaan": 1
       },
-      "icon": "⚙️"
+      "icon": "⚡"
+    },
+    {
+      "id": "5000155",
+      "name": "Bear Cotton",
+      "brand": "Bear Cotton",
+      "category": "cartridge-cotton",
+      "price": 50000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 3
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "5000205",
+      "name": "Cartridge Pava - V2 0.8 Ohm",
+      "brand": "Cartridge Pava",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 3
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000137",
+      "name": "Cartridge Smok RPM C - Empty 4ml",
+      "brand": "Cartridge Smok",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 3,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000036",
+      "name": "Cartridge Teros One",
+      "brand": "Cartridge Teros",
+      "category": "cartridge-cotton",
+      "price": 60000,
+      "stock": {
+        "bangil": 3,
+        "pandaan": 0
+      },
+      "icon": "🧵"
     },
     {
       "id": "6000044",
       "name": "Ez Cartridge Without Coil 2.6ml",
       "brand": "Ez",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 30000,
       "stock": {
         "bangil": 3,
         "pandaan": 0
       },
-      "icon": "⚙️"
+      "icon": "🧵"
     },
     {
       "id": "6000045",
       "name": "Kubi 2 Cartridge - 1.7ml",
       "brand": "Kubi",
-      "category": "access",
+      "category": "cartridge-cotton",
       "price": 45000,
       "stock": {
         "bangil": 3,
         "pandaan": 0
       },
-      "icon": "⚙️"
+      "icon": "🧵"
     },
     {
       "id": "2000140",
       "name": "Coil Frees X Pod - 1.0 Ohm",
       "brand": "Coil Frees",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 25000,
       "stock": {
         "bangil": 0,
@@ -1712,7 +1714,7 @@
       "id": "2000056",
       "name": "Coil Oukitel - 0.6Ohm",
       "brand": "Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 50000,
       "stock": {
         "bangil": 3,
@@ -1724,7 +1726,7 @@
       "id": "2000105",
       "name": "Coil Ultra Boost V2 - M4 0.2 Ohm",
       "brand": "Coil Ultra",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 35000,
       "stock": {
         "bangil": 3,
@@ -1736,7 +1738,7 @@
       "id": "2000186",
       "name": "Malomo Prebuilt Coil - AIO Edition Orange 0.13 Ohm - 0.34 Ohm",
       "brand": "Malomo",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 70000,
       "stock": {
         "bangil": 2,
@@ -1748,7 +1750,7 @@
       "id": "2000035",
       "name": "Voopoo Coil - 0.15 Ohm",
       "brand": "Voopoo Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 40000,
       "stock": {
         "bangil": 0,
@@ -2528,7 +2530,7 @@
       "id": "4000043",
       "name": "Adapter Aegis Boost",
       "brand": "Adapter Aegis",
-      "category": "access",
+      "category": "accessories",
       "price": 45000,
       "stock": {
         "bangil": 2,
@@ -2537,22 +2539,10 @@
       "icon": "⚙️"
     },
     {
-      "id": "7000076",
-      "name": "Battery PVR - 2000mAh",
-      "brand": "Battery Pvr",
-      "category": "access",
-      "price": 50000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 2
-      },
-      "icon": "⚙️"
-    },
-    {
       "id": "4000036",
       "name": "Baut Tanam M2.5 x 4 min minus stainless steel 2.5l",
       "brand": "Baut Tanam",
-      "category": "access",
+      "category": "accessories",
       "price": 5000,
       "stock": {
         "bangil": 2,
@@ -2561,166 +2551,10 @@
       "icon": "⚙️"
     },
     {
-      "id": "6000108",
-      "name": "Cartridge Argus Pod - Empty",
-      "brand": "Cartridge Argus",
-      "category": "access",
-      "price": 35000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 2
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000037",
-      "name": "Cartridge B'adapt - Empty",
-      "brand": "Cartridge",
-      "category": "access",
-      "price": 30000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000102",
-      "name": "Cartridge Caliburn X Pod - Empty",
-      "brand": "Cartridge",
-      "category": "access",
-      "price": 90000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000116",
-      "name": "Cartridge Crown M Empty - 4ml",
-      "brand": "Cartridge Crown",
-      "category": "access",
-      "price": 37500,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000026",
-      "name": "Cartridge Hotcig Marvel - Salt",
-      "brand": "Cartridge Hotcig",
-      "category": "access",
-      "price": 50000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000071",
-      "name": "Cartridge Miso Pod - 0.8 Ohm",
-      "brand": "Cartridge Miso",
-      "category": "access",
-      "price": 35000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000128",
-      "name": "Cartridge Nevoks APX S1 - 0.8 Ohm",
-      "brand": "Cartridge Nevoks",
-      "category": "access",
-      "price": 40000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 2
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "5000213",
-      "name": "Cartridge Oxva Xlim V3 - 0.6 Ohm",
-      "brand": "Cartridge Oxva",
-      "category": "access",
-      "price": 40000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "5000180",
-      "name": "Cartridge Pava - 0.6 Ohm",
-      "brand": "Cartridge Pava",
-      "category": "access",
-      "price": 40000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "5000181",
-      "name": "Cartridge Pava - 0.8 Ohm",
-      "brand": "Cartridge Pava",
-      "category": "access",
-      "price": 40000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000101",
-      "name": "Cartridge RTS Airpops Pro - 2ml",
-      "brand": "Cartridge Rts",
-      "category": "access",
-      "price": 40000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000032",
-      "name": "Cartridge Thelema Pod 4ml",
-      "brand": "Cartridge",
-      "category": "access",
-      "price": 70000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "5000198",
-      "name": "Filter Nixx Tip",
-      "brand": "Filter Nixx",
-      "category": "access",
-      "price": 40000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "⚙️"
-    },
-    {
       "id": "4000053",
       "name": "Katchiring - SS 24mm",
       "brand": "Katchiring",
-      "category": "access",
+      "category": "accessories",
       "price": 220000,
       "stock": {
         "bangil": 1,
@@ -2732,7 +2566,7 @@
       "id": "4000098",
       "name": "Komodo Drip Tip 810",
       "brand": "Komodo Drip",
-      "category": "access",
+      "category": "accessories",
       "price": 55000,
       "stock": {
         "bangil": 0,
@@ -2801,10 +2635,178 @@
       "icon": "🔧"
     },
     {
+      "id": "7000076",
+      "name": "Battery PVR - 2000mAh",
+      "brand": "Battery Pvr",
+      "category": "battery-charger",
+      "price": 50000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 2
+      },
+      "icon": "⚡"
+    },
+    {
+      "id": "6000108",
+      "name": "Cartridge Argus Pod - Empty",
+      "brand": "Cartridge Argus",
+      "category": "cartridge-cotton",
+      "price": 35000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 2
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000037",
+      "name": "Cartridge B'adapt - Empty",
+      "brand": "Cartridge",
+      "category": "cartridge-cotton",
+      "price": 30000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000102",
+      "name": "Cartridge Caliburn X Pod - Empty",
+      "brand": "Cartridge",
+      "category": "cartridge-cotton",
+      "price": 90000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000116",
+      "name": "Cartridge Crown M Empty - 4ml",
+      "brand": "Cartridge Crown",
+      "category": "cartridge-cotton",
+      "price": 37500,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000026",
+      "name": "Cartridge Hotcig Marvel - Salt",
+      "brand": "Cartridge Hotcig",
+      "category": "cartridge-cotton",
+      "price": 50000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000071",
+      "name": "Cartridge Miso Pod - 0.8 Ohm",
+      "brand": "Cartridge Miso",
+      "category": "cartridge-cotton",
+      "price": 35000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000128",
+      "name": "Cartridge Nevoks APX S1 - 0.8 Ohm",
+      "brand": "Cartridge Nevoks",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 2
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "5000213",
+      "name": "Cartridge Oxva Xlim V3 - 0.6 Ohm",
+      "brand": "Cartridge Oxva",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "5000180",
+      "name": "Cartridge Pava - 0.6 Ohm",
+      "brand": "Cartridge Pava",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "5000181",
+      "name": "Cartridge Pava - 0.8 Ohm",
+      "brand": "Cartridge Pava",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000101",
+      "name": "Cartridge RTS Airpops Pro - 2ml",
+      "brand": "Cartridge Rts",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000032",
+      "name": "Cartridge Thelema Pod 4ml",
+      "brand": "Cartridge",
+      "category": "cartridge-cotton",
+      "price": 70000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "5000198",
+      "name": "Filter Nixx Tip",
+      "brand": "Filter Nixx",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "🧵"
+    },
+    {
       "id": "2000069",
       "name": "Coil Hotcig Marvel - 0.6 Ohm",
       "brand": "Coil Hotcig",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 40000,
       "stock": {
         "bangil": 2,
@@ -2816,7 +2818,7 @@
       "id": "2000068",
       "name": "Coil Hotcig Marvel - 1.2 Ohm",
       "brand": "Coil Hotcig",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 40000,
       "stock": {
         "bangil": 2,
@@ -2828,7 +2830,7 @@
       "id": "2000154",
       "name": "Coil Oxva Khantal A1 - 1.0 Ohm",
       "brand": "Coil Oxva",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 35000,
       "stock": {
         "bangil": 1,
@@ -2840,7 +2842,7 @@
       "id": "2000108",
       "name": "Coil Vaporstorm Flame - 1.2 Ohm",
       "brand": "Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 30000,
       "stock": {
         "bangil": 2,
@@ -2852,7 +2854,7 @@
       "id": "2000030",
       "name": "Holy Fiber Cotton",
       "brand": "Holy Fiber",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 45000,
       "stock": {
         "bangil": 0,
@@ -2864,7 +2866,7 @@
       "id": "2000166",
       "name": "ITO Coil M1 - 0.7 Ohm",
       "brand": "Ito Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 36000,
       "stock": {
         "bangil": 2,
@@ -2876,7 +2878,7 @@
       "id": "2000057",
       "name": "Sigelei Fog Coil - 0.15 Ohm",
       "brand": "Sigelei Fog",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 33000,
       "stock": {
         "bangil": 2,
@@ -2888,7 +2890,7 @@
       "id": "2000014",
       "name": "Smok RPM RGC Coil - 0.17 Ohm",
       "brand": "Smok Rpm",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 40000,
       "stock": {
         "bangil": 2,
@@ -2900,7 +2902,7 @@
       "id": "2000155",
       "name": "Voopoo Coil - 1.2 Ohm",
       "brand": "Voopoo Coil",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 40000,
       "stock": {
         "bangil": 0,
@@ -5444,7 +5446,7 @@
       "id": "4000028",
       "name": "Adapter Atomizer VVW Neutral 510 Smok RPM",
       "brand": "Adapter",
-      "category": "access",
+      "category": "accessories",
       "price": 100000,
       "stock": {
         "bangil": 1,
@@ -5456,164 +5458,8 @@
       "id": "4000029",
       "name": "Adapter Atomizer VVW Neutral 510 Vinc",
       "brand": "Adapter",
-      "category": "access",
+      "category": "accessories",
       "price": 100000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "7000068",
-      "name": "Battery Charge Up - 3500mAh",
-      "brand": "Battery Charge",
-      "category": "access",
-      "price": 130000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "7000071",
-      "name": "Battery Onyx 15A - 3500mAh",
-      "brand": "Battery Onyx",
-      "category": "access",
-      "price": 130000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "5000061",
-      "name": "Battery VRK 18350 - 700mAh",
-      "brand": "Battery Vrk",
-      "category": "access",
-      "price": 60000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 1
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000136",
-      "name": "Cartridge Caliburn A3 - 0.8 Ohm",
-      "brand": "Cartridge",
-      "category": "access",
-      "price": 45000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000011",
-      "name": "Cartridge Druga Narada Pro",
-      "brand": "Cartridge Druga",
-      "category": "access",
-      "price": 50000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000088",
-      "name": "Cartridge Nevoks Feelin C1 - Amber Clear",
-      "brand": "Cartridge Nevoks",
-      "category": "access",
-      "price": 50000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000089",
-      "name": "Cartridge Nevoks Feelin C1 - Black Clear",
-      "brand": "Cartridge Nevoks",
-      "category": "access",
-      "price": 50000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000090",
-      "name": "Cartridge Nevoks Feelin C1 - Crystal Clear",
-      "brand": "Cartridge Nevoks",
-      "category": "access",
-      "price": 50000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 1
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000091",
-      "name": "Cartridge Nevoks Feelin C1 - Light Blue Clear",
-      "brand": "Cartridge Nevoks",
-      "category": "access",
-      "price": 50000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 1
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000092",
-      "name": "Cartridge Nevoks Feelin C1 - Matcha Clear",
-      "brand": "Cartridge Nevoks",
-      "category": "access",
-      "price": 50000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 1
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000093",
-      "name": "Cartridge Oxva Origin SE - Empty 3.5ml",
-      "brand": "Cartridge Oxva",
-      "category": "access",
-      "price": 45000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 1
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000126",
-      "name": "Cartridge Vaporesso Xros - 0.8 Ohm",
-      "brand": "Cartridge",
-      "category": "access",
-      "price": 40000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "6000049",
-      "name": "Cartridge Vaporstorm Flame",
-      "brand": "Cartridge",
-      "category": "access",
-      "price": 35000,
       "stock": {
         "bangil": 1,
         "pandaan": 0
@@ -5624,20 +5470,8 @@
       "id": "4000141",
       "name": "Drip Tip QT02 SS - Black",
       "brand": "Drip Tip",
-      "category": "access",
+      "category": "accessories",
       "price": 100000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "5000221",
-      "name": "Filter Nixx Tip - Black",
-      "brand": "Filter Nixx",
-      "category": "access",
-      "price": 40000,
       "stock": {
         "bangil": 1,
         "pandaan": 0
@@ -5648,7 +5482,7 @@
       "id": "4000051",
       "name": "Katchiring - Delrin 24mm",
       "brand": "Katchiring",
-      "category": "access",
+      "category": "accessories",
       "price": 220000,
       "stock": {
         "bangil": 0,
@@ -5660,7 +5494,7 @@
       "id": "4000052",
       "name": "Katchiring - Delrin 26mm",
       "brand": "Katchiring",
-      "category": "access",
+      "category": "accessories",
       "price": 240000,
       "stock": {
         "bangil": 0,
@@ -5672,7 +5506,7 @@
       "id": "4000054",
       "name": "Katchiring - SS 26mm",
       "brand": "Katchiring",
-      "category": "access",
+      "category": "accessories",
       "price": 240000,
       "stock": {
         "bangil": 1,
@@ -5684,7 +5518,7 @@
       "id": "4000094",
       "name": "Pulse AIO Replaceable Panels - Frosted Blue",
       "brand": "Pulse Aio",
-      "category": "access",
+      "category": "accessories",
       "price": 150000,
       "stock": {
         "bangil": 1,
@@ -5696,23 +5530,11 @@
       "id": "4000174",
       "name": "Pulse AIO Replaceable Panels - Frosted Red",
       "brand": "Pulse Aio",
-      "category": "access",
+      "category": "accessories",
       "price": 150000,
       "stock": {
         "bangil": 1,
         "pandaan": 0
-      },
-      "icon": "⚙️"
-    },
-    {
-      "id": "5000184",
-      "name": "TRML Cotton - Premium Cotton",
-      "brand": "Trml Cotton",
-      "category": "access",
-      "price": 50000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 1
       },
       "icon": "⚙️"
     },
@@ -6017,10 +5839,190 @@
       "icon": "🔧"
     },
     {
+      "id": "7000068",
+      "name": "Battery Charge Up - 3500mAh",
+      "brand": "Battery Charge",
+      "category": "battery-charger",
+      "price": 130000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 0
+      },
+      "icon": "⚡"
+    },
+    {
+      "id": "7000071",
+      "name": "Battery Onyx 15A - 3500mAh",
+      "brand": "Battery Onyx",
+      "category": "battery-charger",
+      "price": 130000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 0
+      },
+      "icon": "⚡"
+    },
+    {
+      "id": "5000061",
+      "name": "Battery VRK 18350 - 700mAh",
+      "brand": "Battery Vrk",
+      "category": "battery-charger",
+      "price": 60000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "⚡"
+    },
+    {
+      "id": "6000136",
+      "name": "Cartridge Caliburn A3 - 0.8 Ohm",
+      "brand": "Cartridge",
+      "category": "cartridge-cotton",
+      "price": 45000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000011",
+      "name": "Cartridge Druga Narada Pro",
+      "brand": "Cartridge Druga",
+      "category": "cartridge-cotton",
+      "price": 50000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000088",
+      "name": "Cartridge Nevoks Feelin C1 - Amber Clear",
+      "brand": "Cartridge Nevoks",
+      "category": "cartridge-cotton",
+      "price": 50000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000089",
+      "name": "Cartridge Nevoks Feelin C1 - Black Clear",
+      "brand": "Cartridge Nevoks",
+      "category": "cartridge-cotton",
+      "price": 50000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000090",
+      "name": "Cartridge Nevoks Feelin C1 - Crystal Clear",
+      "brand": "Cartridge Nevoks",
+      "category": "cartridge-cotton",
+      "price": 50000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000091",
+      "name": "Cartridge Nevoks Feelin C1 - Light Blue Clear",
+      "brand": "Cartridge Nevoks",
+      "category": "cartridge-cotton",
+      "price": 50000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000092",
+      "name": "Cartridge Nevoks Feelin C1 - Matcha Clear",
+      "brand": "Cartridge Nevoks",
+      "category": "cartridge-cotton",
+      "price": 50000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000093",
+      "name": "Cartridge Oxva Origin SE - Empty 3.5ml",
+      "brand": "Cartridge Oxva",
+      "category": "cartridge-cotton",
+      "price": 45000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000126",
+      "name": "Cartridge Vaporesso Xros - 0.8 Ohm",
+      "brand": "Cartridge",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "6000049",
+      "name": "Cartridge Vaporstorm Flame",
+      "brand": "Cartridge",
+      "category": "cartridge-cotton",
+      "price": 35000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "5000221",
+      "name": "Filter Nixx Tip - Black",
+      "brand": "Filter Nixx",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 0
+      },
+      "icon": "🧵"
+    },
+    {
+      "id": "5000184",
+      "name": "TRML Cotton - Premium Cotton",
+      "brand": "Trml Cotton",
+      "category": "cartridge-cotton",
+      "price": 50000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "🧵"
+    },
+    {
       "id": "2000167",
       "name": "Coil Aspire Cloudflask - 0.17 Ohm",
       "brand": "Coil Aspire",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 47000,
       "stock": {
         "bangil": 1,
@@ -6032,7 +6034,7 @@
       "id": "2000122",
       "name": "Coil Manto AIO - Reguler 1.2 Ohm",
       "brand": "Coil Manto",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 35000,
       "stock": {
         "bangil": 0,
@@ -6044,7 +6046,7 @@
       "id": "2000026",
       "name": "Coil Pal II Artery - 0.4 Ohm",
       "brand": "Coil Pal",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 30000,
       "stock": {
         "bangil": 1,
@@ -6056,7 +6058,7 @@
       "id": "2000024",
       "name": "Narada Pro Coil - 1.0 Ohm",
       "brand": "Narada Pro",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 35000,
       "stock": {
         "bangil": 1,
@@ -6068,7 +6070,7 @@
       "id": "2000027",
       "name": "Oxva Unicoil - 0.5 Ohm",
       "brand": "Oxva",
-      "category": "coil",
+      "category": "coil-wire",
       "price": 35000,
       "stock": {
         "bangil": 1,
