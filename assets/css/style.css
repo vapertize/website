@@ -1719,8 +1719,8 @@ button { cursor: pointer; font-family: inherit; border: none; }
 
 @media (max-width: 768px) {
   .nav-links {
-    position: fixed;
-    top: calc(72px + env(safe-area-inset-top, 0));
+    position: absolute;
+    top: 100%; /* right below navbar — auto-adapt to navbar height */
     left: 0;
     right: 0;
     background: var(--bg-secondary);
@@ -1728,10 +1728,17 @@ button { cursor: pointer; font-family: inherit; border: none; }
     padding: 24px;
     gap: 16px;
     border-bottom: 1px solid var(--border);
-    transform: translateY(-120%);
+    transform: translateY(-200%);
     transition: var(--transition);
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
   }
-  .nav-links.active { transform: translateY(0); }
+  .nav-links.active {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
   .mobile-toggle { display: flex; align-items: center; justify-content: center; }
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .hero-visual { height: 380px; }
