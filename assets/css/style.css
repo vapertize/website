@@ -88,7 +88,8 @@ button { cursor: pointer; font-family: inherit; border: none; }
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
-  /* Safe area inset hanya untuk iOS notch — tidak menambah space di Android */
+  /* Safe area inset — penting di Android Chrome (status bar) & iOS (notch) */
+  padding-top: env(safe-area-inset-top, 0);
   padding-left: env(safe-area-inset-left, 0);
   padding-right: env(safe-area-inset-right, 0);
 }
@@ -97,7 +98,7 @@ button { cursor: pointer; font-family: inherit; border: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px; /* lebih ringkas — hilangkan dark band tebal di atas */
+  padding: 12px 20px; /* ringkas, tapi cukup ruang untuk logo */
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -117,7 +118,7 @@ button { cursor: pointer; font-family: inherit; border: none; }
 
 .logo span {
   display: inline-block;
-  padding: 3px 0; /* sedikit breathing untuk Bebas Neue ascender */
+  padding: 4px 0; /* breathing room untuk Bebas Neue ascender */
   line-height: 1;
 }
 
