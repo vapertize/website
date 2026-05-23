@@ -1,16 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F5D78B"/>
+    <linearGradient id="g" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F2D27A"/>
       <stop offset="50%" stop-color="#D4AF37"/>
       <stop offset="100%" stop-color="#8B6914"/>
     </linearGradient>
   </defs>
   <rect width="32" height="32" rx="6" fill="#0a0a0a"/>
   <g fill="url(#g)">
-    <!-- Compact V antler -->
-    <path d="M 16 28 L 11 17 L 13 16 L 16 23 L 19 16 L 21 17 Z"/>
-    <path d="M 11 17 L 8 11 L 5 9 L 7 6 L 9 9 L 12 11 L 13 14 Z"/>
-    <path d="M 21 17 L 24 11 L 27 9 L 25 6 L 23 9 L 20 11 L 19 14 Z"/>
+    <!-- Compact antler: left trunk + tines -->
+    <path d="M 16 28 C 15.5 26, 14 24, 12.5 21.5 C 11 19, 9.8 16, 9.5 13.5 L 11 13 C 11.3 15.5, 12.5 18, 13.7 20 C 14.7 22, 15.4 24, 16 26 Z"/>
+    <path d="M 12.5 18 C 10.5 17, 7.5 15.5, 5.5 13.5 L 6.5 12.5 C 8.5 14.5, 11 16, 13 17 Z"/>
+    <path d="M 11 13 C 9.8 11, 8.8 8, 8.5 5 L 10 5 C 10.3 7.5, 11 10, 12 12 Z"/>
+    <!-- Right antler mirror -->
+    <path d="M 16 28 C 16.5 26, 18 24, 19.5 21.5 C 21 19, 22.2 16, 22.5 13.5 L 21 13 C 20.7 15.5, 19.5 18, 18.3 20 C 17.3 22, 16.6 24, 16 26 Z"/>
+    <path d="M 19.5 18 C 21.5 17, 24.5 15.5, 26.5 13.5 L 25.5 12.5 C 23.5 14.5, 21 16, 19 17 Z"/>
+    <path d="M 21 13 C 22.2 11, 23.2 8, 23.5 5 L 22 5 C 21.7 7.5, 21 10, 20 12 Z"/>
+    <!-- V base -->
+    <path d="M 11 21 L 13 21 L 16 28 L 19 21 L 21 21 L 16 30 Z"/>
   </g>
 </svg>
