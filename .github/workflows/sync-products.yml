@@ -46,7 +46,13 @@ jobs:
         if: github.event.inputs.fetch_images == 'true'
         env:
           BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
-        run: python scripts/fetch_images.py || echo "Image fetch skipped (no API key)"
+        run: python scripts/fetch_images.py 50 || echo "Image fetch skipped (no API key)"
+
+      - name: Re-sync products.json to register new image paths
+        if: github.event.inputs.fetch_images == 'true'
+        env:
+          SHEET_CSV_URL: ${{ vars.SHEET_CSV_URL || secrets.SHEET_CSV_URL }}
+        run: python scripts/sync_products.py
 
       - name: Show diff stats
         run: |
