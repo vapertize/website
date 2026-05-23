@@ -38,7 +38,7 @@ async function loadProducts() {
   } catch (e) {
     console.warn('[Vapertize] Failed to load products.json, using fallback:', e);
     PRODUCTS_DATA = PRODUCTS_FALLBACK;
-    PRODUCTS_META = { total: PRODUCTS_FALLBACK.length, categories: ['liquid','device','coil','access'], branches: ['bangil','pandaan'], source: 'fallback' };
+    PRODUCTS_META = { total: PRODUCTS_FALLBACK.length, categories: ['liquid','device','atomizer','coil-wire','battery-charger','cartridge-cotton','accessories'], branches: ['bangil','pandaan'], source: 'fallback' };
     return PRODUCTS_DATA;
   }
 }
@@ -77,27 +77,31 @@ const PRODUCTS_FALLBACK = [
   { id: 'd006', cat: 'device', name: 'SMOK Nord 5 Kit', brand: 'SMOK', desc: 'Pod system 80W dengan IQ-N chip, 2000mAh.', price: 545000, oldPrice: 620000, tag: 'sale', icon: '🌟' },
 
   // COIL & ATOMIZER
-  { id: 'c001', cat: 'coil', name: 'PnP TM2 Coil 0.2Ω', brand: 'Voopoo', desc: 'Mesh coil untuk Drag series, pack of 5.', price: 145000, icon: '🌀' },
-  { id: 'c002', cat: 'coil', name: 'GTX Mesh 0.2Ω', brand: 'Vaporesso', desc: 'Mesh coil 60-75W, flavor maksimal. Pack of 5.', price: 155000, tag: 'hot', icon: '🌀' },
-  { id: 'c003', cat: 'coil', name: 'Hellvape Dead Rabbit V3 RDA', brand: 'Hellvape', desc: 'RDA 24mm, dual coil, BF pin included.', price: 385000, tag: 'new', icon: '🐇' },
-  { id: 'c004', cat: 'coil', name: 'Wotofo Profile X RTA', brand: 'Wotofo', desc: 'RTA 25mm, mesh & coil compatible, 8ml capacity.', price: 525000, icon: '🔧' },
-  { id: 'c005', cat: 'coil', name: 'GeekVape M Coil 0.15Ω', brand: 'GeekVape', desc: 'Untuk Zeus tank, pack of 5. Long lasting flavor.', price: 165000, icon: '🌀' },
-  { id: 'c006', cat: 'coil', name: 'Steam Crave Glaz Mini RTA', brand: 'Steam Crave', desc: 'RTA single coil 24mm dengan top airflow.', price: 425000, icon: '🔩' },
+  { id: 'c001', cat: 'coil-wire', name: 'PnP TM2 Coil 0.2Ω', brand: 'Voopoo', desc: 'Mesh coil untuk Drag series, pack of 5.', price: 145000, icon: '🌀' },
+  { id: 'c002', cat: 'coil-wire', name: 'GTX Mesh 0.2Ω', brand: 'Vaporesso', desc: 'Mesh coil 60-75W, flavor maksimal. Pack of 5.', price: 155000, tag: 'hot', icon: '🌀' },
+  { id: 'c003', cat: 'atomizer', name: 'Hellvape Dead Rabbit V3 RDA', brand: 'Hellvape', desc: 'RDA 24mm, dual coil, BF pin included.', price: 385000, tag: 'new', icon: '🐇' },
+  { id: 'c004', cat: 'atomizer', name: 'Wotofo Profile X RTA', brand: 'Wotofo', desc: 'RTA 25mm, mesh & coil compatible, 8ml capacity.', price: 525000, icon: '🔧' },
+  { id: 'c005', cat: 'coil-wire', name: 'GeekVape M Coil 0.15Ω', brand: 'GeekVape', desc: 'Untuk Zeus tank, pack of 5. Long lasting flavor.', price: 165000, icon: '🌀' },
+  { id: 'c006', cat: 'atomizer', name: 'Steam Crave Glaz Mini RTA', brand: 'Steam Crave', desc: 'RTA single coil 24mm dengan top airflow.', price: 425000, icon: '🔩' },
 
   // ACCESSORIES
-  { id: 'a001', cat: 'access', name: 'Molicel P26A Battery 2600mAh', brand: 'Molicel', desc: 'Battery 18650 35A, original. 1 piece.', price: 95000, tag: 'hot', icon: '🔋' },
-  { id: 'a002', cat: 'access', name: 'Xtar VC4 Charger', brand: 'Xtar', desc: 'Smart charger 4 slot dengan LCD display.', price: 285000, icon: '🔌' },
-  { id: 'a003', cat: 'access', name: 'Cotton Bacon Prime', brand: 'Wick \'N\' Vape', desc: 'Organic cotton premium untuk DIY coil.', price: 75000, oldPrice: 90000, tag: 'sale', icon: '☁️' },
-  { id: 'a004', cat: 'access', name: '510 Drip Tip Resin Premium', brand: 'Generic', desc: 'Drip tip resin handmade, berbagai warna.', price: 45000, icon: '💧' },
-  { id: 'a005', cat: 'access', name: 'Vape Case Carry Bag', brand: 'Coil Master', desc: 'Tas vape multipurpose, muat 2 device + liquid.', price: 165000, tag: 'new', icon: '👜' },
-  { id: 'a006', cat: 'access', name: 'Ohm Reader Coil Master', brand: 'Coil Master', desc: '521 Tab Mini V3 untuk DIY building.', price: 245000, icon: '📏' }
+  { id: 'a001', cat: 'battery-charger', name: 'Molicel P26A Battery 2600mAh', brand: 'Molicel', desc: 'Battery 18650 35A, original. 1 piece.', price: 95000, tag: 'hot', icon: '🔋' },
+  { id: 'a002', cat: 'battery-charger', name: 'Xtar VC4 Charger', brand: 'Xtar', desc: 'Smart charger 4 slot dengan LCD display.', price: 285000, icon: '🔌' },
+  { id: 'a003', cat: 'cartridge-cotton', name: 'Cotton Bacon Prime', brand: 'Wick \'N\' Vape', desc: 'Organic cotton premium untuk DIY coil.', price: 75000, oldPrice: 90000, tag: 'sale', icon: '☁️' },
+  { id: 'a004', cat: 'accessories', name: '510 Drip Tip Resin Premium', brand: 'Generic', desc: 'Drip tip resin handmade, berbagai warna.', price: 45000, icon: '💧' },
+  { id: 'a005', cat: 'accessories', name: 'Vape Case Carry Bag', brand: 'Coil Master', desc: 'Tas vape multipurpose, muat 2 device + liquid.', price: 165000, tag: 'new', icon: '👜' },
+  { id: 'a006', cat: 'accessories', name: 'Ohm Reader Coil Master', brand: 'Coil Master', desc: '521 Tab Mini V3 untuk DIY building.', price: 245000, icon: '📏' }
 ];
 
+// 7 kategori sesuai dengan kolom 'kategori' di Google Sheet
 const CATEGORIES = [
-  { id: 'liquid', name: 'Liquid', icon: '💧', desc: 'E-Juice & Salt Nic' },
-  { id: 'device', name: 'Device', icon: '🔋', desc: 'Mod & Pod System' },
-  { id: 'coil', name: 'Coil', icon: '🌀', desc: 'Coil, RDA & RTA' },
-  { id: 'access', name: 'Accessories', icon: '⚙️', desc: 'Battery & Tools' }
+  { id: 'liquid',           name: 'Liquid',             icon: '💧', desc: 'E-Juice & Salt Nic' },
+  { id: 'device',           name: 'Device',             icon: '🔋', desc: 'Mod & Pod System' },
+  { id: 'atomizer',         name: 'Atomizer',           icon: '🔧', desc: 'RDA, RTA & Tank' },
+  { id: 'coil-wire',        name: 'Coil & Wire',        icon: '🌀', desc: 'Mesh, Coil, Wire' },
+  { id: 'battery-charger',  name: 'Battery & Charger',  icon: '⚡', desc: 'Battery 18650 & Charger' },
+  { id: 'cartridge-cotton', name: 'Cartridge & Cotton', icon: '🧵', desc: 'Refill & Cotton' },
+  { id: 'accessories',      name: 'Accessories',        icon: '⚙️', desc: 'Drip Tip & Tools' }
 ];
 
 const REWARDS = [
