@@ -1,0 +1,17 @@
+{
+  "name": "vapertize-website",
+  "version": "1.0.0",
+  "description": "Vapertize - Authentic & Premium Vape Store Website",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "preview": "npx serve ."
+  },
+  "devDependencies": {
+    "wrangler": "^3.78.0"
+  },
+  "keywords": ["vape", "vapertize", "vape-store", "indonesia"],
+  "author": "Vapertize",
+  "license": "UNLICENSED"
+}

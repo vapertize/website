@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vapertize - Authentic & Premium Vape Store</title>
+  <meta name="description" content="Vapertize - Toko vape terpercaya di Bangil & Pandaan, Pasuruan. Menyediakan liquid, device, coil, dan accessories vape 100% authentic.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="navbarSlot" data-page="home"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge">⚡ 100% Authentic Products</span>
+          <h1 class="hero-title">
+            Vape Your <span class="accent">Way</span><br>
+            With Vapertize
+          </h1>
+          <p class="hero-desc">
+            Distributor & toko vape premium di Pasuruan. Liquid, device, coil hingga accessories — semua authentic dengan garansi resmi distributor.
+          </p>
+          <div class="hero-cta">
+            <a href="catalog.html" class="btn btn-primary btn-lg">Belanja Sekarang →</a>
+            <a href="member.html" class="btn btn-secondary btn-lg">Join Member</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="num">564+</div>
+              <div class="label">Happy Customers</div>
+            </div>
+            <div class="hero-stat">
+              <div class="num">2</div>
+              <div class="label">Store Locations</div>
+            </div>
+            <div class="hero-stat">
+              <div class="num">5★</div>
+              <div class="label">Rating</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-orb"></div>
+          <div class="hero-device">
+            <div class="hero-device-screen">
+              <div class="v">V</div>
+              <div class="t">VAPERTIZE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">★ Browse Category</span>
+        <h2 class="section-title">Shop by Category</h2>
+        <p class="section-desc">Temukan semua kebutuhan vaping kamu dari satu tempat — dengan kualitas premium dan harga terbaik.</p>
+      </div>
+      <div class="cat-grid" id="catGrid"></div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="section" style="background:var(--bg-secondary)">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">🔥 Hot Picks</span>
+        <h2 class="section-title">Featured Products</h2>
+        <p class="section-desc">Produk pilihan terbaik minggu ini, paling banyak dicari customer Vapertize.</p>
+      </div>
+      <div class="product-grid" id="featuredGrid"></div>
+      <div style="text-align:center;margin-top:48px">
+        <a href="catalog.html" class="btn btn-secondary btn-lg">Lihat Semua Produk →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">✨ Why Vapertize</span>
+        <h2 class="section-title">Why Choose Us</h2>
+        <p class="section-desc">Lebih dari sekedar toko vape — kami partner kamu untuk pengalaman vaping terbaik.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">✓</div>
+          <h3>100% Authentic</h3>
+          <p>Semua produk authentic, no clone, langsung dari distributor resmi.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚚</div>
+          <h3>Free Shipping</h3>
+          <p>Gratis ongkir ke seluruh Indonesia untuk pembelian tertentu.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎁</div>
+          <h3>Reward Member</h3>
+          <p>Setiap belanja kumpulkan poin dan tukar dengan hadiah menarik.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3>24/7 Support</h3>
+          <p>Tim CS siap bantu kapan saja via WhatsApp & social media.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background:linear-gradient(135deg,rgba(0,229,255,0.1),rgba(255,0,128,0.1));border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div class="container">
+      <div style="text-align:center;max-width:600px;margin:0 auto">
+        <h2 class="section-title">Join Vapertize Squad</h2>
+        <p class="section-desc" style="margin-bottom:32px">Daftar member sekarang, dapatkan 100 poin gratis dan akses ke promo eksklusif khusus member.</p>
+        <a href="member.html" class="btn btn-primary btn-lg">Daftar Member Gratis</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footerSlot"></div>
+  <div id="cartSlot"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    function pageInit() {
+      // Render categories
+      const catGrid = document.getElementById('catGrid');
+      catGrid.innerHTML = CATEGORIES.map(c => {
+        const count = getProductsByCat(c.id).length;
+        return `
+          <a href="catalog.html?cat=${c.id}" class="cat-card">
+            <div class="cat-icon">${c.icon}</div>
+            <div class="cat-name">${c.name}</div>
+            <div class="cat-count">${count} produk · ${c.desc}</div>
+          </a>
+        `;
+      }).join('');
+
+      // Render featured (tag = hot or new)
+      const featured = PRODUCTS.filter(p => p.tag).slice(0, 8);
+      const featuredGrid = document.getElementById('featuredGrid');
+      featuredGrid.innerHTML = featured.map(p => `
+        <div class="product-card">
+          <div class="product-img">
+            ${p.tag ? `<span class="product-tag ${p.tag}">${p.tag}</span>` : ''}
+            ${p.icon}
+          </div>
+          <div class="product-info">
+            <div class="product-cat">${CATEGORIES.find(c => c.id === p.cat)?.name || ''}</div>
+            <div class="product-name">${p.name}</div>
+            <div class="product-desc">${p.desc}</div>
+            <div class="product-bottom">
+              <div class="product-price">
+                ${p.oldPrice ? `<span class="old">${formatRupiah(p.oldPrice)}</span>` : ''}
+                ${formatRupiah(p.price)}
+              </div>
+              <button class="add-cart-btn" onclick="addToCart('${p.id}')" title="Tambah">+</button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+  </script>
+</body>
+</html>

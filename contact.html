@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak & Lokasi - Vapertize</title>
+  <meta name="description" content="Hubungi Vapertize: WhatsApp, Instagram, atau kunjungi toko kami di Bangil & Pandaan, Pasuruan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="navbarSlot" data-page="contact"></div>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section-eyebrow">Get in Touch</span>
+      <h1 class="section-title">Kontak & Lokasi</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Kontak</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <h2 style="font-family:var(--font-display);font-size:36px;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px">Hubungi Kami</h2>
+          <p style="color:var(--text-secondary);margin-bottom:32px">Tim Vapertize siap bantu jawab pertanyaan kamu. Hubungi via channel berikut:</p>
+
+          <div class="contact-info-card" id="waCard" style="cursor:pointer">
+            <div class="contact-info-icon">💬</div>
+            <div>
+              <h4>WhatsApp</h4>
+              <p id="waNumber"></p>
+              <p style="color:var(--accent);font-size:13px;font-weight:600;margin-top:4px">Klik untuk chat langsung →</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">📧</div>
+            <div>
+              <h4>Email</h4>
+              <p id="email"></p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">🕐</div>
+            <div>
+              <h4>Jam Buka</h4>
+              <p id="hours"></p>
+              <p style="font-size:13px;color:var(--text-muted)">Setiap hari termasuk weekend & hari libur</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">📷</div>
+            <div>
+              <h4>Social Media</h4>
+              <p>Follow @vapertize di Instagram & Facebook untuk update produk terbaru, promo, dan tips vaping.</p>
+              <div class="social-links" id="contactSocial"></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 style="font-family:var(--font-display);font-size:36px;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px">Kirim Pesan</h2>
+          <p style="color:var(--text-secondary);margin-bottom:32px">Atau isi form di bawah, pesan kamu akan dikirim via WhatsApp.</p>
+
+          <form onsubmit="return sendContact(event)" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:32px">
+            <div class="form-group">
+              <label class="form-label">Nama</label>
+              <input type="text" class="form-input" id="cName" required placeholder="Nama lengkap">
+            </div>
+            <div class="form-group">
+              <label class="form-label">No. WhatsApp</label>
+              <input type="tel" class="form-input" id="cPhone" required placeholder="08xxxxxxxxxx">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Topik</label>
+              <select class="form-select" id="cTopic" required>
+                <option value="">Pilih topik</option>
+                <option>Tanya Produk</option>
+                <option>Order via WhatsApp</option>
+                <option>Status Pengiriman</option>
+                <option>Komplain / Garansi</option>
+                <option>Reseller / Dropship</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Pesan</label>
+              <textarea class="form-textarea" id="cMessage" required placeholder="Tulis pesan kamu..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-whatsapp btn-block btn-lg">
+              💬 Kirim via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORES -->
+  <section class="section" style="background:var(--bg-secondary)">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">📍 Visit Us</span>
+        <h2 class="section-title">Lokasi Toko Vapertize</h2>
+        <p class="section-desc">Mampir langsung ke toko offline kami di Bangil atau Pandaan, Pasuruan. Tester tersedia!</p>
+      </div>
+
+      <div class="store-cards" id="storeCards"></div>
+
+      <!-- Map -->
+      <div style="margin-top:40px" class="map-card">
+        <iframe
+          src="https://www.google.com/maps?q=Bangil+Pasuruan+Jawa+Timur&output=embed"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <div id="footerSlot"></div>
+  <div id="cartSlot"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    function sendContact(e) {
+      e.preventDefault();
+      const name = document.getElementById('cName').value;
+      const phone = document.getElementById('cPhone').value;
+      const topic = document.getElementById('cTopic').value;
+      const message = document.getElementById('cMessage').value;
+
+      const msg = `*Pesan dari Website Vapertize*\n\n*Nama:* ${name}\n*No. WA:* ${phone}\n*Topik:* ${topic}\n\n*Pesan:*\n${message}`;
+      const url = `https://wa.me/${STORE_INFO.whatsapp}?text=${encodeURIComponent(msg)}`;
+      window.open(url, '_blank');
+      showToast('Membuka WhatsApp...', 'success');
+      return false;
+    }
+
+    function pageInit() {
+      document.getElementById('waNumber').textContent = STORE_INFO.phone;
+      document.getElementById('email').textContent = STORE_INFO.email;
+      document.getElementById('hours').textContent = STORE_INFO.hours;
+
+      document.getElementById('waCard').addEventListener('click', () => {
+        window.open(`https://wa.me/${STORE_INFO.whatsapp}`, '_blank');
+      });
+
+      document.getElementById('contactSocial').innerHTML = `
+        <a href="${STORE_INFO.instagram}" class="social-link" target="_blank">📷</a>
+        <a href="${STORE_INFO.facebook}" class="social-link" target="_blank">f</a>
+        <a href="https://wa.me/${STORE_INFO.whatsapp}" class="social-link" target="_blank">💬</a>
+      `;
+
+      const storeCards = document.getElementById('storeCards');
+      storeCards.innerHTML = STORE_INFO.stores.map(s => `
+        <div class="store-card">
+          <div class="store-card-header">
+            <h3>${s.name}</h3>
+          </div>
+          <div class="store-card-body">
+            <p>📍 <span>${s.address}</span></p>
+            <p>📞 <span>${s.phone}</span></p>
+            <p>🕐 <span>${STORE_INFO.hours}</span></p>
+            <div style="display:flex;gap:8px;margin-top:16px">
+              <a href="https://maps.google.com/?q=${s.mapQuery}" target="_blank" class="btn btn-secondary btn-sm" style="flex:1">📍 Lihat Maps</a>
+              <a href="https://wa.me/${STORE_INFO.whatsapp}" target="_blank" class="btn btn-whatsapp btn-sm" style="flex:1">💬 Chat</a>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+  </script>
+</body>
+</html>

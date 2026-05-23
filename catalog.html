@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Produk - Vapertize</title>
+  <meta name="description" content="Katalog lengkap produk Vapertize: liquid, device, coil, dan accessories vape authentic.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="navbarSlot" data-page="catalog"></div>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section-eyebrow">Shop</span>
+      <h1 class="section-title">Katalog Produk</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Katalog</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOG -->
+  <section class="section">
+    <div class="container">
+      <!-- Filter -->
+      <div class="filter-bar">
+        <button class="filter-chip active" data-cat="all">Semua</button>
+        <button class="filter-chip" data-cat="liquid">💧 Liquid</button>
+        <button class="filter-chip" data-cat="device">🔋 Device</button>
+        <button class="filter-chip" data-cat="coil">🌀 Coil</button>
+        <button class="filter-chip" data-cat="access">⚙️ Accessories</button>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Cari produk...">
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="productGrid"></div>
+
+      <div id="emptyState" style="display:none" class="empty-state">
+        <div class="icon">🔍</div>
+        <p>Produk tidak ditemukan</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="footerSlot"></div>
+  <div id="cartSlot"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    let currentCat = 'all';
+    let searchQuery = '';
+
+    function renderProducts() {
+      let items = getProductsByCat(currentCat);
+      if (searchQuery) {
+        const q = searchQuery.toLowerCase();
+        items = items.filter(p =>
+          p.name.toLowerCase().includes(q) ||
+          p.desc.toLowerCase().includes(q) ||
+          p.brand.toLowerCase().includes(q)
+        );
+      }
+
+      const grid = document.getElementById('productGrid');
+      const empty = document.getElementById('emptyState');
+
+      if (items.length === 0) {
+        grid.innerHTML = '';
+        empty.style.display = 'block';
+        return;
+      }
+      empty.style.display = 'none';
+
+      grid.innerHTML = items.map(p => `
+        <div class="product-card">
+          <div class="product-img">
+            ${p.tag ? `<span class="product-tag ${p.tag}">${p.tag}</span>` : ''}
+            ${p.icon}
+          </div>
+          <div class="product-info">
+            <div class="product-cat">${p.brand} · ${CATEGORIES.find(c => c.id === p.cat)?.name || ''}</div>
+            <div class="product-name">${p.name}</div>
+            <div class="product-desc">${p.desc}</div>
+            <div class="product-bottom">
+              <div class="product-price">
+                ${p.oldPrice ? `<span class="old">${formatRupiah(p.oldPrice)}</span>` : ''}
+                ${formatRupiah(p.price)}
+              </div>
+              <button class="add-cart-btn" onclick="addToCart('${p.id}')" title="Tambah ke keranjang">+</button>
+            </div>
+            <button class="btn btn-whatsapp btn-sm btn-block" style="margin-top:10px" onclick="orderProductWA('${p.id}')">
+              💬 Order Cepat WA
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function pageInit() {
+      // Read URL param
+      const params = new URLSearchParams(window.location.search);
+      const cat = params.get('cat');
+      if (cat) {
+        currentCat = cat;
+        document.querySelectorAll('.filter-chip').forEach(c => c.classList.toggle('active', c.dataset.cat === cat));
+      }
+
+      renderProducts();
+
+      // Filter clicks
+      document.querySelectorAll('.filter-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          currentCat = chip.dataset.cat;
+          renderProducts();
+        });
+      });
+
+      // Search
+      document.getElementById('searchInput').addEventListener('input', e => {
+        searchQuery = e.target.value;
+        renderProducts();
+      });
+    }
+  </script>
+</body>
+</html>

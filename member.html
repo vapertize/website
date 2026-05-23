@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Area - Vapertize</title>
+  <meta name="description" content="Member Vapertize - cek poin, riwayat order, dan tukar reward eksklusif.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="navbarSlot" data-page="member"></div>
+
+  <section class="section">
+    <div class="container">
+      <div id="memberContent"></div>
+    </div>
+  </section>
+
+  <div id="footerSlot"></div>
+  <div id="cartSlot"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    function renderAuth() {
+      document.getElementById('memberContent').innerHTML = `
+        <div class="auth-layout">
+          <div class="auth-visual">
+            <div class="auth-visual-content">
+              <span class="section-eyebrow">★ Vapertize Squad</span>
+              <h2>Join the Club</h2>
+              <p>Daftar member Vapertize sekarang dan nikmati benefit eksklusif yang hanya untuk member.</p>
+              <ul class="perks">
+                <li>100 poin gratis saat daftar</li>
+                <li>Kumpulkan poin setiap belanja</li>
+                <li>Tukar poin dengan reward menarik</li>
+                <li>Akses promo & event eksklusif</li>
+                <li>Tier system: Bronze → Diamond</li>
+                <li>Priority CS support</li>
+              </ul>
+            </div>
+            <div style="font-size:13px;color:var(--text-muted);margin-top:24px">
+              Sudah dipercaya oleh 500+ vaper di Pasuruan & sekitarnya
+            </div>
+          </div>
+          <div class="auth-form">
+            <div class="auth-tabs">
+              <button class="auth-tab active" data-tab="login" onclick="switchTab('login')">Login</button>
+              <button class="auth-tab" data-tab="register" onclick="switchTab('register')">Register</button>
+            </div>
+
+            <div id="loginForm">
+              <h3>Welcome Back</h3>
+              <p class="subtitle">Masuk untuk cek poin dan riwayat order kamu</p>
+              <form onsubmit="return handleLogin(event)">
+                <div class="form-group">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-input" id="loginEmail" required placeholder="kamu@email.com">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Password</label>
+                  <input type="password" class="form-input" id="loginPassword" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
+              </form>
+              <p style="text-align:center;margin-top:20px;font-size:13px;color:var(--text-muted)">
+                Belum punya akun? <a href="#" onclick="switchTab('register');return false" style="color:var(--accent)">Daftar di sini</a>
+              </p>
+            </div>
+
+            <div id="registerForm" style="display:none">
+              <h3>Create Account</h3>
+              <p class="subtitle">Daftar gratis & dapatkan 100 poin pendaftaran</p>
+              <form onsubmit="return handleRegister(event)">
+                <div class="form-group">
+                  <label class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-input" id="regName" required placeholder="Nama lengkap">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-input" id="regEmail" required placeholder="kamu@email.com">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">No. WhatsApp</label>
+                  <input type="tel" class="form-input" id="regPhone" required placeholder="08xxxxxxxxxx">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Password</label>
+                  <input type="password" class="form-input" id="regPassword" required placeholder="Min. 6 karakter" minlength="6">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-lg">Daftar Sekarang</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function switchTab(tab) {
+      document.querySelectorAll('.auth-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+      document.getElementById('loginForm').style.display = tab === 'login' ? 'block' : 'none';
+      document.getElementById('registerForm').style.display = tab === 'register' ? 'block' : 'none';
+    }
+
+    function handleLogin(e) {
+      e.preventDefault();
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPassword').value;
+      const result = loginUser(email, password);
+      if (!result.ok) {
+        showToast(result.msg, 'error');
+        return false;
+      }
+      showToast(`Selamat datang, ${result.user.name}!`, 'success');
+      setTimeout(() => location.reload(), 800);
+      return false;
+    }
+
+    function handleRegister(e) {
+      e.preventDefault();
+      const name = document.getElementById('regName').value;
+      const email = document.getElementById('regEmail').value;
+      const phone = document.getElementById('regPhone').value;
+      const password = document.getElementById('regPassword').value;
+      const result = registerUser(name, email, phone, password);
+      if (!result.ok) {
+        showToast(result.msg, 'error');
+        return false;
+      }
+      showToast(`Registrasi berhasil! +100 poin bonus`, 'success');
+      setTimeout(() => location.reload(), 800);
+      return false;
+    }
+
+    function renderDashboard(user) {
+      const tier = getUserTier(user.points);
+      const orderCount = user.history.filter(h => h.type === 'add').length;
+
+      // Sort history newest first
+      const history = [...user.history].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+      document.getElementById('memberContent').innerHTML = `
+        <div class="dashboard">
+          <aside class="dash-sidebar">
+            <div class="user-avatar">${user.name.charAt(0).toUpperCase()}</div>
+            <div class="user-name">${user.name}</div>
+            <div class="user-email">${user.email}</div>
+            <ul class="dash-menu">
+              <li><a href="#" class="active">📊 Dashboard</a></li>
+              <li><a href="#poin">⭐ Poin & Reward</a></li>
+              <li><a href="#history">📜 Riwayat</a></li>
+              <li><a href="catalog.html">🛍 Belanja</a></li>
+              <li><a href="contact.html">💬 Bantuan</a></li>
+              <li><a href="#" onclick="logout();return false" style="color:var(--danger)">🚪 Logout</a></li>
+            </ul>
+          </aside>
+
+          <div class="dash-content">
+            <!-- Point Card -->
+            <div class="point-card">
+              <div class="point-label">Total Poin Kamu</div>
+              <div class="point-value">${user.points.toLocaleString()}</div>
+              <div class="point-tier">⭐ ${tier} Member</div>
+              <div style="margin-top:12px;font-size:13px;opacity:0.8">
+                Member sejak ${new Date(user.joinDate).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}
+              </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-row">
+              <div class="stat-card">
+                <div class="label">Total Order</div>
+                <div class="value">${orderCount}</div>
+              </div>
+              <div class="stat-card">
+                <div class="label">Reward Diklaim</div>
+                <div class="value">${user.history.filter(h => h.type === 'use').length}</div>
+              </div>
+              <div class="stat-card">
+                <div class="label">Tier Status</div>
+                <div class="value">${tier}</div>
+              </div>
+            </div>
+
+            <!-- Rewards -->
+            <div class="dash-card" id="poin">
+              <h3>🎁 Tukar Poin dengan Reward</h3>
+              <div class="reward-grid">
+                ${REWARDS.map(r => `
+                  <div class="reward-card">
+                    <div class="reward-icon">${r.icon}</div>
+                    <div class="reward-name">${r.name}</div>
+                    <div class="reward-cost">${r.cost} poin</div>
+                    <button class="btn ${user.points >= r.cost ? 'btn-primary' : 'btn-secondary'} btn-sm btn-block"
+                      style="margin-top:12px"
+                      onclick="claimReward('${r.name}', ${r.cost})"
+                      ${user.points < r.cost ? 'disabled' : ''}>
+                      ${user.points >= r.cost ? 'Tukar' : 'Poin Kurang'}
+                    </button>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- History -->
+            <div class="dash-card" id="history">
+              <h3>📜 Riwayat Poin</h3>
+              ${history.length === 0 ? '<p style="color:var(--text-muted);text-align:center;padding:20px">Belum ada riwayat</p>' :
+                history.map(h => `
+                  <div class="history-item">
+                    <div class="history-icon">${h.type === 'add' ? '➕' : '🎁'}</div>
+                    <div class="history-info">
+                      <div class="history-title">${h.title}</div>
+                      <div class="history-date">${new Date(h.date).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' })}</div>
+                    </div>
+                    <div class="history-point ${h.type}">${h.type === 'add' ? '+' : '-'}${h.points}</div>
+                  </div>
+                `).join('')
+              }
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function claimReward(name, cost) {
+      const user = getCurrentUser();
+      if (!user || user.points < cost) return;
+      if (!confirm(`Tukar ${cost} poin untuk "${name}"?`)) return;
+
+      const users = getUsers();
+      const idx = users.findIndex(u => u.id === user.id);
+      users[idx].points -= cost;
+      users[idx].history.unshift({
+        type: 'use',
+        title: `Tukar reward: ${name}`,
+        date: new Date().toISOString(),
+        points: cost
+      });
+      saveUsers(users);
+      showToast(`Reward berhasil ditukar! Cek WA untuk klaim.`, 'success');
+      renderDashboard(users[idx]);
+    }
+
+    function pageInit() {
+      const user = getCurrentUser();
+      if (user) {
+        renderDashboard(user);
+      } else {
+        renderAuth();
+      }
+    }
+  </script>
+</body>
+</html>
