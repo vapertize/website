@@ -35,7 +35,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=7">
+  <link rel="stylesheet" href="assets/css/style.css?v=8">
 
   <script type="application/ld+json">
   {
@@ -57,16 +57,15 @@
     "mainEntity": {
       "@type": "Organization",
       "name": "Vapertize",
-      "telephone": "+62-812-3456-7890",
-      "email": "info@vapertize.com",
+      "telephone": "+62-813-7000-0110",
+      "email": "store@vapertize.com",
       "url": "https://vapertize.id/",
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "telephone": "+62-812-3456-7890",
-        "contactType": "Customer Service",
-        "availableLanguage": ["Indonesian", "English"],
-        "areaServed": "ID"
-      }]
+      "contactPoint": [
+        {"@type":"ContactPoint","telephone":"+62-813-7000-0110","contactType":"Customer Service","availableLanguage":["Indonesian","English"],"areaServed":"ID"},
+        {"@type":"ContactPoint","telephone":"+62-813-7000-0125","contactType":"Sales","availableLanguage":["Indonesian"],"areaServed":"ID","contactOption":"WholesaleAndDistribution"},
+        {"@type":"ContactPoint","telephone":"+62-813-7000-0145","contactType":"Customer Service","availableLanguage":["Indonesian"],"areaServed":"Bangil"},
+        {"@type":"ContactPoint","telephone":"+62-813-7000-0165","contactType":"Customer Service","availableLanguage":["Indonesian"],"areaServed":"Pandaan"}
+      ]
     }
   }
   </script>
@@ -92,20 +91,47 @@
           <h2 style="font-family:var(--font-display);font-size:36px;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px">Hubungi Kami</h2>
           <p style="color:var(--text-secondary);margin-bottom:32px">Tim Vapertize siap bantu jawab pertanyaan kamu. Hubungi via channel berikut:</p>
 
-          <div class="contact-info-card" id="waCard" style="cursor:pointer">
-            <div class="contact-info-icon">💬</div>
+          <a href="https://wa.me/628137000110" target="_blank" class="contact-info-card" style="text-decoration:none;color:inherit;cursor:pointer">
+            <div class="contact-info-icon">🤖</div>
             <div>
-              <h4>WhatsApp</h4>
-              <p id="waNumber"></p>
-              <p style="color:var(--accent);font-size:13px;font-weight:600;margin-top:4px">Klik untuk chat langsung →</p>
+              <h4>AI Risa <span style="background:var(--accent);color:#000;font-size:10px;padding:2px 8px;border-radius:100px;margin-left:8px;font-weight:700;letter-spacing:1px">24/7</span></h4>
+              <p>+62 813-7000-0110</p>
+              <p style="color:var(--accent);font-size:13px;font-weight:600;margin-top:4px">Konsultasi instan & cepat →</p>
             </div>
-          </div>
+          </a>
+
+          <a href="https://wa.me/628137000125" target="_blank" class="contact-info-card" style="text-decoration:none;color:inherit;cursor:pointer">
+            <div class="contact-info-icon">📦</div>
+            <div>
+              <h4>Distributor / Reseller</h4>
+              <p>+62 813-7000-0125</p>
+              <p style="color:var(--text-muted);font-size:13px;margin-top:4px">B2B, wholesale, dropship</p>
+            </div>
+          </a>
+
+          <a href="https://wa.me/628137000145" target="_blank" class="contact-info-card" style="text-decoration:none;color:inherit;cursor:pointer">
+            <div class="contact-info-icon">🏪</div>
+            <div>
+              <h4>Toko Bangil</h4>
+              <p>+62 813-7000-0145</p>
+              <p style="color:var(--text-muted);font-size:13px;margin-top:4px">Chat retail Bangil</p>
+            </div>
+          </a>
+
+          <a href="https://wa.me/628137000165" target="_blank" class="contact-info-card" style="text-decoration:none;color:inherit;cursor:pointer">
+            <div class="contact-info-icon">🏪</div>
+            <div>
+              <h4>Toko Pandaan</h4>
+              <p>+62 813-7000-0165</p>
+              <p style="color:var(--text-muted);font-size:13px;margin-top:4px">Chat retail Pandaan</p>
+            </div>
+          </a>
 
           <div class="contact-info-card">
             <div class="contact-info-icon">📧</div>
             <div>
               <h4>Email</h4>
-              <p id="email"></p>
+              <p><a href="mailto:store@vapertize.com" style="color:inherit">store@vapertize.com</a></p>
             </div>
           </div>
 
@@ -113,7 +139,7 @@
             <div class="contact-info-icon">🕐</div>
             <div>
               <h4>Jam Buka</h4>
-              <p id="hours"></p>
+              <p id="hours">08.00 - 22.00 WIB</p>
               <p style="font-size:13px;color:var(--text-muted)">Setiap hari termasuk weekend & hari libur</p>
             </div>
           </div>
@@ -145,12 +171,14 @@
               <label class="form-label">Topik</label>
               <select class="form-select" id="cTopic" required>
                 <option value="">Pilih topik</option>
-                <option>Tanya Produk</option>
-                <option>Order via WhatsApp</option>
-                <option>Status Pengiriman</option>
-                <option>Komplain / Garansi</option>
-                <option>Reseller / Dropship</option>
-                <option>Lainnya</option>
+                <option>Tanya Produk (→ AI Risa)</option>
+                <option>Order via WhatsApp (→ AI Risa)</option>
+                <option>Status Pengiriman (→ AI Risa)</option>
+                <option>Komplain / Garansi (→ AI Risa)</option>
+                <option>Reseller / Dropship / Grosir (→ Distributor)</option>
+                <option>Kunjungan Toko Bangil (→ Retail Bangil)</option>
+                <option>Kunjungan Toko Pandaan (→ Retail Pandaan)</option>
+                <option>Lainnya (→ AI Risa)</option>
               </select>
             </div>
             <div class="form-group">
@@ -191,8 +219,8 @@
   <div id="footerSlot"></div>
   <div id="cartSlot"></div>
 
-  <script src="assets/js/data.js?v=7"></script>
-  <script src="assets/js/app.js?v=7"></script>
+  <script src="assets/js/data.js?v=8"></script>
+  <script src="assets/js/app.js?v=8"></script>
   <script>
     function sendContact(e) {
       e.preventDefault();
@@ -201,26 +229,25 @@
       const topic = document.getElementById('cTopic').value;
       const message = document.getElementById('cMessage').value;
 
+      // Topic-based routing: B2B/Reseller → distributor, lokasi-spesifik → retail, default → AI Risa
+      let channel = 'aiRisa';
+      if (/reseller|dropship|grosir|wholesale|distributor/i.test(topic)) channel = 'distributor';
+      else if (/bangil/i.test(topic + message)) channel = 'bangil';
+      else if (/pandaan/i.test(topic + message)) channel = 'pandaan';
+
       const msg = `*Pesan dari Website Vapertize*\n\n*Nama:* ${name}\n*No. WA:* ${phone}\n*Topik:* ${topic}\n\n*Pesan:*\n${message}`;
-      const url = `https://wa.me/${STORE_INFO.whatsapp}?text=${encodeURIComponent(msg)}`;
-      window.open(url, '_blank');
+      window.open(waUrl(channel, msg), '_blank');
       showToast('Membuka WhatsApp...', 'success');
       return false;
     }
 
     function pageInit() {
-      document.getElementById('waNumber').textContent = STORE_INFO.phone;
-      document.getElementById('email').textContent = STORE_INFO.email;
       document.getElementById('hours').textContent = STORE_INFO.hours;
 
-      document.getElementById('waCard').addEventListener('click', () => {
-        window.open(`https://wa.me/${STORE_INFO.whatsapp}`, '_blank');
-      });
-
       document.getElementById('contactSocial').innerHTML = `
-        <a href="${STORE_INFO.instagram}" class="social-link" target="_blank">📷</a>
-        <a href="${STORE_INFO.facebook}" class="social-link" target="_blank">f</a>
-        <a href="https://wa.me/${STORE_INFO.whatsapp}" class="social-link" target="_blank">💬</a>
+        <a href="${STORE_INFO.instagram}" class="social-link" target="_blank" aria-label="Instagram">📷</a>
+        <a href="${STORE_INFO.facebook}" class="social-link" target="_blank" aria-label="Facebook">f</a>
+        <a href="${waUrl('aiRisa')}" class="social-link" target="_blank" aria-label="WhatsApp AI Risa">💬</a>
       `;
 
       const storeCards = document.getElementById('storeCards');
@@ -235,7 +262,7 @@
             <p>🕐 <span>${STORE_INFO.hours}</span></p>
             <div style="display:flex;gap:8px;margin-top:16px">
               <a href="https://maps.google.com/?q=${s.mapQuery}" target="_blank" class="btn btn-secondary btn-sm" style="flex:1">📍 Lihat Maps</a>
-              <a href="https://wa.me/${STORE_INFO.whatsapp}" target="_blank" class="btn btn-whatsapp btn-sm" style="flex:1">💬 Chat</a>
+              <a href="https://wa.me/${s.whatsapp}" target="_blank" class="btn btn-whatsapp btn-sm" style="flex:1">💬 Chat</a>
             </div>
           </div>
         </div>

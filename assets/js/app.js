@@ -5,17 +5,42 @@
 const STORE_INFO = {
   name: 'Vapertize',
   tagline: 'Authentic & Premium Vape Store',
-  phone: '+62 812-3456-7890',
-  whatsapp: '6281234567890', // ganti dengan nomor WA toko
-  email: 'info@vapertize.com',
+  email: 'store@vapertize.com',
   hours: '08.00 - 22.00 WIB',
   instagram: 'https://instagram.com/vapertize',
   facebook: 'https://facebook.com/vapertize.id',
+
+  // WhatsApp channels (format internasional tanpa + dan 0)
+  whatsapp: {
+    aiRisa:      '628137000110',   // AI chatbot — default untuk konsultasi cepat 24/7
+    distributor: '628137000125',   // B2B, reseller, dropship, grosir
+    bangil:      '628137000145',   // Toko retail Bangil
+    pandaan:     '628137000165'    // Toko retail Pandaan
+  },
+
+  // Display formats
+  phone: {
+    aiRisa:      '+62 813-7000-0110',
+    distributor: '+62 813-7000-0125',
+    bangil:      '+62 813-7000-0145',
+    pandaan:     '+62 813-7000-0165'
+  },
+
+  // Default chat untuk tombol generic ("Chat Konsultasi", checkout)
+  defaultWA: '628137000110',  // AI Risa (instant response 24/7)
+
   stores: [
-    { name: 'Vapertize Bangil', address: 'Jl. Raya Bangil, Pasuruan, Jawa Timur', phone: '+62 812-3456-7890', mapQuery: 'Vapertize+Bangil+Pasuruan' },
-    { name: 'Vapertize Pandaan', address: 'Jl. Raya Pandaan, Pasuruan, Jawa Timur', phone: '+62 812-3456-7891', mapQuery: 'Vapertize+Pandaan+Pasuruan' }
+    { name: 'Vapertize Bangil', address: 'Jl. Raya Bangil, Pasuruan, Jawa Timur', phone: '+62 813-7000-0145', whatsapp: '628137000145', mapQuery: 'Vapertize+Bangil+Pasuruan' },
+    { name: 'Vapertize Pandaan', address: 'Jl. Raya Pandaan, Pasuruan, Jawa Timur', phone: '+62 813-7000-0165', whatsapp: '628137000165', mapQuery: 'Vapertize+Pandaan+Pasuruan' }
   ]
 };
+
+// Helper: build WhatsApp URL
+function waUrl(channel = 'aiRisa', message = '') {
+  const number = STORE_INFO.whatsapp[channel] || STORE_INFO.defaultWA;
+  const url = `https://wa.me/${number}`;
+  return message ? `${url}?text=${encodeURIComponent(message)}` : url;
+}
 
 // ============================================
 // AGE GATE
@@ -184,16 +209,15 @@ function checkoutWA() {
   }
   msg += `Mohon konfirmasi ketersediaan & ongkir ke alamat saya. Terima kasih!`;
 
-  const url = `https://wa.me/${STORE_INFO.whatsapp}?text=${encodeURIComponent(msg)}`;
-  window.open(url, '_blank');
+  // Checkout dikirim ke AI Risa (24/7 instant response) — bisa di-route ke retail nanti
+  window.open(waUrl('aiRisa', msg), '_blank');
 }
 
 function orderProductWA(productId) {
   const p = getProduct(productId);
   if (!p) return;
-  const msg = `Halo admin Vapertize, saya tertarik dengan produk *${p.name}* (${formatRupiah(p.price)}). Apakah masih tersedia?`;
-  const url = `https://wa.me/${STORE_INFO.whatsapp}?text=${encodeURIComponent(msg)}`;
-  window.open(url, '_blank');
+  const msg = `Halo Vapertize, saya tertarik dengan produk *${p.name}* (${formatRupiah(p.price)}). Apakah masih tersedia?`;
+  window.open(waUrl('aiRisa', msg), '_blank');
 }
 
 // ============================================
@@ -321,7 +345,7 @@ function buildFooter() {
             <div class="social-links">
               <a href="${STORE_INFO.instagram}" class="social-link" target="_blank">📷</a>
               <a href="${STORE_INFO.facebook}" class="social-link" target="_blank">f</a>
-              <a href="https://wa.me/${STORE_INFO.whatsapp}" class="social-link" target="_blank">💬</a>
+              <a href="https://wa.me/${STORE_INFO.defaultWA}" class="social-link" target="_blank">💬</a>
             </div>
           </div>
           <div>
@@ -347,7 +371,7 @@ function buildFooter() {
             <ul>
               <li><a href="contact.html">Kontak Kami</a></li>
               <li><a href="contact.html">Lokasi Toko</a></li>
-              <li><a href="https://wa.me/${STORE_INFO.whatsapp}" target="_blank">WhatsApp</a></li>
+              <li><a href="https://wa.me/${STORE_INFO.defaultWA}" target="_blank">WhatsApp</a></li>
               <li><a href="contact.html">FAQ</a></li>
             </ul>
           </div>
