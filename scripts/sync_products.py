@@ -32,7 +32,7 @@ DEFAULT_CSV_URL = (
     "2PACX-1vTaicsIj0eq7g2AYz9h3yoeRwWgvzbThDVKlTCcnjtyvSqwJ811LaVlKd3vzvD4UJD2RYM9sGHhi3Ml"
     "/pub?gid=0&single=true&output=csv"
 )
-CSV_URL = os.environ.get("SHEET_CSV_URL", DEFAULT_CSV_URL).strip()
+CSV_URL = os.environ.get("SHEET_CSV_URL", "").strip() or DEFAULT_CSV_URL
 
 # Output paths (relative to repo root)
 REPO_ROOT = Path(__file__).parent.parent
