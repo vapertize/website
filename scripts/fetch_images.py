@@ -46,8 +46,8 @@ MAX_FETCHES = int(sys.argv[1]) if len(sys.argv) > 1 else 50
 # Image specs
 TARGET_WIDTH = 500          # resize to 500px wide (4-col grid display)
 TARGET_QUALITY = 82         # WebP quality 0-100
-MIN_IMG_BYTES = 5_000       # skip tiny icons/thumbnails
-MAX_IMG_BYTES = 1_500_000   # skip oversized images
+MIN_IMG_BYTES = 3_000       # skip tiny icons/thumbnails
+MAX_IMG_BYTES = 5_000_000   # skip oversized images (5 MB cap)
 SEARCH_DELAY = 1.1          # seconds between API calls (rate limit)
 
 
@@ -83,30 +83,32 @@ def build_query(product):
 
 
 def search_brave_image(query):
-    """Search Brave Image API, return top suitable result URL or None."""
+    """Search Brave Image API, return list of candidate image URLs (best-first)."""
     headers = {
         "Accept": "application/json",
         "X-Subscription-Token": BRAVE_API_KEY,
     }
+    # Brave Image Search API params (different from Web Search!)
+    # safesearch: only "strict" or "off" (no "moderate")
+    # No search_lang / spellcheck on image endpoint
     params = {
         "q": query,
         "count": 10,             # ask for 10 results, pick best
-        "safesearch": "moderate",
-        "search_lang": "en",
+        "safesearch": "off",     # vape = adult product, "strict" filters too much
         "country": "ID",
-        "spellcheck": 0,
     }
     try:
         r = requests.get(BRAVE_IMAGE_URL, headers=headers, params=params, timeout=15)
         if r.status_code == 429:
             print(f"  ⚠ Rate limited, sleeping 60s")
             time.sleep(60)
-            return None
+            return []
         r.raise_for_status()
         data = r.json()
         results = data.get("results", [])
 
-        # Prefer results with good properties: size, recognizable host
+        # Collect all viable candidate URLs (try multiple if first download fails)
+        candidates = []
         for res in results:
             props = res.get("properties", {}) or {}
             url = props.get("url") or res.get("thumbnail", {}).get("src")
@@ -115,11 +117,11 @@ def search_brave_image(query):
             # Skip obvious low-quality sources
             if any(skip in url.lower() for skip in ["icon", "logo", "favicon", "thumb_small"]):
                 continue
-            return url
-        return None
+            candidates.append(url)
+        return candidates
     except Exception as e:
         print(f"  ⚠ Brave search error: {e}")
-        return None
+        return []
 
 
 def download_and_resize(url, output_path):
@@ -214,21 +216,28 @@ def main():
         stock = p["stock"]["bangil"] + p["stock"]["pandaan"]
         print(f"[{i}/{len(targets)}] {p['id']} (stock {stock}): {query[:70]}")
 
-        img_url = search_brave_image(query)
-        if not img_url:
+        candidates = search_brave_image(query)
+        if not candidates:
             print(f"  ⚠ No suitable image found")
             skipped += 1
             time.sleep(SEARCH_DELAY)
             continue
 
+        # Try up to 3 candidates before giving up on this product
         output_path = IMAGES_DIR / f"{p['id']}.webp"
-        ok, msg = download_and_resize(img_url, output_path)
-        if ok:
-            size_kb = output_path.stat().st_size // 1024
-            print(f"  ✓ Saved {output_path.name} ({size_kb} KB)")
-            fetched += 1
-        else:
-            print(f"  ⚠ {msg}")
+        success = False
+        for j, img_url in enumerate(candidates[:3]):
+            ok, msg = download_and_resize(img_url, output_path)
+            if ok:
+                size_kb = output_path.stat().st_size // 1024
+                print(f"  ✓ Saved {output_path.name} ({size_kb} KB) [try {j+1}]")
+                fetched += 1
+                success = True
+                break
+            else:
+                print(f"  · try {j+1}: {msg}")
+        if not success:
+            print(f"  ⚠ All candidates failed validation")
             skipped += 1
 
         time.sleep(SEARCH_DELAY)
