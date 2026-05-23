@@ -45,41 +45,58 @@ BRANCH_NORMALIZE = {
     "pandaan": "pandaan",
 }
 
-# Category normalization (sheet uses lowercase: liquid, atomizer, etc.)
+# Category normalization — sesuai dengan kolom 'kategori' di Google Sheet.
+# Output ID: URL-safe (no spaces, no &). Display label dibentuk di frontend.
 CATEGORY_ALIASES = {
+    # Liquid
     "liquid": "liquid",
     "e-juice": "liquid",
     "ejuice": "liquid",
+    "e-liquid": "liquid",
+    # Device
     "device": "device",
     "mod": "device",
     "pod": "device",
     "kit": "device",
-    "coil": "coil",
-    "coil dan wire": "coil",
-    "wire": "coil",
+    # Atomizer
     "atomizer": "atomizer",
     "rda": "atomizer",
     "rta": "atomizer",
     "rdta": "atomizer",
     "tank": "atomizer",
-    "accessories": "access",
-    "access": "access",
-    "aksesoris": "access",
-    "battery": "access",
-    "battery dan charger": "access",
-    "charger": "access",
-    "cotton": "access",
-    "cartridge dan cotton": "access",
-    "cartridge": "access",
+    # Coil & Wire
+    "coil": "coil-wire",
+    "wire": "coil-wire",
+    "coil dan wire": "coil-wire",
+    "coil & wire": "coil-wire",
+    "coil and wire": "coil-wire",
+    # Battery & Charger
+    "battery": "battery-charger",
+    "charger": "battery-charger",
+    "battery dan charger": "battery-charger",
+    "battery & charger": "battery-charger",
+    "battery and charger": "battery-charger",
+    # Cartridge & Cotton
+    "cartridge": "cartridge-cotton",
+    "cotton": "cartridge-cotton",
+    "cartridge dan cotton": "cartridge-cotton",
+    "cartridge & cotton": "cartridge-cotton",
+    "cartridge and cotton": "cartridge-cotton",
+    # Accessories (catch-all — barang yang tidak masuk kategori spesifik)
+    "accessories": "accessories",
+    "access": "accessories",
+    "aksesoris": "accessories",
 }
 
-# Emoji fallback per category
+# Emoji fallback per category (7 kategori aligned dengan sheet)
 CATEGORY_ICON = {
-    "liquid": "💧",
-    "device": "🔋",
-    "coil": "🌀",
-    "atomizer": "🔧",
-    "access": "⚙️",
+    "liquid":           "💧",
+    "device":           "🔋",
+    "atomizer":         "🔧",
+    "coil-wire":        "🌀",
+    "battery-charger":  "⚡",
+    "cartridge-cotton": "🧵",
+    "accessories":      "⚙️",
 }
 
 
@@ -106,7 +123,7 @@ def normalize_branch(s):
 
 def normalize_category(s):
     key = (s or "").strip().lower()
-    return CATEGORY_ALIASES.get(key, key or "access")
+    return CATEGORY_ALIASES.get(key, key or "accessories")
 
 
 def infer_brand(name):
