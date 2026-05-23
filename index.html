@@ -13,13 +13,10 @@
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="googlebot" content="index, follow">
   <meta name="language" content="Indonesian">
-  <meta name="revisit-after" content="7 days">
   <meta name="theme-color" content="#0a0a0a">
 
-  <!-- Canonical -->
   <link rel="canonical" href="https://vapertize.id/">
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Vapertize">
   <meta property="og:locale" content="id_ID">
@@ -29,16 +26,13 @@
   <meta property="og:image" content="https://vapertize.id/assets/img/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Vapertize - Authentic & Premium Vape Store">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://vapertize.id/">
   <meta name="twitter:title" content="Vapertize - Authentic & Premium Vape Store">
-  <meta name="twitter:description" content="Toko vape authentic & premium di Bangil & Pandaan, Pasuruan. Liquid, device, coil, accessories.">
+  <meta name="twitter:description" content="Toko vape authentic & premium di Bangil & Pandaan, Pasuruan.">
   <meta name="twitter:image" content="https://vapertize.id/assets/img/og-image.png">
 
-  <!-- Icons & Manifest -->
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo-32.png?v=5">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/img/logo-64.png?v=5">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/img/logo-192.png?v=5">
@@ -46,134 +40,254 @@
   <link rel="apple-touch-icon" sizes="192x192" href="assets/img/logo-192.png?v=5">
   <link rel="manifest" href="manifest.json">
 
-  <!-- Performance: preconnect & font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;900&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=4">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=6">
 
-  <!-- JSON-LD: Organization + LocalBusiness + WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://vapertize.id/#organization",
-        "name": "Vapertize",
-        "alternateName": "Vapertize Vape Store",
-        "url": "https://vapertize.id/",
-        "logo": "https://vapertize.id/assets/img/logo-512.png",
-        "description": "Authentic & Premium Vape Store di Pasuruan",
-        "sameAs": [
-          "https://www.instagram.com/vapertize",
-          "https://www.facebook.com/vapertize.id"
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://vapertize.id/#website",
-        "url": "https://vapertize.id/",
-        "name": "Vapertize",
-        "publisher": { "@id": "https://vapertize.id/#organization" },
-        "inLanguage": "id-ID"
-      },
-      {
-        "@type": ["Store", "LocalBusiness"],
-        "@id": "https://vapertize.id/#store-bangil",
-        "name": "Vapertize Bangil",
-        "image": "https://vapertize.id/assets/img/logo-512.png",
-        "url": "https://vapertize.id/",
-        "telephone": "+62-812-3456-7890",
-        "priceRange": "Rp 45.000 - Rp 1.250.000",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Jl. Raya Bangil",
-          "addressLocality": "Bangil",
-          "addressRegion": "Jawa Timur",
-          "addressCountry": "ID",
-          "postalCode": "67153"
-        },
-        "geo": { "@type": "GeoCoordinates", "latitude": -7.5995, "longitude": 112.8174 },
-        "openingHoursSpecification": [{
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-          "opens": "08:00", "closes": "22:00"
-        }],
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "564" }
-      },
-      {
-        "@type": ["Store", "LocalBusiness"],
-        "@id": "https://vapertize.id/#store-pandaan",
-        "name": "Vapertize Pandaan",
-        "image": "https://vapertize.id/assets/img/logo-512.png",
-        "url": "https://vapertize.id/",
-        "telephone": "+62-812-3456-7891",
-        "priceRange": "Rp 45.000 - Rp 1.250.000",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Jl. Raya Pandaan",
-          "addressLocality": "Pandaan",
-          "addressRegion": "Jawa Timur",
-          "addressCountry": "ID",
-          "postalCode": "67156"
-        },
-        "geo": { "@type": "GeoCoordinates", "latitude": -7.6520, "longitude": 112.6914 },
-        "openingHoursSpecification": [{
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-          "opens": "08:00", "closes": "22:00"
-        }]
-      }
+      {"@type":"Organization","@id":"https://vapertize.id/#organization","name":"Vapertize","alternateName":"Vapertize Vape Store","url":"https://vapertize.id/","logo":"https://vapertize.id/assets/img/logo-512.png","description":"Authentic & Premium Vape Store di Pasuruan","sameAs":["https://www.instagram.com/vapertize","https://www.facebook.com/vapertize.id"]},
+      {"@type":"WebSite","@id":"https://vapertize.id/#website","url":"https://vapertize.id/","name":"Vapertize","publisher":{"@id":"https://vapertize.id/#organization"},"inLanguage":"id-ID"},
+      {"@type":["Store","LocalBusiness"],"@id":"https://vapertize.id/#store-bangil","name":"Vapertize Bangil","image":"https://vapertize.id/assets/img/logo-512.png","url":"https://vapertize.id/","telephone":"+62-812-3456-7890","priceRange":"Rp 45.000 - Rp 1.250.000","address":{"@type":"PostalAddress","streetAddress":"Jl. Raya Bangil","addressLocality":"Bangil","addressRegion":"Jawa Timur","addressCountry":"ID","postalCode":"67153"},"geo":{"@type":"GeoCoordinates","latitude":-7.5995,"longitude":112.8174},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"22:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"564"}},
+      {"@type":["Store","LocalBusiness"],"@id":"https://vapertize.id/#store-pandaan","name":"Vapertize Pandaan","image":"https://vapertize.id/assets/img/logo-512.png","url":"https://vapertize.id/","telephone":"+62-812-3456-7891","priceRange":"Rp 45.000 - Rp 1.250.000","address":{"@type":"PostalAddress","streetAddress":"Jl. Raya Pandaan","addressLocality":"Pandaan","addressRegion":"Jawa Timur","addressCountry":"ID","postalCode":"67156"},"geo":{"@type":"GeoCoordinates","latitude":-7.6520,"longitude":112.6914},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"22:00"}]}
     ]
   }
   </script>
 </head>
-<body>
+<body class="home-modern">
   <div id="navbarSlot" data-page="home"></div>
 
-  <!-- HERO -->
-  <section class="hero">
+  <!-- HERO: Cinematic full-viewport -->
+  <section class="hero-cinema">
+    <div class="hero-cinema-bg">
+      <div class="hero-orb-1"></div>
+      <div class="hero-orb-2"></div>
+      <div class="hero-grid-overlay"></div>
+    </div>
+
+    <div class="hero-cinema-content">
+      <div class="container">
+        <div class="hero-eyebrow reveal" data-delay="0">
+          <span class="eyebrow-dot"></span>
+          <span>AUTHENTIC & PREMIUM</span>
+          <span class="eyebrow-dot"></span>
+        </div>
+
+        <h1 class="hero-cinema-title">
+          <span class="line reveal" data-delay="100">Vape Your</span>
+          <span class="line reveal" data-delay="200"><span class="gold-text">Way</span>.</span>
+          <span class="line reveal" data-delay="300">With Vapertize.</span>
+        </h1>
+
+        <p class="hero-cinema-sub reveal" data-delay="500">
+          Distributor & toko vape premium di Pasuruan dengan koleksi liquid, device, dan accessories <strong>100% authentic</strong>. Garansi resmi distributor.
+        </p>
+
+        <div class="hero-cinema-cta reveal" data-delay="600">
+          <a href="catalog.html" class="btn-modern btn-modern-primary">
+            <span>Belanja Sekarang</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#categories" class="btn-modern btn-modern-ghost">
+            Lihat Kategori
+          </a>
+        </div>
+
+        <div class="hero-scroll-hint reveal" data-delay="800">
+          <span>SCROLL</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero floating logo -->
+    <div class="hero-floating-logo reveal" data-delay="400">
+      <picture>
+        <source srcset="assets/img/logo-512.webp?v=5" type="image/webp">
+        <img src="assets/img/logo-512.png?v=5" alt="Vapertize antler logo" width="500" height="500">
+      </picture>
+    </div>
+  </section>
+
+  <!-- BRAND MARQUEE -->
+  <section class="marquee-section">
+    <div class="marquee-label">TRUSTED AUTHORIZED BRANDS</div>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>VOOPOO</span><span class="marquee-dot">●</span>
+        <span>VAPORESSO</span><span class="marquee-dot">●</span>
+        <span>GEEKVAPE</span><span class="marquee-dot">●</span>
+        <span>SMOK</span><span class="marquee-dot">●</span>
+        <span>OXVA</span><span class="marquee-dot">●</span>
+        <span>LOST VAPE</span><span class="marquee-dot">●</span>
+        <span>HELLVAPE</span><span class="marquee-dot">●</span>
+        <span>WOTOFO</span><span class="marquee-dot">●</span>
+        <span>STEAM CRAVE</span><span class="marquee-dot">●</span>
+        <span>MOLICEL</span><span class="marquee-dot">●</span>
+        <span>XTAR</span><span class="marquee-dot">●</span>
+        <!-- Duplicate for seamless loop -->
+        <span>VOOPOO</span><span class="marquee-dot">●</span>
+        <span>VAPORESSO</span><span class="marquee-dot">●</span>
+        <span>GEEKVAPE</span><span class="marquee-dot">●</span>
+        <span>SMOK</span><span class="marquee-dot">●</span>
+        <span>OXVA</span><span class="marquee-dot">●</span>
+        <span>LOST VAPE</span><span class="marquee-dot">●</span>
+        <span>HELLVAPE</span><span class="marquee-dot">●</span>
+        <span>WOTOFO</span><span class="marquee-dot">●</span>
+        <span>STEAM CRAVE</span><span class="marquee-dot">●</span>
+        <span>MOLICEL</span><span class="marquee-dot">●</span>
+        <span>XTAR</span><span class="marquee-dot">●</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS WITH COUNT-UP -->
+  <section class="stats-modern">
     <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <span class="hero-badge">⚡ 100% Authentic Products</span>
-          <h1 class="hero-title">
-            Vape Your <span class="accent">Way</span><br>
-            With Vapertize
-          </h1>
-          <p class="hero-desc">
-            Distributor & toko vape premium di Pasuruan. Liquid, device, coil hingga accessories — semua authentic dengan garansi resmi distributor.
+      <div class="stats-modern-grid">
+        <div class="stat-modern reveal">
+          <div class="stat-number" data-count="564" data-suffix="+">0</div>
+          <div class="stat-label">Happy Customers</div>
+          <div class="stat-sublabel">5★ Rating Average</div>
+        </div>
+        <div class="stat-modern reveal" data-delay="100">
+          <div class="stat-number" data-count="100" data-suffix="%">0</div>
+          <div class="stat-label">Authentic Products</div>
+          <div class="stat-sublabel">Garansi Distributor</div>
+        </div>
+        <div class="stat-modern reveal" data-delay="200">
+          <div class="stat-number" data-count="2" data-suffix="">0</div>
+          <div class="stat-label">Store Locations</div>
+          <div class="stat-sublabel">Bangil & Pandaan</div>
+        </div>
+        <div class="stat-modern reveal" data-delay="300">
+          <div class="stat-number" data-count="14" data-suffix="h">0</div>
+          <div class="stat-label">Daily Service</div>
+          <div class="stat-sublabel">08:00 - 22:00 WIB</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES BENTO GRID -->
+  <section class="bento-section" id="categories">
+    <div class="container">
+      <div class="section-modern-header">
+        <div class="section-modern-eyebrow reveal">
+          <span class="eyebrow-dot"></span>
+          <span>EXPLORE</span>
+        </div>
+        <h2 class="section-modern-title reveal" data-delay="100">
+          Everything you need.<br>
+          <span class="gold-text">In one place.</span>
+        </h2>
+        <p class="section-modern-sub reveal" data-delay="200">
+          Dari liquid premium sampai mod high-end, semua kebutuhan vaping kamu tersedia di Vapertize.
+        </p>
+      </div>
+
+      <div class="bento-grid" id="bentoGrid"></div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS HORIZONTAL SCROLL -->
+  <section class="featured-modern">
+    <div class="container">
+      <div class="featured-header">
+        <div>
+          <div class="section-modern-eyebrow reveal">
+            <span class="eyebrow-dot"></span>
+            <span>HOT THIS WEEK</span>
+          </div>
+          <h2 class="section-modern-title reveal" data-delay="100">
+            Featured <span class="gold-text">Products</span>
+          </h2>
+        </div>
+        <a href="catalog.html" class="btn-modern btn-modern-ghost reveal" data-delay="200">
+          View All
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+
+      <div class="product-scroll-wrap">
+        <div class="product-scroll" id="featuredScroll"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US - SPLIT SECTION -->
+  <section class="why-modern">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-content">
+          <div class="section-modern-eyebrow reveal">
+            <span class="eyebrow-dot"></span>
+            <span>WHY VAPERTIZE</span>
+          </div>
+          <h2 class="section-modern-title reveal" data-delay="100">
+            Built for vapers.<br>
+            <span class="gold-text">Trusted by 564+.</span>
+          </h2>
+          <p class="section-modern-sub reveal" data-delay="200">
+            Lebih dari sekedar toko vape — kami partner kamu untuk pengalaman vaping terbaik. Setiap produk yang kami jual sudah melalui verifikasi authenticity.
           </p>
-          <div class="hero-cta">
-            <a href="catalog.html" class="btn btn-primary btn-lg">Belanja Sekarang →</a>
-            <a href="member.html" class="btn btn-secondary btn-lg">Join Member</a>
+
+          <div class="why-features">
+            <div class="why-feature reveal" data-delay="300">
+              <div class="why-feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <h3>100% Authentic</h3>
+                <p>Setiap produk diverifikasi keasliannya, no clone. Garansi resmi dari distributor official Indonesia.</p>
+              </div>
+            </div>
+            <div class="why-feature reveal" data-delay="400">
+              <div class="why-feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l4-4h10l4 4M3 8h18M3 8v10a2 2 0 002 2h14a2 2 0 002-2V8M7 12h10"/></svg>
+              </div>
+              <div>
+                <h3>Free Shipping</h3>
+                <p>Gratis ongkir ke seluruh Indonesia untuk pembelian tertentu. Same-day delivery di area Pasuruan.</p>
+              </div>
+            </div>
+            <div class="why-feature reveal" data-delay="500">
+              <div class="why-feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.539 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.539-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+              </div>
+              <div>
+                <h3>Reward Member</h3>
+                <p>Sistem poin loyalty dari Bronze sampai Diamond. Tukar reward eksklusif dengan poin belanja kamu.</p>
+              </div>
+            </div>
+            <div class="why-feature reveal" data-delay="600">
+              <div class="why-feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+              </div>
+              <div>
+                <h3>24/7 Support</h3>
+                <p>Tim customer service siap bantu via WhatsApp & social media setiap saat. Konsultasi gratis pilih device.</p>
+              </div>
+            </div>
           </div>
-          <div class="hero-stats">
-            <div class="hero-stat">
-              <div class="num">564+</div>
-              <div class="label">Happy Customers</div>
-            </div>
-            <div class="hero-stat">
-              <div class="num">2</div>
-              <div class="label">Store Locations</div>
-            </div>
-            <div class="hero-stat">
-              <div class="num">5★</div>
-              <div class="label">Rating</div>
-            </div>
-          </div>
         </div>
-        <div class="hero-visual">
-          <div class="hero-orb"></div>
-          <div class="hero-device">
-            <div class="hero-device-screen">
-              <picture>
-                <source srcset="assets/img/logo-192.webp?v=5" type="image/webp">
-                <img src="assets/img/logo-192.png?v=5" alt="Vapertize Logo - Authentic & Premium Vape Store" width="120" height="120" style="margin-bottom:8px" loading="eager" fetchpriority="high">
-              </picture>
-              <div class="t">VAPERTIZE</div>
+
+        <div class="why-visual reveal" data-delay="200">
+          <div class="why-visual-card">
+            <picture>
+              <source srcset="assets/img/logo-512.webp?v=5" type="image/webp">
+              <img src="assets/img/logo-512.png?v=5" alt="Vapertize antler emblem" width="400" height="400">
+            </picture>
+            <div class="why-visual-glow"></div>
+          </div>
+          <div class="why-visual-badge">
+            <div class="badge-icon">★</div>
+            <div>
+              <div class="badge-rating">5.0</div>
+              <div class="badge-label">564+ Reviews</div>
             </div>
           </div>
         </div>
@@ -181,73 +295,173 @@
     </div>
   </section>
 
-  <!-- CATEGORIES -->
-  <section class="section">
+  <!-- MEMBER PROGRAM SHOWCASE -->
+  <section class="member-showcase">
     <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">★ Browse Category</span>
-        <h2 class="section-title">Shop by Category</h2>
-        <p class="section-desc">Temukan semua kebutuhan vaping kamu dari satu tempat — dengan kualitas premium dan harga terbaik.</p>
+      <div class="section-modern-header center">
+        <div class="section-modern-eyebrow reveal">
+          <span class="eyebrow-dot"></span>
+          <span>VAPERTIZE SQUAD</span>
+        </div>
+        <h2 class="section-modern-title reveal" data-delay="100">
+          Loyalty <span class="gold-text">Rewarded</span>.
+        </h2>
+        <p class="section-modern-sub reveal" data-delay="200">
+          Sistem tier eksklusif: makin sering belanja, makin tinggi tier, makin banyak benefit.
+        </p>
       </div>
-      <div class="cat-grid" id="catGrid"></div>
+
+      <div class="tiers-grid">
+        <div class="tier-card reveal" data-delay="0">
+          <div class="tier-icon tier-bronze">🥉</div>
+          <div class="tier-name">BRONZE</div>
+          <div class="tier-range">0 - 499 poin</div>
+          <ul>
+            <li>100 poin bonus pendaftaran</li>
+            <li>Akses promo member</li>
+            <li>Newsletter eksklusif</li>
+          </ul>
+        </div>
+        <div class="tier-card reveal" data-delay="100">
+          <div class="tier-icon tier-silver">🥈</div>
+          <div class="tier-name">SILVER</div>
+          <div class="tier-range">500 - 999 poin</div>
+          <ul>
+            <li>Semua benefit Bronze</li>
+            <li>Diskon 5% setiap belanja</li>
+            <li>Free liquid 30ml</li>
+          </ul>
+        </div>
+        <div class="tier-card reveal active" data-delay="200">
+          <div class="tier-badge">POPULAR</div>
+          <div class="tier-icon tier-gold">🥇</div>
+          <div class="tier-name">GOLD</div>
+          <div class="tier-range">1.000 - 1.999 poin</div>
+          <ul>
+            <li>Semua benefit Silver</li>
+            <li>Diskon 10% setiap belanja</li>
+            <li>Free coil pack mesh</li>
+            <li>Priority CS support</li>
+          </ul>
+        </div>
+        <div class="tier-card reveal" data-delay="300">
+          <div class="tier-icon tier-diamond">💎</div>
+          <div class="tier-name">DIAMOND</div>
+          <div class="tier-range">5.000+ poin</div>
+          <ul>
+            <li>Semua benefit Gold</li>
+            <li>Diskon 15% setiap belanja</li>
+            <li>Early access produk baru</li>
+            <li>Free device starter</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="member-cta reveal" data-delay="400">
+        <a href="member.html" class="btn-modern btn-modern-primary btn-large">
+          <span>Join Member Gratis</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+        <span class="member-cta-note">Dapat 100 poin bonus saat daftar</span>
+      </div>
     </div>
   </section>
 
-  <!-- FEATURED PRODUCTS -->
-  <section class="section" style="background:var(--bg-secondary)">
+  <!-- LOCATIONS -->
+  <section class="locations-modern">
     <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">🔥 Hot Picks</span>
-        <h2 class="section-title">Featured Products</h2>
-        <p class="section-desc">Produk pilihan terbaik minggu ini, paling banyak dicari customer Vapertize.</p>
+      <div class="section-modern-header center">
+        <div class="section-modern-eyebrow reveal">
+          <span class="eyebrow-dot"></span>
+          <span>VISIT US</span>
+        </div>
+        <h2 class="section-modern-title reveal" data-delay="100">
+          Mampir ke <span class="gold-text">toko offline</span>.
+        </h2>
+        <p class="section-modern-sub reveal" data-delay="200">
+          Tester tersedia. Konsultasi langsung dengan tim Vapertize. Buka setiap hari termasuk weekend.
+        </p>
       </div>
-      <div class="product-grid" id="featuredGrid"></div>
-      <div style="text-align:center;margin-top:48px">
-        <a href="catalog.html" class="btn btn-secondary btn-lg">Lihat Semua Produk →</a>
+
+      <div class="locations-grid">
+        <div class="location-card reveal" data-delay="0">
+          <div class="location-image">
+            <div class="location-marker">📍</div>
+            <div class="location-image-overlay"></div>
+          </div>
+          <div class="location-body">
+            <h3>Vapertize Bangil</h3>
+            <p class="location-address">Jl. Raya Bangil, Pasuruan, Jawa Timur</p>
+            <div class="location-meta">
+              <span>🕐 08.00 - 22.00 WIB</span>
+              <span>📞 +62 812-3456-7890</span>
+            </div>
+            <div class="location-actions">
+              <a href="https://maps.google.com/?q=Vapertize+Bangil+Pasuruan" target="_blank" class="btn-modern btn-modern-ghost btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Google Maps
+              </a>
+              <a href="https://wa.me/6281234567890" target="_blank" class="btn-modern btn-modern-whatsapp btn-sm">
+                💬 WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-card reveal" data-delay="150">
+          <div class="location-image">
+            <div class="location-marker">📍</div>
+            <div class="location-image-overlay"></div>
+          </div>
+          <div class="location-body">
+            <h3>Vapertize Pandaan</h3>
+            <p class="location-address">Jl. Raya Pandaan, Pasuruan, Jawa Timur</p>
+            <div class="location-meta">
+              <span>🕐 08.00 - 22.00 WIB</span>
+              <span>📞 +62 812-3456-7891</span>
+            </div>
+            <div class="location-actions">
+              <a href="https://maps.google.com/?q=Vapertize+Pandaan+Pasuruan" target="_blank" class="btn-modern btn-modern-ghost btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Google Maps
+              </a>
+              <a href="https://wa.me/6281234567891" target="_blank" class="btn-modern btn-modern-whatsapp btn-sm">
+                💬 WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY US -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">✨ Why Vapertize</span>
-        <h2 class="section-title">Why Choose Us</h2>
-        <p class="section-desc">Lebih dari sekedar toko vape — kami partner kamu untuk pengalaman vaping terbaik.</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">✓</div>
-          <h3>100% Authentic</h3>
-          <p>Semua produk authentic, no clone, langsung dari distributor resmi.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🚚</div>
-          <h3>Free Shipping</h3>
-          <p>Gratis ongkir ke seluruh Indonesia untuk pembelian tertentu.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🎁</div>
-          <h3>Reward Member</h3>
-          <p>Setiap belanja kumpulkan poin dan tukar dengan hadiah menarik.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">💬</div>
-          <h3>24/7 Support</h3>
-          <p>Tim CS siap bantu kapan saja via WhatsApp & social media.</p>
-        </div>
-      </div>
+  <!-- FINAL CTA: APPLE-STYLE -->
+  <section class="final-cta">
+    <div class="final-cta-bg">
+      <div class="final-cta-orb"></div>
     </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section" style="background:linear-gradient(135deg,rgba(0,229,255,0.1),rgba(255,0,128,0.1));border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
     <div class="container">
-      <div style="text-align:center;max-width:600px;margin:0 auto">
-        <h2 class="section-title">Join Vapertize Squad</h2>
-        <p class="section-desc" style="margin-bottom:32px">Daftar member sekarang, dapatkan 100 poin gratis dan akses ke promo eksklusif khusus member.</p>
-        <a href="member.html" class="btn btn-primary btn-lg">Daftar Member Gratis</a>
+      <div class="final-cta-content reveal">
+        <div class="section-modern-eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span>READY?</span>
+        </div>
+        <h2 class="final-cta-title">
+          Start your<br>
+          <span class="gold-text">vape journey</span>.
+        </h2>
+        <p class="final-cta-sub">
+          Browse 100+ produk authentic atau langsung chat tim kami untuk konsultasi gratis.
+        </p>
+        <div class="final-cta-actions">
+          <a href="catalog.html" class="btn-modern btn-modern-primary btn-large">
+            Belanja Sekarang
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </a>
+          <a href="https://wa.me/6281234567890" target="_blank" class="btn-modern btn-modern-whatsapp btn-large">
+            💬 Chat Konsultasi
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -255,46 +469,139 @@
   <div id="footerSlot"></div>
   <div id="cartSlot"></div>
 
-  <script src="assets/js/data.js?v=4"></script>
-  <script src="assets/js/app.js?v=4"></script>
+  <script src="assets/js/data.js?v=6"></script>
+  <script src="assets/js/app.js?v=6"></script>
   <script>
+    // ============================================
+    // MODERN ANIMATIONS
+    // ============================================
+
+    // Reveal on scroll using Intersection Observer
+    function initReveal() {
+      // Mark JS ready - this triggers CSS to hide .reveal initially
+      document.documentElement.classList.add('js-ready');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const delay = entry.target.dataset.delay || 0;
+            setTimeout(() => entry.target.classList.add('revealed'), delay);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      // Safety fallback: reveal everything after 4s in case IO never fires
+      setTimeout(() => {
+        document.querySelectorAll('.reveal:not(.revealed)').forEach(el => el.classList.add('revealed'));
+      }, 4000);
+    }
+
+    // Animated counter
+    function initCounters() {
+      const animateCounter = (el) => {
+        const target = parseInt(el.dataset.count);
+        const suffix = el.dataset.suffix || '';
+        const duration = 1800;
+        const step = 16;
+        const increment = target / (duration / step);
+        let current = 0;
+        const update = () => {
+          current += increment;
+          if (current >= target) {
+            el.textContent = target + suffix;
+          } else {
+            el.textContent = Math.floor(current) + suffix;
+            requestAnimationFrame(update);
+          }
+        };
+        update();
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      document.querySelectorAll('[data-count]').forEach(el => observer.observe(el));
+    }
+
+    // Parallax hero
+    function initParallax() {
+      const logo = document.querySelector('.hero-floating-logo');
+      if (!logo) return;
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY;
+        if (y < window.innerHeight) {
+          logo.style.transform = `translateY(${y * 0.3}px) scale(${1 - y * 0.0005})`;
+          logo.style.opacity = Math.max(0, 1 - y / 600);
+        }
+      }, { passive: true });
+    }
+
     function pageInit() {
-      // Render categories
-      const catGrid = document.getElementById('catGrid');
-      catGrid.innerHTML = CATEGORIES.map(c => {
+      // Bento grid categories
+      const bentoCats = [
+        { id: 'liquid', name: 'Liquid', desc: 'Salt Nic & Freebase', icon: '💧', size: 'large', tag: 'BEST SELLER' },
+        { id: 'device', name: 'Device', desc: 'Mod & Pod System', icon: '🔋', size: 'tall' },
+        { id: 'coil', name: 'Coil & Atomizer', desc: 'RDA, RTA, Mesh', icon: '🌀', size: 'small' },
+        { id: 'access', name: 'Accessories', desc: 'Battery & Tools', icon: '⚙️', size: 'small' }
+      ];
+
+      const bentoGrid = document.getElementById('bentoGrid');
+      bentoGrid.innerHTML = bentoCats.map((c, i) => {
         const count = getProductsByCat(c.id).length;
         return `
-          <a href="catalog.html?cat=${c.id}" class="cat-card">
-            <div class="cat-icon">${c.icon}</div>
-            <div class="cat-name">${c.name}</div>
-            <div class="cat-count">${count} produk · ${c.desc}</div>
+          <a href="catalog.html?cat=${c.id}" class="bento-card bento-${c.size} reveal" data-delay="${i * 100}">
+            ${c.tag ? `<span class="bento-tag">${c.tag}</span>` : ''}
+            <div class="bento-icon">${c.icon}</div>
+            <div class="bento-body">
+              <h3 class="bento-name">${c.name}</h3>
+              <p class="bento-desc">${c.desc}</p>
+              <div class="bento-meta">
+                <span>${count} produk</span>
+                <span class="bento-arrow">→</span>
+              </div>
+            </div>
           </a>
         `;
       }).join('');
 
-      // Render featured (tag = hot or new)
-      const featured = PRODUCTS.filter(p => p.tag).slice(0, 8);
-      const featuredGrid = document.getElementById('featuredGrid');
-      featuredGrid.innerHTML = featured.map(p => `
-        <div class="product-card">
-          <div class="product-img">
-            ${p.tag ? `<span class="product-tag ${p.tag}">${p.tag}</span>` : ''}
-            ${p.icon}
+      // Featured products horizontal scroll
+      const featured = PRODUCTS.filter(p => p.tag).slice(0, 10);
+      const scroll = document.getElementById('featuredScroll');
+      scroll.innerHTML = featured.map((p, i) => `
+        <div class="product-modern reveal" data-delay="${i * 50}">
+          <div class="product-modern-img">
+            ${p.tag ? `<span class="product-modern-tag ${p.tag}">${p.tag}</span>` : ''}
+            <span class="product-modern-icon">${p.icon}</span>
           </div>
-          <div class="product-info">
-            <div class="product-cat">${CATEGORIES.find(c => c.id === p.cat)?.name || ''}</div>
-            <div class="product-name">${p.name}</div>
-            <div class="product-desc">${p.desc}</div>
-            <div class="product-bottom">
-              <div class="product-price">
+          <div class="product-modern-body">
+            <div class="product-modern-cat">${p.brand}</div>
+            <div class="product-modern-name">${p.name}</div>
+            <div class="product-modern-bottom">
+              <div class="product-modern-price">
                 ${p.oldPrice ? `<span class="old">${formatRupiah(p.oldPrice)}</span>` : ''}
                 ${formatRupiah(p.price)}
               </div>
-              <button class="add-cart-btn" onclick="addToCart('${p.id}')" title="Tambah">+</button>
+              <button class="product-modern-add" onclick="addToCart('${p.id}')" title="Tambah">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
             </div>
           </div>
         </div>
       `).join('');
+
+      // Re-observe newly added .reveal elements
+      initReveal();
+      initCounters();
+      initParallax();
     }
   </script>
 </body>
