@@ -8,16 +8,17 @@
   --bg-card: #1a1a1a;
   --bg-elevated: #222222;
   --border: #2a2a2a;
-  --border-gold: rgba(212, 175, 55, 0.25);
+  --border-gold: rgba(201, 169, 97, 0.28);
   --text-primary: #ffffff;
-  --text-secondary: #b0b0b0;
+  --text-secondary: #b8b8b8;
   --text-muted: #707070;
-  --accent: #D4AF37;          /* Vapertize Gold */
-  --accent-hover: #F4D03F;     /* Bright Gold */
-  --accent-glow: rgba(212, 175, 55, 0.35);
-  --accent-2: #B8860B;         /* Dark Gold */
-  --accent-2-glow: rgba(184, 134, 11, 0.35);
-  --gold-soft: #FFE9A8;
+  --accent: #C9A961;          /* Vapertize Antler Gold */
+  --accent-hover: #E5C97A;     /* Highlight Gold */
+  --accent-glow: rgba(201, 169, 97, 0.40);
+  --accent-2: #8B6F2E;         /* Deep Shadow Gold */
+  --accent-2-glow: rgba(139, 111, 46, 0.40);
+  --gold-soft: #F5E6B0;        /* Champagne Highlight */
+  --gold-deep: #5C4515;        /* Antique Bronze Shadow */
   --success: #6BCB77;
   --warning: #FFD93D;
   --danger: #D94f4f;
@@ -56,8 +57,8 @@ body::before {
   width: 100%;
   height: 100%;
   background:
-    radial-gradient(circle at 20% 0%, rgba(212, 175, 55, 0.10), transparent 50%),
-    radial-gradient(circle at 80% 100%, rgba(184, 134, 11, 0.08), transparent 50%);
+    radial-gradient(circle at 20% 0%, rgba(201, 169, 97, 0.12), transparent 50%),
+    radial-gradient(circle at 80% 100%, rgba(139, 111, 46, 0.10), transparent 50%);
   pointer-events: none;
   z-index: 0;
 }
@@ -108,21 +109,23 @@ button { cursor: pointer; font-family: inherit; border: none; }
 }
 
 .logo-mark {
-  width: 36px;
-  height: 36px;
-  background: linear-gradient(135deg, var(--accent-hover), var(--accent), var(--accent-2));
-  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
-  font-weight: 900;
-  color: #000;
-  box-shadow: 0 0 20px var(--accent-glow);
-  border: 1px solid var(--gold-soft);
+  filter: drop-shadow(0 0 12px var(--accent-glow));
 }
 
-.logo span { color: var(--accent); }
+.logo-mark img { width: 100%; height: 100%; object-fit: contain; }
+
+.logo span {
+  background: linear-gradient(135deg, var(--gold-soft), var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
 .nav-links {
   display: flex;
@@ -396,10 +399,10 @@ button { cursor: pointer; font-family: inherit; border: none; }
   content: '';
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, var(--gold-soft), var(--accent), var(--accent-2));
+  background: radial-gradient(circle, var(--gold-soft) 0%, var(--accent) 60%, var(--accent-2) 100%);
   border-radius: 50%;
   margin-bottom: 20px;
-  box-shadow: 0 0 30px var(--accent-glow);
+  box-shadow: 0 0 30px var(--accent-glow), inset 0 -8px 12px rgba(0,0,0,0.3);
 }
 
 .hero-device-screen {
@@ -1656,9 +1659,8 @@ button { cursor: pointer; font-family: inherit; border: none; }
 }
 
 .age-gate-card .logo-mark {
-  width: 64px;
-  height: 64px;
-  font-size: 28px;
+  width: 80px;
+  height: 80px;
   margin: 0 auto 20px;
 }
 

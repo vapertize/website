@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D78B"/>
+      <stop offset="35%" stop-color="#D4AF37"/>
+      <stop offset="65%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+    <linearGradient id="goldShine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3C4" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#FFF3C4" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="bevel">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1"/>
+      <feSpecularLighting result="spec" lighting-color="#fff8d0" surfaceScale="3" specularConstant="1" specularExponent="20">
+        <feDistantLight azimuth="135" elevation="45"/>
+      </feSpecularLighting>
+      <feComposite in="spec" in2="SourceAlpha" operator="in" result="specOut"/>
+      <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+    </filter>
+  </defs>
+
+  <!-- V Antler shape -->
+  <g filter="url(#bevel)" fill="url(#goldGrad)">
+    <!-- Central V trunk -->
+    <path d="M 100 175 L 75 110 L 88 105 L 100 145 L 112 105 L 125 110 Z"/>
+
+    <!-- Left antler branches (going up & out from left side of V) -->
+    <path d="M 75 110
+             L 65 85
+             L 50 80
+             L 55 65
+             L 40 60
+             L 45 45
+             L 30 35
+             L 35 25
+             L 50 35
+             L 48 50
+             L 60 50
+             L 58 65
+             L 70 70
+             L 72 88
+             L 85 95 Z"/>
+
+    <!-- Mid-left antler tip -->
+    <path d="M 50 80 L 35 70 L 30 55 L 38 60 L 42 75 Z"/>
+
+    <!-- Upper-left antler tip -->
+    <path d="M 55 65 L 42 50 L 38 35 L 48 42 L 52 58 Z"/>
+
+    <!-- Right antler branches (mirror) -->
+    <path d="M 125 110
+             L 135 85
+             L 150 80
+             L 145 65
+             L 160 60
+             L 155 45
+             L 170 35
+             L 165 25
+             L 150 35
+             L 152 50
+             L 140 50
+             L 142 65
+             L 130 70
+             L 128 88
+             L 115 95 Z"/>
+
+    <!-- Mid-right antler tip -->
+    <path d="M 150 80 L 165 70 L 170 55 L 162 60 L 158 75 Z"/>
+
+    <!-- Upper-right antler tip -->
+    <path d="M 145 65 L 158 50 L 162 35 L 152 42 L 148 58 Z"/>
+  </g>
+
+  <!-- Shine overlay -->
+  <g fill="url(#goldShine)" opacity="0.6">
+    <path d="M 100 175 L 75 110 L 88 105 L 100 145 Z"/>
+    <path d="M 65 85 L 50 80 L 55 65 L 70 70 Z"/>
+    <path d="M 135 85 L 150 80 L 145 65 L 130 70 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+{
+  "name": "Vapertize - Authentic & Premium Vape Store",
+  "short_name": "Vapertize",
+  "description": "Toko vape authentic & premium di Bangil & Pandaan, Pasuruan. Liquid, device, coil, accessories.",
+  "lang": "id",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#0a0a0a",
+  "background_color": "#0a0a0a",
+  "categories": ["shopping", "lifestyle"],
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/img/logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    { "name": "Katalog", "short_name": "Katalog", "url": "/catalog.html", "description": "Lihat semua produk" },
+    { "name": "Kontak", "short_name": "Kontak", "url": "/contact.html", "description": "Hubungi Vapertize" },
+    { "name": "Member", "short_name": "Member", "url": "/member.html", "description": "Cek poin & reward" }
+  ]
+}

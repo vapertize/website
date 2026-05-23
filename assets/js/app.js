@@ -26,7 +26,7 @@ function initAgeGate() {
   gate.className = 'age-gate';
   gate.innerHTML = `
     <div class="age-gate-card">
-      <div class="logo-mark">V</div>
+      <div class="logo-mark"><img src="assets/img/logo.svg" alt="Vapertize Logo"></div>
       <h2>Verifikasi Usia</h2>
       <p>Produk vape hanya untuk usia <strong style="color:var(--accent)">21+ tahun</strong>. Dengan masuk ke website ini Anda menyatakan telah berusia 21 tahun atau lebih.</p>
       <div class="age-gate-actions">
@@ -283,7 +283,7 @@ function buildNavbar(activePage = '') {
     <nav class="navbar">
       <div class="nav-inner">
         <a href="index.html" class="logo">
-          <div class="logo-mark">V</div>
+          <div class="logo-mark"><img src="assets/img/logo.svg" alt="Vapertize Logo"></div>
           <span>Vapertize</span>
         </a>
         <ul class="nav-links" id="navLinks">
@@ -314,7 +314,7 @@ function buildFooter() {
         <div class="footer-grid">
           <div class="footer-brand">
             <a href="index.html" class="logo">
-              <div class="logo-mark">V</div>
+              <div class="logo-mark"><img src="assets/img/logo.svg" alt="Vapertize Logo"></div>
               <span>Vapertize</span>
             </a>
             <p>${STORE_INFO.tagline}. Toko vape terpercaya dengan produk 100% authentic di Bangil & Pandaan, Pasuruan.</p>
