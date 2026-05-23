@@ -1,0 +1,72 @@
+name: Sync Products from Google Sheet
+
+on:
+  schedule:
+    # Setiap hari 21:05 WIB (14:05 UTC) — 5 menit setelah admin update sheet jam 21:00
+    - cron: '5 14 * * *'
+  workflow_dispatch:
+    inputs:
+      fetch_images:
+        description: 'Fetch images untuk produk baru (slower)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pillow
+
+      - name: Sync sheet → products.json
+        env:
+          SHEET_CSV_URL: ${{ vars.SHEET_CSV_URL || secrets.SHEET_CSV_URL }}
+        run: python scripts/sync_products.py
+
+      - name: Fetch images for new products (optional)
+        if: github.event.inputs.fetch_images == 'true'
+        env:
+          BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+        run: python scripts/fetch_images.py || echo "Image fetch skipped (no API key)"
+
+      - name: Show diff stats
+        run: |
+          git diff --stat
+          echo "---"
+          if [ -f assets/data/products.json ]; then
+            echo "Products JSON size: $(wc -c < assets/data/products.json) bytes"
+            python3 -c "import json; d=json.load(open('assets/data/products.json')); print(f'Total products: {d[\"totalProducts\"]}'); print(f'Categories: {d[\"categories\"]}'); print(f'Branches: {d[\"branches\"]}')"
+          fi
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/products.json assets/img/products/ 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No changes detected"
+          else
+            git commit -m "chore: sync products from Google Sheet [skip ci]
+
+            $(date -u +%Y-%m-%dT%H:%M:%SZ) auto-sync"
+            git push
+            echo "✓ Pushed product updates"
+          fi

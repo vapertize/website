@@ -1,0 +1,23 @@
+{
+  "updated": "2026-05-23T21:30:00+07:00",
+  "totalProducts": 12,
+  "categories": ["liquid", "device", "coil", "atomizer", "access"],
+  "branches": ["bangil", "pandaan"],
+  "source": "Seed data — akan di-overwrite oleh GitHub Action saat sync pertama",
+  "categoryCounts": { "liquid": 6, "device": 3, "coil": 1, "atomizer": 1, "access": 1 },
+  "newProductIds": [],
+  "products": [
+    {"id":"1000028","name":"Dark Luna 60ml - 6mg","brand":"Dark Luna","category":"liquid","price":155000,"stock":{"bangil":1,"pandaan":0},"icon":"💧"},
+    {"id":"1000077","name":"Paradewa 60ml - Apple Zeus 3mg","brand":"Paradewa","category":"liquid","price":140000,"stock":{"bangil":1,"pandaan":0},"icon":"💧"},
+    {"id":"1000116","name":"LCV 60ml - Oat Crackers 3mg","brand":"Lcv","category":"liquid","price":100000,"stock":{"bangil":2,"pandaan":0},"icon":"💧"},
+    {"id":"1000119","name":"LCV 60ml - Berry Cheesecake 3mg","brand":"Lcv","category":"liquid","price":100000,"stock":{"bangil":1,"pandaan":0},"icon":"💧"},
+    {"id":"1000121","name":"LCV 60ml - Tiramisu 3mg","brand":"Lcv","category":"liquid","price":100000,"stock":{"bangil":1,"pandaan":0},"icon":"💧"},
+    {"id":"1000215","name":"Lunar Hexohm 60ml - Strawberry Cheesecake 3mg","brand":"Lunar Hexohm","category":"liquid","price":155000,"stock":{"bangil":1,"pandaan":0},"icon":"💧"},
+    {"id":"d001","name":"Voopoo Drag X2 Kit","brand":"Voopoo","category":"device","price":685000,"stock":{"bangil":3,"pandaan":2},"icon":"🔋"},
+    {"id":"d002","name":"Vaporesso XROS 4 Pro","brand":"Vaporesso","category":"device","price":425000,"stock":{"bangil":2,"pandaan":1},"icon":"🔋"},
+    {"id":"d003","name":"GeekVape Aegis Legend 3","brand":"GeekVape","category":"device","price":895000,"stock":{"bangil":1,"pandaan":1},"icon":"🔋"},
+    {"id":"c001","name":"PnP TM2 Coil 0.2Ω","brand":"Voopoo","category":"coil","price":145000,"stock":{"bangil":5,"pandaan":3},"icon":"🌀"},
+    {"id":"8000289","name":"Dead Rabbit Solo RDA - Matte Full Black","brand":"Hellvape","category":"atomizer","price":270000,"stock":{"bangil":0,"pandaan":1},"icon":"🔧"},
+    {"id":"a001","name":"Molicel P26A Battery 2600mAh","brand":"Molicel","category":"access","price":95000,"stock":{"bangil":10,"pandaan":5},"icon":"⚙️"}
+  ]
+}

@@ -2790,3 +2790,70 @@ button { cursor: pointer; font-family: inherit; border: none; }
 @media (max-width: 480px) {
   .stats-modern-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================
+   BRANCH PICKER
+   ============================================ */
+.branch-picker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, rgba(201,169,97,0.08), rgba(139,111,46,0.04));
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+}
+
+.branch-picker-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+}
+
+.branch-chip {
+  padding: 8px 18px;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.branch-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.branch-chip.active {
+  background: linear-gradient(135deg, var(--gold-soft), var(--accent));
+  border-color: var(--accent);
+  color: #0a0a0a;
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.branch-picker-meta {
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.product-stock {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .branch-picker { gap: 8px; padding: 12px; }
+  .branch-picker-meta { width: 100%; margin-left: 0; text-align: center; margin-top: 4px; }
+  .branch-chip { padding: 6px 12px; font-size: 12px; }
+}

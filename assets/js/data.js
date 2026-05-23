@@ -1,7 +1,65 @@
 // ============================================
 // VAPERTIZE - Product Database
 // ============================================
-const PRODUCTS = [
+// Strategy:
+// 1. Synced PRODUCTS_JSON from Google Sheet via GitHub Action (assets/data/products.json)
+// 2. Fallback to hardcoded PRODUCTS_FALLBACK if JSON fetch fails
+// 3. Dynamic branch filter via getCurrentBranch()
+
+// Branch state (persisted in localStorage)
+function getCurrentBranch() {
+  return localStorage.getItem('vt_branch') || 'all'; // 'bangil' | 'pandaan' | 'all'
+}
+
+function setCurrentBranch(branch) {
+  localStorage.setItem('vt_branch', branch);
+  window.dispatchEvent(new CustomEvent('vt_branch_changed', { detail: branch }));
+}
+
+// Loaded products (populated by loadProducts())
+let PRODUCTS_DATA = null;     // raw JSON from sheet
+let PRODUCTS_META = null;     // { updated, totalProducts, categories, branches }
+
+async function loadProducts() {
+  if (PRODUCTS_DATA) return PRODUCTS_DATA;
+  try {
+    const r = await fetch('assets/data/products.json?v=' + Date.now(), { cache: 'no-cache' });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const json = await r.json();
+    PRODUCTS_DATA = json.products;
+    PRODUCTS_META = {
+      updated: json.updated,
+      total: json.totalProducts,
+      categories: json.categories,
+      branches: json.branches,
+      source: json.source,
+    };
+    return PRODUCTS_DATA;
+  } catch (e) {
+    console.warn('[Vapertize] Failed to load products.json, using fallback:', e);
+    PRODUCTS_DATA = PRODUCTS_FALLBACK;
+    PRODUCTS_META = { total: PRODUCTS_FALLBACK.length, categories: ['liquid','device','coil','access'], branches: ['bangil','pandaan'], source: 'fallback' };
+    return PRODUCTS_DATA;
+  }
+}
+
+// Backwards compat: PRODUCTS is the live list filtered by current branch
+Object.defineProperty(window, 'PRODUCTS', {
+  get() {
+    const data = PRODUCTS_DATA || PRODUCTS_FALLBACK;
+    const branch = getCurrentBranch();
+    if (branch === 'all') {
+      return data.filter(p => {
+        const s = p.stock || {};
+        return (s.bangil || 0) + (s.pandaan || 0) > 0 || data === PRODUCTS_FALLBACK;
+      });
+    }
+    return data.filter(p => (p.stock?.[branch] || 0) > 0 || data === PRODUCTS_FALLBACK);
+  },
+});
+
+// Fallback hardcoded data (used if products.json fails to load)
+const PRODUCTS_FALLBACK = [
   // LIQUID / E-JUICE
   { id: 'l001', cat: 'liquid', name: 'Aurora Mango Salt Nic', brand: 'Aurora', desc: 'Mango tropis dengan sentuhan ice. Salt Nic 30mg, 30ml.', price: 110000, oldPrice: 130000, tag: 'hot', icon: '🥭' },
   { id: 'l002', cat: 'liquid', name: 'Sunset Strawberry Freebase', brand: 'Sunset', desc: 'Strawberry creamy, 60ml, 3mg. Smooth all day vape.', price: 145000, tag: 'new', icon: '🍓' },
@@ -56,11 +114,38 @@ function formatRupiah(num) {
   return 'Rp ' + num.toLocaleString('id-ID');
 }
 
+// Normalize category field (sheet uses 'category', fallback uses 'cat')
+function productCat(p) { return p.category || p.cat; }
+
 function getProductsByCat(cat) {
   if (!cat || cat === 'all') return PRODUCTS;
-  return PRODUCTS.filter(p => p.cat === cat);
+  return PRODUCTS.filter(p => productCat(p) === cat);
 }
 
 function getProduct(id) {
   return PRODUCTS.find(p => p.id === id);
+}
+
+// Get product image src (uses cached image, falls back to category icon)
+function getProductImage(p) {
+  if (p.image) return p.image + '?v=1';
+  return null; // signals UI to use emoji icon
+}
+
+// Helper: total stock across all branches
+function productTotalStock(p) {
+  if (p.stock) return (p.stock.bangil || 0) + (p.stock.pandaan || 0);
+  return null; // unknown (fallback data)
+}
+
+// Initialize products on page load — fire-and-forget
+if (typeof window !== 'undefined') {
+  window.addEventListener('DOMContentLoaded', () => {
+    loadProducts().then(() => {
+      // Re-trigger pageInit if defined (so newly loaded products render)
+      if (typeof pageInit === 'function' && PRODUCTS_DATA && PRODUCTS_DATA !== PRODUCTS_FALLBACK) {
+        try { pageInit(); } catch (e) { console.warn('pageInit re-run failed:', e); }
+      }
+    });
+  });
 }
