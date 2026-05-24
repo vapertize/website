@@ -353,9 +353,10 @@ function buildNavbar(activePage = '') {
         <ul class="nav-links" id="navLinks">
           <li><a href="index.html" class="${activePage === 'home' ? 'active' : ''}">Home</a></li>
           <li><a href="catalog.html" class="${activePage === 'catalog' ? 'active' : ''}">Katalog</a></li>
-          <li><a href="member.html" class="${activePage === 'member' ? 'active' : ''}">Member</a></li>
-          <li><a href="faq.html" class="${activePage === 'faq' ? 'active' : ''}">FAQ</a></li>
-          <li><a href="contact.html" class="${activePage === 'contact' ? 'active' : ''}">Kontak</a></li>
+          <li><a href="/member.html" class="${activePage === 'member' ? 'active' : ''}">Member</a></li>
+          <li><a href="/blog/" class="${activePage === 'blog' ? 'active' : ''}">Blog</a></li>
+          <li><a href="/faq.html" class="${activePage === 'faq' ? 'active' : ''}">FAQ</a></li>
+          <li><a href="/contact.html" class="${activePage === 'contact' ? 'active' : ''}">Kontak</a></li>
         </ul>
         <div class="nav-actions">
           <button class="icon-btn" onclick="openCart()" title="Keranjang">
@@ -413,10 +414,11 @@ function buildFooter() {
           <div>
             <h4>Bantuan</h4>
             <ul>
-              <li><a href="contact.html">Kontak Kami</a></li>
-              <li><a href="contact.html">Lokasi Toko</a></li>
+              <li><a href="/contact.html">Kontak Kami</a></li>
+              <li><a href="/contact.html">Lokasi Toko</a></li>
               <li><a href="https://wa.me/${STORE_INFO.defaultWA}" target="_blank">WhatsApp</a></li>
-              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="/faq.html">FAQ</a></li>
+              <li><a href="/blog/">Blog & Tips</a></li>
             </ul>
           </div>
         </div>
@@ -581,4 +583,89 @@ function closeSaleTicker() {
   clearInterval(_tickerTimer);
   document.querySelector('.sale-ticker')?.remove();
   sessionStorage.setItem('vt_ticker_closed', '1');
+}
+
+// ============================================
+// NOTIFY ME WHEN RESTOCK (Batch 2 — F11)
+// Workflow: User input WA → POST to n8n webhook → fallback to localStorage
+// Set N8N_RESTOCK_WEBHOOK env on production / replace below to enable n8n integration
+// ============================================
+const N8N_RESTOCK_WEBHOOK = ''; // e.g. 'https://n8n.vapertize.id/webhook/restock-notify'
+
+function openRestockModal(productId, productName) {
+  // Build modal if not exists
+  let modal = document.querySelector('.restock-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.className = 'restock-modal';
+    document.body.appendChild(modal);
+  }
+  modal.innerHTML = `
+    <div class="restock-modal-content">
+      <button class="restock-close" onclick="closeRestockModal()" aria-label="Tutup">×</button>
+      <div class="restock-icon">🔔</div>
+      <h3 class="restock-title">Beritahu Saat Ready</h3>
+      <div class="restock-product">${productName}</div>
+      <p class="restock-desc">Kasih kontak WhatsApp kamu, AI Risa akan otomatis kabari saat produk ini sudah tersedia lagi.</p>
+      <form onsubmit="return submitRestockNotify(event, '${productId}', \`${productName.replace(/`/g,'\\`')}\`)">
+        <div class="form-group">
+          <label class="form-label">No. WhatsApp</label>
+          <input type="tel" class="form-input" id="restockPhone" required placeholder="08xxxxxxxxxx" pattern="0[0-9]{9,13}" minlength="10">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Nama (opsional)</label>
+          <input type="text" class="form-input" id="restockName" placeholder="Nama kamu">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block btn-lg">🔔 Daftar Notifikasi</button>
+        <p style="text-align:center;font-size:12px;color:var(--text-muted);margin-top:12px">Atau langsung chat manual: <a href="https://wa.me/${STORE_INFO.defaultWA}?text=${encodeURIComponent('Halo Risa, tolong kabari saya kalau ' + productName + ' sudah ready')}" target="_blank" style="color:var(--accent)">via WhatsApp</a></p>
+      </form>
+    </div>
+  `;
+  modal.classList.add('show');
+  modal.addEventListener('click', e => { if (e.target === modal) closeRestockModal(); });
+}
+
+function closeRestockModal() {
+  document.querySelector('.restock-modal')?.classList.remove('show');
+}
+
+async function submitRestockNotify(e, productId, productName) {
+  e.preventDefault();
+  const phone = document.getElementById('restockPhone').value.trim();
+  const name = document.getElementById('restockName').value.trim() || '-';
+
+  const payload = {
+    productId,
+    productName,
+    phone,
+    name,
+    timestamp: new Date().toISOString(),
+    source: 'vapertize.id'
+  };
+
+  // 1. Save to localStorage (fallback / admin review)
+  const stored = JSON.parse(localStorage.getItem('vt_restock_notifications') || '[]');
+  stored.push(payload);
+  localStorage.setItem('vt_restock_notifications', JSON.stringify(stored));
+
+  // 2. Send to n8n webhook if configured
+  if (N8N_RESTOCK_WEBHOOK) {
+    try {
+      await fetch(N8N_RESTOCK_WEBHOOK, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+    } catch (err) {
+      console.warn('n8n webhook failed (will use WA fallback):', err);
+    }
+  }
+
+  // 3. Also open WA so user has a confirmation channel
+  const waMsg = `Halo Risa, saya ${name} (${phone}). Tolong kabari saya kalau ${productName} sudah ready. Terima kasih!`;
+  window.open(`https://wa.me/${STORE_INFO.defaultWA}?text=${encodeURIComponent(waMsg)}`, '_blank');
+
+  closeRestockModal();
+  showToast('✓ Terdaftar! Cek WhatsApp untuk konfirmasi.', 'success');
+  return false;
 }
