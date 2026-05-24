@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-24T15:24:09+07:00",
+  "updated": "2026-05-25T00:42:57+07:00",
   "totalProducts": 796,
   "categories": [
     "accessories",
@@ -157,7 +157,8 @@
         "bangil": 6,
         "pandaan": 8
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/5000178.webp"
     },
     {
       "id": "5000187",
@@ -442,7 +443,8 @@
         "bangil": 8,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005026.webp"
     },
     {
       "id": "4000201",
@@ -519,7 +521,8 @@
         "bangil": 5,
         "pandaan": 3
       },
-      "icon": "⚙️"
+      "icon": "⚙️",
+      "image": "assets/img/products/4000021.webp"
     },
     {
       "id": "5000210",
@@ -570,7 +573,8 @@
         "bangil": 4,
         "pandaan": 4
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004398.webp"
     },
     {
       "id": "6000050",
@@ -686,7 +690,8 @@
         "bangil": 3,
         "pandaan": 4
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004152.webp"
     },
     {
       "id": "1004985",
@@ -698,7 +703,8 @@
         "bangil": 4,
         "pandaan": 3
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004985.webp"
     },
     {
       "id": "1003973",
@@ -710,7 +716,8 @@
         "bangil": 3,
         "pandaan": 4
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003973.webp"
     },
     {
       "id": "1004529",
@@ -735,7 +742,8 @@
         "bangil": 5,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004999.webp"
     },
     {
       "id": "4000127",
@@ -747,7 +755,8 @@
         "bangil": 2,
         "pandaan": 4
       },
-      "icon": "⚙️"
+      "icon": "⚙️",
+      "image": "assets/img/products/4000127.webp"
     },
     {
       "id": "5000206",
@@ -772,7 +781,8 @@
         "bangil": 5,
         "pandaan": 1
       },
-      "icon": "🌀"
+      "icon": "🌀",
+      "image": "assets/img/products/2000150.webp"
     },
     {
       "id": "1004756",
@@ -784,7 +794,8 @@
         "bangil": 3,
         "pandaan": 3
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004756.webp"
     },
     {
       "id": "1004697",
@@ -796,7 +807,8 @@
         "bangil": 3,
         "pandaan": 3
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004697.webp"
     },
     {
       "id": "1004679",
@@ -808,7 +820,8 @@
         "bangil": 3,
         "pandaan": 3
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004679.webp"
     },
     {
       "id": "1003974",
@@ -820,7 +833,8 @@
         "bangil": 4,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003974.webp"
     },
     {
       "id": "1002174",
@@ -832,7 +846,8 @@
         "bangil": 2,
         "pandaan": 4
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002174.webp"
     },
     {
       "id": "1005166",
@@ -844,7 +859,8 @@
         "bangil": 2,
         "pandaan": 4
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005166.webp"
     },
     {
       "id": "1003972",
@@ -856,7 +872,8 @@
         "bangil": 4,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003972.webp"
     },
     {
       "id": "1005167",
@@ -868,7 +885,8 @@
         "bangil": 3,
         "pandaan": 3
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005167.webp"
     },
     {
       "id": "4000063",
@@ -880,7 +898,8 @@
         "bangil": 3,
         "pandaan": 2
       },
-      "icon": "⚙️"
+      "icon": "⚙️",
+      "image": "assets/img/products/4000063.webp"
     },
     {
       "id": "5000186",
@@ -892,7 +911,8 @@
         "bangil": 3,
         "pandaan": 2
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/5000186.webp"
     },
     {
       "id": "5000164",
@@ -904,7 +924,8 @@
         "bangil": 4,
         "pandaan": 1
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/5000164.webp"
     },
     {
       "id": "5000198",
@@ -916,7 +937,8 @@
         "bangil": 1,
         "pandaan": 4
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/5000198.webp"
     },
     {
       "id": "6000019",
@@ -928,7 +950,8 @@
         "bangil": 5,
         "pandaan": 0
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/6000019.webp"
     },
     {
       "id": "2000114",
@@ -940,7 +963,8 @@
         "bangil": 5,
         "pandaan": 0
       },
-      "icon": "🌀"
+      "icon": "🌀",
+      "image": "assets/img/products/2000114.webp"
     },
     {
       "id": "2000016",
@@ -952,7 +976,8 @@
         "bangil": 2,
         "pandaan": 3
       },
-      "icon": "🌀"
+      "icon": "🌀",
+      "image": "assets/img/products/2000016.webp"
     },
     {
       "id": "2000111",
@@ -964,7 +989,8 @@
         "bangil": 5,
         "pandaan": 0
       },
-      "icon": "🌀"
+      "icon": "🌀",
+      "image": "assets/img/products/2000111.webp"
     },
     {
       "id": "1004755",
@@ -976,7 +1002,8 @@
         "bangil": 2,
         "pandaan": 3
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004755.webp"
     },
     {
       "id": "1004955",
@@ -988,7 +1015,8 @@
         "bangil": 3,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004955.webp"
     },
     {
       "id": "1003260",
@@ -1000,7 +1028,8 @@
         "bangil": 1,
         "pandaan": 4
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003260.webp"
     },
     {
       "id": "1005193",
@@ -1012,7 +1041,8 @@
         "bangil": 2,
         "pandaan": 3
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005193.webp"
     },
     {
       "id": "1005194",
@@ -1024,7 +1054,8 @@
         "bangil": 1,
         "pandaan": 4
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005194.webp"
     },
     {
       "id": "1003903",
@@ -1036,7 +1067,8 @@
         "bangil": 3,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003903.webp"
     },
     {
       "id": "1005118",
@@ -1048,7 +1080,8 @@
         "bangil": 5,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005118.webp"
     },
     {
       "id": "1004998",
@@ -1060,7 +1093,8 @@
         "bangil": 2,
         "pandaan": 3
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004998.webp"
     },
     {
       "id": "1005103",
@@ -1072,7 +1106,8 @@
         "bangil": 1,
         "pandaan": 4
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005103.webp"
     },
     {
       "id": "7000083",
@@ -1084,7 +1119,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "⚡"
+      "icon": "⚡",
+      "image": "assets/img/products/7000083.webp"
     },
     {
       "id": "7000066",
@@ -1096,7 +1132,8 @@
         "bangil": 0,
         "pandaan": 4
       },
-      "icon": "⚡"
+      "icon": "⚡",
+      "image": "assets/img/products/7000066.webp"
     },
     {
       "id": "6000041",
@@ -1108,7 +1145,8 @@
         "bangil": 4,
         "pandaan": 0
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/6000041.webp"
     },
     {
       "id": "6000047",
@@ -1120,7 +1158,8 @@
         "bangil": 4,
         "pandaan": 0
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/6000047.webp"
     },
     {
       "id": "6000070",
@@ -1132,7 +1171,8 @@
         "bangil": 3,
         "pandaan": 1
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/6000070.webp"
     },
     {
       "id": "6000072",
@@ -1144,7 +1184,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/6000072.webp"
     },
     {
       "id": "6000087",
@@ -1156,7 +1197,8 @@
         "bangil": 0,
         "pandaan": 4
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/6000087.webp"
     },
     {
       "id": "6000138",
@@ -1168,7 +1210,8 @@
         "bangil": 0,
         "pandaan": 4
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/6000138.webp"
     },
     {
       "id": "6000005",
@@ -1180,7 +1223,8 @@
         "bangil": 4,
         "pandaan": 0
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/6000005.webp"
     },
     {
       "id": "2000116",
@@ -1192,7 +1236,8 @@
         "bangil": 4,
         "pandaan": 0
       },
-      "icon": "🌀"
+      "icon": "🌀",
+      "image": "assets/img/products/2000116.webp"
     },
     {
       "id": "2000051",
@@ -1204,7 +1249,8 @@
         "bangil": 4,
         "pandaan": 0
       },
-      "icon": "🌀"
+      "icon": "🌀",
+      "image": "assets/img/products/2000051.webp"
     },
     {
       "id": "2000031",
@@ -1216,7 +1262,8 @@
         "bangil": 1,
         "pandaan": 3
       },
-      "icon": "🌀"
+      "icon": "🌀",
+      "image": "assets/img/products/2000031.webp"
     },
     {
       "id": "4000208",
@@ -1228,7 +1275,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "🌀"
+      "icon": "🌀",
+      "image": "assets/img/products/4000208.webp"
     },
     {
       "id": "2000029",
@@ -1240,7 +1288,8 @@
         "bangil": 4,
         "pandaan": 0
       },
-      "icon": "🌀"
+      "icon": "🌀",
+      "image": "assets/img/products/2000029.webp"
     },
     {
       "id": "1005165",
@@ -1252,7 +1301,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005165.webp"
     },
     {
       "id": "1002869",
@@ -1264,7 +1314,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002869.webp"
     },
     {
       "id": "1005061",
@@ -1276,7 +1327,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005061.webp"
     },
     {
       "id": "1005063",
@@ -1288,7 +1340,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005063.webp"
     },
     {
       "id": "1005064",
@@ -1300,7 +1353,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005064.webp"
     },
     {
       "id": "1004775",
@@ -1312,7 +1366,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004775.webp"
     },
     {
       "id": "1005148",
@@ -1324,7 +1379,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005148.webp"
     },
     {
       "id": "1004696",
@@ -1336,7 +1392,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004696.webp"
     },
     {
       "id": "1004701",
@@ -1348,7 +1405,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004701.webp"
     },
     {
       "id": "1003804",
@@ -1360,7 +1418,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003804.webp"
     },
     {
       "id": "1005042",
@@ -1372,7 +1431,8 @@
         "bangil": 1,
         "pandaan": 3
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005042.webp"
     },
     {
       "id": "1004977",
@@ -1384,7 +1444,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004977.webp"
     },
     {
       "id": "1004978",
@@ -1396,7 +1457,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004978.webp"
     },
     {
       "id": "1003259",
@@ -1408,7 +1470,8 @@
         "bangil": 1,
         "pandaan": 3
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003259.webp"
     },
     {
       "id": "1005192",
@@ -1420,7 +1483,8 @@
         "bangil": 1,
         "pandaan": 3
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005192.webp"
     },
     {
       "id": "1002176",
@@ -1432,7 +1496,8 @@
         "bangil": 3,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002176.webp"
     },
     {
       "id": "1002177",
@@ -1444,7 +1509,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002177.webp"
     },
     {
       "id": "1004124",
@@ -1456,7 +1522,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004124.webp"
     },
     {
       "id": "1004766",
@@ -1468,7 +1535,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004766.webp"
     },
     {
       "id": "1005211",
@@ -1480,7 +1548,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005211.webp"
     },
     {
       "id": "1002671",
@@ -1492,7 +1561,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002671.webp"
     },
     {
       "id": "1003315",
@@ -1504,7 +1574,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003315.webp"
     },
     {
       "id": "1005104",
@@ -1516,7 +1587,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005104.webp"
     },
     {
       "id": "1004436",
@@ -1528,7 +1600,8 @@
         "bangil": 0,
         "pandaan": 4
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004436.webp"
     },
     {
       "id": "1005172",
@@ -1540,7 +1613,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005172.webp"
     },
     {
       "id": "1005176",
@@ -1552,7 +1626,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005176.webp"
     },
     {
       "id": "1005178",
@@ -1564,7 +1639,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005178.webp"
     },
     {
       "id": "1005179",
@@ -1576,7 +1652,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005179.webp"
     },
     {
       "id": "1005180",
@@ -1588,7 +1665,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005180.webp"
     },
     {
       "id": "1005184",
@@ -1600,7 +1678,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005184.webp"
     },
     {
       "id": "1005187",
@@ -1612,7 +1691,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005187.webp"
     },
     {
       "id": "1005189",
@@ -1624,7 +1704,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005189.webp"
     },
     {
       "id": "1005157",
@@ -1636,7 +1717,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005157.webp"
     },
     {
       "id": "1005198",
@@ -1648,7 +1730,8 @@
         "bangil": 2,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005198.webp"
     },
     {
       "id": "7000079",
@@ -1660,7 +1743,8 @@
         "bangil": 1,
         "pandaan": 2
       },
-      "icon": "⚡"
+      "icon": "⚡",
+      "image": "assets/img/products/7000079.webp"
     },
     {
       "id": "7000067",
@@ -1672,7 +1756,8 @@
         "bangil": 2,
         "pandaan": 1
       },
-      "icon": "⚡"
+      "icon": "⚡",
+      "image": "assets/img/products/7000067.webp"
     },
     {
       "id": "5000047",
@@ -1684,7 +1769,8 @@
         "bangil": 2,
         "pandaan": 1
       },
-      "icon": "⚡"
+      "icon": "⚡",
+      "image": "assets/img/products/5000047.webp"
     },
     {
       "id": "5000155",
@@ -1696,7 +1782,8 @@
         "bangil": 0,
         "pandaan": 3
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/5000155.webp"
     },
     {
       "id": "5000205",
@@ -1708,7 +1795,8 @@
         "bangil": 0,
         "pandaan": 3
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/5000205.webp"
     },
     {
       "id": "6000137",
@@ -1720,7 +1808,8 @@
         "bangil": 3,
         "pandaan": 0
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/6000137.webp"
     },
     {
       "id": "6000036",
@@ -1732,7 +1821,8 @@
         "bangil": 3,
         "pandaan": 0
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/6000036.webp"
     },
     {
       "id": "6000044",
@@ -1744,7 +1834,8 @@
         "bangil": 3,
         "pandaan": 0
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/6000044.webp"
     },
     {
       "id": "6000045",
@@ -1756,7 +1847,8 @@
         "bangil": 3,
         "pandaan": 0
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/6000045.webp"
     },
     {
       "id": "2000140",
@@ -1768,7 +1860,8 @@
         "bangil": 0,
         "pandaan": 3
       },
-      "icon": "🌀"
+      "icon": "🌀",
+      "image": "assets/img/products/2000140.webp"
     },
     {
       "id": "2000056",
@@ -1780,7 +1873,8 @@
         "bangil": 3,
         "pandaan": 0
       },
-      "icon": "🌀"
+      "icon": "🌀",
+      "image": "assets/img/products/2000056.webp"
     },
     {
       "id": "2000105",
@@ -1792,7 +1886,8 @@
         "bangil": 3,
         "pandaan": 0
       },
-      "icon": "🌀"
+      "icon": "🌀",
+      "image": "assets/img/products/2000105.webp"
     },
     {
       "id": "2000186",
@@ -1804,7 +1899,8 @@
         "bangil": 2,
         "pandaan": 1
       },
-      "icon": "🌀"
+      "icon": "🌀",
+      "image": "assets/img/products/2000186.webp"
     },
     {
       "id": "2000035",
@@ -1816,7 +1912,8 @@
         "bangil": 0,
         "pandaan": 3
       },
-      "icon": "🌀"
+      "icon": "🌀",
+      "image": "assets/img/products/2000035.webp"
     },
     {
       "id": "2001965",
@@ -1828,7 +1925,8 @@
         "bangil": 1,
         "pandaan": 2
       },
-      "icon": "🔋"
+      "icon": "🔋",
+      "image": "assets/img/products/2001965.webp"
     },
     {
       "id": "1000688",
@@ -1840,7 +1938,8 @@
         "bangil": 1,
         "pandaan": 2
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1000688.webp"
     },
     {
       "id": "1002307",
@@ -1852,7 +1951,8 @@
         "bangil": 3,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002307.webp"
     },
     {
       "id": "1003484",
