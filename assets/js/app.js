@@ -545,9 +545,111 @@ document.addEventListener('DOMContentLoaded', () => {
   const showTicker = !['member'].includes(page) && !sessionStorage.getItem('vt_ticker_closed');
   if (showTicker) startRecentlySoldTicker();
 
+  // ============================================
+  // Promo Slideshow (kalau ada section di halaman)
+  // ============================================
+  if (document.querySelector('#promoSlideshow')) {
+    initPromoSlider();
+  }
+
   // Run page-specific init
   if (typeof pageInit === 'function') pageInit();
 });
+
+// ============================================
+// PROMO SLIDESHOW
+// ============================================
+let _promoTimer = null;
+let _promoIdx = 0;
+async function initPromoSlider() {
+  const root = document.getElementById('promoSlideshow');
+  if (!root) return;
+  const slidesEl = root.querySelector('.promo-slides');
+  const dotsEl   = root.querySelector('.promo-dots');
+  if (!slidesEl || !dotsEl) return;
+
+  let promos = [];
+  try {
+    promos = await loadPromos();
+  } catch (e) {
+    console.warn('initPromoSlider: loadPromos failed', e);
+    return;
+  }
+  if (!promos || promos.length === 0) {
+    root.style.display = 'none';
+    return;
+  }
+
+  // Render slides
+  slidesEl.innerHTML = promos.map((p, i) => `
+    <a class="promo-slide ${i === 0 ? 'is-active' : ''}" href="${p.ctaUrl || '#'}" ${(p.ctaUrl || '').startsWith('http') ? 'target="_blank" rel="noopener"' : ''} data-idx="${i}">
+      <img src="${p.image}" alt="${(p.title || 'Promo Vapertize').replace(/"/g, '&quot;')}" loading="lazy" decoding="async">
+      <div class="promo-slide-overlay">
+        ${p.badge ? `<span class="promo-slide-badge">${p.badge}</span>` : ''}
+        <h3 class="promo-slide-title">${p.title || ''}</h3>
+        ${p.subtitle ? `<p class="promo-slide-sub">${p.subtitle}</p>` : ''}
+        ${p.ctaText ? `<span class="promo-slide-cta">${p.ctaText} <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>` : ''}
+      </div>
+    </a>
+  `).join('');
+
+  // Render dots
+  dotsEl.innerHTML = promos.map((_, i) => `
+    <button class="promo-dot ${i === 0 ? 'is-active' : ''}" data-idx="${i}" aria-label="Slide ${i + 1}"></button>
+  `).join('');
+
+  const goTo = (idx) => {
+    const slides = slidesEl.querySelectorAll('.promo-slide');
+    const dots   = dotsEl.querySelectorAll('.promo-dot');
+    _promoIdx = (idx + promos.length) % promos.length;
+    slides.forEach((s, i) => s.classList.toggle('is-active', i === _promoIdx));
+    dots.forEach((d, i) => d.classList.toggle('is-active', i === _promoIdx));
+  };
+
+  const start = () => {
+    stop();
+    if (promos.length < 2) return;
+    _promoTimer = setInterval(() => goTo(_promoIdx + 1), 5500);
+  };
+  const stop = () => { if (_promoTimer) { clearInterval(_promoTimer); _promoTimer = null; } };
+
+  // Dots click
+  dotsEl.addEventListener('click', (e) => {
+    const btn = e.target.closest('.promo-dot');
+    if (!btn) return;
+    goTo(parseInt(btn.dataset.idx, 10));
+    start();
+  });
+
+  // Prev/next
+  root.querySelector('.promo-nav-prev')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    goTo(_promoIdx - 1);
+    start();
+  });
+  root.querySelector('.promo-nav-next')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    goTo(_promoIdx + 1);
+    start();
+  });
+
+  // Pause on hover
+  root.addEventListener('mouseenter', stop);
+  root.addEventListener('mouseleave', start);
+
+  // Touch swipe (mobile)
+  let touchStartX = 0;
+  let touchEndX = 0;
+  slidesEl.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; stop(); }, { passive: true });
+  slidesEl.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+    if (Math.abs(diff) > 50) goTo(_promoIdx + (diff > 0 ? 1 : -1));
+    start();
+  }, { passive: true });
+
+  start();
+}
 
 // ============================================
 // RECENTLY SOLD TICKER implementation

@@ -344,3 +344,39 @@ if (typeof window !== 'undefined') {
     });
   });
 }
+
+// ============================================
+// PROMOS (slideshow di home) — sumber: /promos.json
+// Admin page nanti akan CRUD ke file ini.
+// ============================================
+const PROMOS_FALLBACK = [
+  {
+    id: 'fallback-1',
+    title: 'Authentic & Premium',
+    subtitle: 'Semua produk Vapertize 100% original dengan garansi distributor resmi.',
+    image: '/assets/img/promos/promo-authentic.jpg',
+    ctaText: 'Lihat Katalog',
+    ctaUrl: '/catalog.html',
+    badge: 'AUTHENTIC',
+    active: true
+  }
+];
+
+let PROMOS_DATA = null;
+async function loadPromos() {
+  if (PROMOS_DATA) return PROMOS_DATA;
+  try {
+    const r = await fetch('/promos.json?v=' + Date.now(), { cache: 'no-cache' });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const json = await r.json();
+    const list = Array.isArray(json.promos) ? json.promos : [];
+    PROMOS_DATA = list.filter(p => p && p.active !== false);
+    if (PROMOS_DATA.length === 0) PROMOS_DATA = PROMOS_FALLBACK;
+    return PROMOS_DATA;
+  } catch (e) {
+    console.warn('[Vapertize] Failed to load promos.json, using fallback:', e);
+    PROMOS_DATA = PROMOS_FALLBACK;
+    return PROMOS_DATA;
+  }
+}
+if (typeof window !== 'undefined') window.loadPromos = loadPromos;
