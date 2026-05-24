@@ -365,8 +365,10 @@ function buildNavbar(activePage = '') {
             🛒
             <span class="cart-badge">0</span>
           </button>
-          <a href="member.html" class="icon-btn" title="${user ? user.name : 'Login'}">
-            ${user ? user.name.charAt(0).toUpperCase() : '👤'}
+          <a href="member.html" class="icon-btn icon-btn-profile" title="${user ? user.name : 'Login'}">
+            ${user
+              ? `<span class="profile-initial">${user.name.charAt(0).toUpperCase()}</span>`
+              : `<img src="/assets/img/icons/profile.png?v=1" alt="Login" width="36" height="36" class="profile-img">`}
           </a>
           <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')" aria-label="Toggle menu">☰</button>
         </div>
