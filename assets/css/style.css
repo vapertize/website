@@ -1019,6 +1019,36 @@ button { cursor: pointer; font-family: inherit; border: none; }
   box-shadow: 0 0 15px var(--accent-glow);
 }
 
+/* Profile button variant — bigger gold PNG icon, transparent bg */
+.icon-btn-profile {
+  background: transparent;
+  border: 1px solid rgba(212,175,55,0.3);
+  overflow: hidden;
+  padding: 0;
+}
+.icon-btn-profile:hover {
+  background: transparent;
+  border-color: var(--accent);
+  box-shadow: 0 0 18px rgba(212,175,55,0.45);
+  transform: scale(1.05);
+}
+.icon-btn-profile .profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+}
+.icon-btn-profile .profile-initial {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.icon-btn-profile:hover .profile-initial {
+  color: var(--accent-hover);
+}
+
 .cart-badge {
   position: absolute;
   top: -4px;
@@ -3176,6 +3206,24 @@ button { cursor: pointer; font-family: inherit; border: none; }
   filter: drop-shadow(0 4px 16px rgba(0,0,0,0.4));
 }
 .bento-large .bento-icon { font-size: 84px; }
+
+/* PNG icon variant (golden 3D icons untuk 7 kategori) */
+.bento-icon-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.45)) drop-shadow(0 0 12px rgba(212,175,55,0.25));
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.bento-large .bento-icon-img {
+  width: 104px;
+  height: 104px;
+}
+.bento-card:hover .bento-icon-img {
+  transform: scale(1.08);
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.6)) drop-shadow(0 0 20px rgba(212,175,55,0.5));
+}
 
 .bento-count {
   display: inline-flex;
