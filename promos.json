@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "updated": "2026-05-24",
+  "note": "Edit array 'promos' untuk update slideshow di home. Field 'active': true/false untuk show/hide tanpa hapus. Order = display order.",
+  "promos": [
+    {
+      "id": "promo-bundle-3plus1",
+      "title": "Bundle Liquid 3 + 1",
+      "subtitle": "Beli 3 liquid pilihan, dapat GRATIS 1 botol. Hemat sampai Rp 75.000.",
+      "image": "/assets/img/promos/promo-bundle.jpg",
+      "ctaText": "Belanja Bundle",
+      "ctaUrl": "/catalog.html?cat=bundle",
+      "badge": "PROMO MINGGU INI",
+      "active": true
+    },
+    {
+      "id": "promo-cashback-member",
+      "title": "Cashback 10% Member",
+      "subtitle": "Khusus member Vapertize Hub — dapat cashback 10% setiap belanja, tanpa minimal order.",
+      "image": "/assets/img/promos/promo-cashback.jpg",
+      "ctaText": "Join Vapertize Hub",
+      "ctaUrl": "https://s.id/vptzhub",
+      "badge": "EKSKLUSIF MEMBER",
+      "active": true
+    },
+    {
+      "id": "promo-garansi-authentic",
+      "title": "100% Authentic Guarantee",
+      "subtitle": "Semua produk Vapertize dijamin original distributor resmi. Garansi tukar bila terbukti palsu.",
+      "image": "/assets/img/promos/promo-authentic.jpg",
+      "ctaText": "Lihat Katalog",
+      "ctaUrl": "/catalog.html",
+      "badge": "GARANSI RESMI",
+      "active": true
+    }
+  ]
+}
