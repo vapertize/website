@@ -43,7 +43,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=28">
+  <link rel="stylesheet" href="assets/css/style.css?v=29">
 
   <script type="application/ld+json">
   {
@@ -338,9 +338,9 @@
         <div class="risa-visual reveal">
           <div class="risa-photo-wrap">
             <picture>
-              <source media="(min-width: 900px)" srcset="/assets/img/risa-vapertize-800.jpg?v=28">
-              <source media="(min-width: 500px)" srcset="/assets/img/risa-vapertize-600.jpg?v=28">
-              <img src="/assets/img/risa-vapertize-400.jpg?v=28" alt="Risa Vapertize — AI Brand Ambassador" class="risa-photo" width="600" height="900" loading="lazy">
+              <source media="(min-width: 900px)" srcset="/assets/img/risa-vapertize-800.jpg?v=29">
+              <source media="(min-width: 500px)" srcset="/assets/img/risa-vapertize-600.jpg?v=29">
+              <img src="/assets/img/risa-vapertize-400.jpg?v=29" alt="Risa Vapertize — AI Brand Ambassador" class="risa-photo" width="600" height="900" loading="lazy">
             </picture>
             <div class="risa-photo-glow"></div>
             <div class="risa-badge-live">
@@ -571,8 +571,8 @@
   <div id="footerSlot"></div>
   <div id="cartSlot"></div>
 
-  <script src="assets/js/data.js?v=28"></script>
-  <script src="assets/js/app.js?v=28"></script>
+  <script src="assets/js/data.js?v=29"></script>
+  <script src="assets/js/app.js?v=29"></script>
   <script>
     // ============================================
     // MODERN ANIMATIONS
@@ -650,13 +650,13 @@
     function pageInit() {
       // Bento grid categories — 7 kategori sesuai Gsheet, dengan accent gradient & tag
       const bentoCats = [
-        { id: 'liquid',           name: 'Liquid',              desc: 'Salt Nic • Freebase • 500+ flavor', icon: '💧', size: 'large', tag: 'BEST SELLER', gradient: 'gold' },
-        { id: 'device',           name: 'Device',              desc: 'Mod • Pod System • Kit',           icon: '🔋', size: 'tall',                       gradient: 'blue' },
-        { id: 'atomizer',         name: 'Atomizer',            desc: 'RDA • RTA • Sub-Ohm',              icon: '🔧', size: 'small',                      gradient: 'red' },
-        { id: 'coil-wire',        name: 'Coil & Wire',         desc: 'Mesh • Kanthal • Built',           icon: '🌀', size: 'small',                      gradient: 'purple' },
-        { id: 'cartridge-cotton', name: 'Cartridge & Cotton',  desc: 'Refill • Premium cotton',          icon: '🧵', size: 'small',                      gradient: 'green' },
-        { id: 'battery-charger',  name: 'Battery & Charger',   desc: 'Molicel • Sony • Charger',         icon: '🔌', size: 'small',                      gradient: 'orange' },
-        { id: 'accessories',      name: 'Accessories',         desc: 'Tools • Cases • Spare parts',      icon: '⚙️', size: 'wide',                       gradient: 'cyan' }
+        { id: 'liquid',           name: 'Liquid',              desc: 'Salt Nic • Freebase • 500+ flavor', img: 'liquid',           size: 'large', tag: 'BEST SELLER', gradient: 'gold' },
+        { id: 'device',           name: 'Device',              desc: 'Mod • Pod System • Kit',           img: 'device',            size: 'tall',                       gradient: 'blue' },
+        { id: 'atomizer',         name: 'Atomizer',            desc: 'RDA • RTA • Sub-Ohm',              img: 'atomizer',          size: 'small',                      gradient: 'red' },
+        { id: 'coil-wire',        name: 'Coil & Wire',         desc: 'Mesh • Kanthal • Built',           img: 'coil-wire',         size: 'small',                      gradient: 'purple' },
+        { id: 'cartridge-cotton', name: 'Cartridge & Cotton',  desc: 'Refill • Premium cotton',          img: 'cartridge-cotton',  size: 'small',                      gradient: 'green' },
+        { id: 'battery-charger',  name: 'Battery & Charger',   desc: 'Molicel • Sony • Charger',         img: 'battery-charger',   size: 'small',                      gradient: 'orange' },
+        { id: 'accessories',      name: 'Accessories',         desc: 'Tools • Cases • Spare parts',      img: 'accessories',       size: 'wide',                       gradient: 'cyan' }
       ];
 
       const bentoGrid = document.getElementById('bentoGrid');
@@ -666,7 +666,7 @@
           <a href="catalog.html?cat=${c.id}" class="bento-card bento-${c.size} bento-${c.gradient} reveal" data-delay="${i * 80}">
             ${c.tag ? `<span class="bento-tag">${c.tag}</span>` : ''}
             <div class="bento-icon-wrap">
-              <div class="bento-icon">${c.icon}</div>
+              <img class="bento-icon-img" src="/assets/img/icons/${c.img}.png?v=1" alt="${c.name} icon" width="96" height="96" loading="lazy" decoding="async">
             </div>
             <div class="bento-body">
               <h3 class="bento-name">${c.name}</h3>
