@@ -20,18 +20,18 @@ const STORE_INFO = {
 
   // Display formats
   phone: {
-    aiRisa:      '+62 813-7000-0110',
-    distributor: '+62 813-7000-0125',
-    bangil:      '+62 813-7000-0145',
-    pandaan:     '+62 813-7000-0165'
+    aiRisa:      '+62 813-7000-110',
+    distributor: '+62 813-7000-125',
+    bangil:      '+62 813-7000-145',
+    pandaan:     '+62 813-7000-165'
   },
 
   // Default chat untuk tombol generic ("Chat Konsultasi", checkout)
   defaultWA: '628137000110',  // AI Risa (instant response 24/7)
 
   stores: [
-    { name: 'Vapertize Bangil', address: 'Jl. Raya Bangil, Pasuruan, Jawa Timur', phone: '+62 813-7000-0145', whatsapp: '628137000145', mapQuery: 'Vapertize+Bangil+Pasuruan' },
-    { name: 'Vapertize Pandaan', address: 'Jl. Raya Pandaan, Pasuruan, Jawa Timur', phone: '+62 813-7000-0165', whatsapp: '628137000165', mapQuery: 'Vapertize+Pandaan+Pasuruan' }
+    { name: 'Vapertize Bangil', address: 'Jl. Raya Bangil, Pasuruan, Jawa Timur', phone: '+62 813-7000-145', whatsapp: '628137000145', mapQuery: 'Vapertize+Bangil+Pasuruan' },
+    { name: 'Vapertize Pandaan', address: 'Jl. Raya Pandaan, Pasuruan, Jawa Timur', phone: '+62 813-7000-165', whatsapp: '628137000165', mapQuery: 'Vapertize+Pandaan+Pasuruan' }
   ]
 };
 
@@ -90,7 +90,7 @@ function initAgeGate() {
   gate.className = 'age-gate';
   gate.innerHTML = `
     <div class="age-gate-card">
-      <div class="logo-mark"><picture><source srcset="assets/img/logo-128.webp?v=5" type="image/webp"><img src="assets/img/logo-128.png?v=5" alt="Vapertize Logo - Premium Vape Store" width="40" height="40"></picture></div>
+      <div class="logo-mark"><picture><source srcset="/assets/img/logo-128.webp?v=5" type="image/webp"><img src="/assets/img/logo-128.png?v=5" alt="Vapertize Logo - Premium Vape Store" width="40" height="40"></picture></div>
       <h2>Verifikasi Usia</h2>
       <p>Produk vape hanya untuk usia <strong style="color:var(--accent)">21+ tahun</strong>. Dengan masuk ke website ini Anda menyatakan telah berusia 21 tahun atau lebih.</p>
       <div class="age-gate-actions">
