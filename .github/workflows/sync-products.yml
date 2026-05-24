@@ -103,6 +103,9 @@ jobs:
           SHEET_CSV_URL: ${{ vars.SHEET_CSV_URL || secrets.SHEET_CSV_URL }}
         run: python scripts/sync_products.py
 
+      - name: Generate static product detail pages (SEO)
+        run: python scripts/generate_product_pages.py
+
       - name: Show diff stats
         run: |
           git diff --stat
@@ -123,6 +126,14 @@ jobs:
           # Add images dir only if it has files (git ignores empty dirs)
           if [ -d assets/img/products ] && [ -n "$(ls -A assets/img/products 2>/dev/null)" ]; then
             git add assets/img/products/
+          fi
+
+          # Add generated product pages
+          if [ -d p ] && [ -n "$(ls -A p 2>/dev/null)" ]; then
+            git add p/
+          fi
+          if [ -f sitemap-products.xml ]; then
+            git add sitemap-products.xml
           fi
 
           echo "=== Staged files ==="
