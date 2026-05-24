@@ -346,13 +346,13 @@ function buildNavbar(activePage = '') {
   return `
     <nav class="navbar">
       <div class="nav-inner">
-        <a href="index.html" class="logo">
-          <div class="logo-mark"><picture><source srcset="assets/img/logo-128.webp?v=5" type="image/webp"><img src="assets/img/logo-128.png?v=5" alt="Vapertize Logo - Premium Vape Store" width="40" height="40"></picture></div>
+        <a href="/index.html" class="logo">
+          <div class="logo-mark"><picture><source srcset="/assets/img/logo-128.webp?v=5" type="image/webp"><img src="/assets/img/logo-128.png?v=5" alt="Vapertize Logo - Premium Vape Store" width="40" height="40"></picture></div>
           <span>Vapertize</span>
         </a>
         <ul class="nav-links" id="navLinks">
-          <li><a href="index.html" class="${activePage === 'home' ? 'active' : ''}">Home</a></li>
-          <li><a href="catalog.html" class="${activePage === 'catalog' ? 'active' : ''}">Katalog</a></li>
+          <li><a href="/index.html" class="${activePage === 'home' ? 'active' : ''}">Home</a></li>
+          <li><a href="/catalog.html" class="${activePage === 'catalog' ? 'active' : ''}">Katalog</a></li>
           <li><a href="/member.html" class="${activePage === 'member' ? 'active' : ''}">Member</a></li>
           <li><a href="/blog/" class="${activePage === 'blog' ? 'active' : ''}">Blog</a></li>
           <li><a href="/faq.html" class="${activePage === 'faq' ? 'active' : ''}">FAQ</a></li>
@@ -366,7 +366,7 @@ function buildNavbar(activePage = '') {
           <a href="member.html" class="icon-btn" title="${user ? user.name : 'Login'}">
             ${user ? user.name.charAt(0).toUpperCase() : '👤'}
           </a>
-          <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">☰</button>
+          <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')" aria-label="Toggle menu">☰</button>
         </div>
       </div>
     </nav>
@@ -379,8 +379,8 @@ function buildFooter() {
       <div class="container">
         <div class="footer-grid">
           <div class="footer-brand">
-            <a href="index.html" class="logo">
-              <div class="logo-mark"><picture><source srcset="assets/img/logo-128.webp?v=5" type="image/webp"><img src="assets/img/logo-128.png?v=5" alt="Vapertize Logo - Premium Vape Store" width="40" height="40"></picture></div>
+            <a href="/index.html" class="logo">
+              <div class="logo-mark"><picture><source srcset="/assets/img/logo-128.webp?v=5" type="image/webp"><img src="/assets/img/logo-128.png?v=5" alt="Vapertize Logo - Premium Vape Store" width="40" height="40"></picture></div>
               <span>Vapertize</span>
             </a>
             <p>${STORE_INFO.tagline}. Toko vape terpercaya dengan produk 100% authentic di Bangil & Pandaan, Pasuruan.</p>
@@ -393,22 +393,23 @@ function buildFooter() {
           <div>
             <h4>Belanja</h4>
             <ul>
-              <li><a href="catalog.html?cat=liquid">Liquid</a></li>
-              <li><a href="catalog.html?cat=device">Device</a></li>
-              <li><a href="catalog.html?cat=atomizer">Atomizer</a></li>
-              <li><a href="catalog.html?cat=coil-wire">Coil &amp; Wire</a></li>
-              <li><a href="catalog.html?cat=battery-charger">Battery &amp; Charger</a></li>
-              <li><a href="catalog.html?cat=cartridge-cotton">Cartridge &amp; Cotton</a></li>
-              <li><a href="catalog.html?cat=accessories">Accessories</a></li>
+              <li><a href="/catalog.html?cat=bundle">📦 Paket Hemat</a></li>
+              <li><a href="/catalog.html?cat=liquid">Liquid</a></li>
+              <li><a href="/catalog.html?cat=device">Device</a></li>
+              <li><a href="/catalog.html?cat=atomizer">Atomizer</a></li>
+              <li><a href="/catalog.html?cat=coil-wire">Coil &amp; Wire</a></li>
+              <li><a href="/catalog.html?cat=battery-charger">Battery &amp; Charger</a></li>
+              <li><a href="/catalog.html?cat=cartridge-cotton">Cartridge &amp; Cotton</a></li>
+              <li><a href="/catalog.html?cat=accessories">Accessories</a></li>
             </ul>
           </div>
           <div>
             <h4>Akun</h4>
             <ul>
-              <li><a href="member.html">Login / Daftar</a></li>
-              <li><a href="member.html">Cek Poin</a></li>
-              <li><a href="member.html">Riwayat Order</a></li>
-              <li><a href="member.html">Reward</a></li>
+              <li><a href="/member.html">Login / Daftar</a></li>
+              <li><a href="/member.html">Cek Poin</a></li>
+              <li><a href="/member.html">Riwayat Order</a></li>
+              <li><a href="/member.html">Reward</a></li>
             </ul>
           </div>
           <div>
