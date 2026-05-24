@@ -471,6 +471,114 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target.id === 'cartModal') closeCart();
   });
 
+  // ============================================
+  // PWA — Service worker registration + install prompt
+  // ============================================
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  }
+
+  let deferredInstallPrompt = null;
+  window.addEventListener('beforeinstallprompt', e => {
+    e.preventDefault();
+    deferredInstallPrompt = e;
+    // Show install button on body
+    if (!document.querySelector('.pwa-install-btn') && !localStorage.getItem('vt_pwa_dismissed')) {
+      const btn = document.createElement('button');
+      btn.className = 'pwa-install-btn';
+      btn.innerHTML = '<span class="pwa-install-icon">📱</span><span class="pwa-install-text">Install App Vapertize</span><span class="pwa-install-close" title="Dismiss">×</span>';
+      btn.addEventListener('click', async e => {
+        if (e.target.classList.contains('pwa-install-close')) {
+          localStorage.setItem('vt_pwa_dismissed', '1');
+          btn.remove();
+          return;
+        }
+        if (!deferredInstallPrompt) return;
+        deferredInstallPrompt.prompt();
+        const choice = await deferredInstallPrompt.userChoice;
+        if (choice.outcome === 'accepted') {
+          showToast('Vapertize berhasil di-install! 🎉', 'success');
+        }
+        deferredInstallPrompt = null;
+        btn.remove();
+      });
+      document.body.appendChild(btn);
+    }
+  });
+  window.addEventListener('appinstalled', () => {
+    document.querySelector('.pwa-install-btn')?.remove();
+  });
+
+  // ============================================
+  // Floating WA Quick Chat button (semua halaman)
+  // ============================================
+  if (!document.querySelector('.wa-float-btn')) {
+    const waBtn = document.createElement('a');
+    waBtn.className = 'wa-float-btn';
+    waBtn.href = `https://wa.me/${STORE_INFO.defaultWA}?text=${encodeURIComponent('Halo Risa, saya mau tanya tentang produk Vapertize')}`;
+    waBtn.target = '_blank';
+    waBtn.rel = 'noopener';
+    waBtn.setAttribute('aria-label', 'Chat AI Risa di WhatsApp');
+    waBtn.innerHTML = `
+      <span class="wa-float-icon">💬</span>
+      <span class="wa-float-text">Chat Risa</span>
+      <span class="wa-float-pulse"></span>
+    `;
+    document.body.appendChild(waBtn);
+  }
+
+  // ============================================
+  // Recently Sold Ticker (social proof, except member/auth pages)
+  // ============================================
+  const page = document.querySelector('[data-page]')?.dataset.page || '';
+  const showTicker = !['member'].includes(page) && !sessionStorage.getItem('vt_ticker_closed');
+  if (showTicker) startRecentlySoldTicker();
+
   // Run page-specific init
   if (typeof pageInit === 'function') pageInit();
 });
+
+// ============================================
+// RECENTLY SOLD TICKER implementation
+// ============================================
+let _tickerTimer = null;
+function startRecentlySoldTicker() {
+  // Wait a bit for products to load
+  setTimeout(() => {
+    showNextSale();
+    _tickerTimer = setInterval(showNextSale, 12000);
+  }, 5000);
+}
+function showNextSale() {
+  if (typeof generateRecentSale !== 'function') return;
+  const sale = generateRecentSale();
+  if (!sale) return;
+
+  let ticker = document.querySelector('.sale-ticker');
+  if (!ticker) {
+    ticker = document.createElement('div');
+    ticker.className = 'sale-ticker';
+    document.body.appendChild(ticker);
+  }
+  ticker.classList.remove('show');
+  setTimeout(() => {
+    const productName = sale.product.name.length > 38 ? sale.product.name.substring(0, 38) + '…' : sale.product.name;
+    ticker.innerHTML = `
+      <span class="sale-ticker-icon">🛍</span>
+      <div class="sale-ticker-body">
+        <strong>${sale.buyer.name}</strong> dari <strong>${sale.buyer.city}</strong> baru beli<br>
+        <span class="sale-ticker-product">${productName}</span>
+        <span class="sale-ticker-time">${sale.minutesAgo} menit lalu</span>
+      </div>
+      <button class="sale-ticker-close" aria-label="Tutup" onclick="closeSaleTicker()">×</button>
+    `;
+    ticker.classList.add('show');
+    // Auto-hide after 6 seconds
+    setTimeout(() => ticker.classList.remove('show'), 6000);
+  }, 100);
+}
+function closeSaleTicker() {
+  clearInterval(_tickerTimer);
+  document.querySelector('.sale-ticker')?.remove();
+  sessionStorage.setItem('vt_ticker_closed', '1');
+}

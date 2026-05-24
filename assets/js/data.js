@@ -122,7 +122,8 @@ function formatRupiah(num) {
 function productCat(p) { return p.category || p.cat; }
 
 function getProductsByCat(cat) {
-  if (!cat || cat === 'all') return PRODUCTS;
+  if (!cat || cat === 'all') return [...BUNDLES, ...PRODUCTS]; // bundles di depan
+  if (cat === 'bundle') return [...BUNDLES];
   return PRODUCTS.filter(p => productCat(p) === cat);
 }
 
@@ -140,6 +141,196 @@ function getProductImage(p) {
 function productTotalStock(p) {
   if (p.stock) return (p.stock.bangil || 0) + (p.stock.pandaan || 0);
   return null; // unknown (fallback data)
+}
+
+// ============================================
+// BUNDLE DEALS — paket hemat curated
+// ============================================
+const BUNDLES = [
+  {
+    id: 'bundle-starter',
+    cat: 'bundle',
+    name: 'Starter Kit Pemula',
+    brand: 'Vapertize',
+    desc: 'Paket lengkap pemula: Pod device + 1 botol liquid 60ml + extra coil.',
+    price: 525000,
+    oldPrice: 615000,
+    tag: 'hot',
+    icon: '🎁',
+    bundleItems: ['Vaporesso XROS 4 Pod Device', 'Liquid Premium 60ml (pilih flavor)', '2x Replacement Coil', 'Lanyard + Cleaning Cloth']
+  },
+  {
+    id: 'bundle-cloud',
+    cat: 'bundle',
+    name: 'Cloud Chaser Bundle',
+    brand: 'Vapertize',
+    desc: 'Untuk yang suka cloud besar: Mod 200W + RDA + battery + liquid.',
+    price: 1485000,
+    oldPrice: 1725000,
+    tag: 'sale',
+    icon: '☁️',
+    bundleItems: ['GeekVape Aegis Legend 3 Mod', 'Dead Rabbit V3 RDA', 'Molicel P26A Battery (2pcs)', 'Liquid Freebase 100ml']
+  },
+  {
+    id: 'bundle-flavor',
+    cat: 'bundle',
+    name: 'Flavor Hunter Pack',
+    brand: 'Vapertize',
+    desc: 'Eksplorasi rasa: 4 liquid premium beda flavor, salt + freebase.',
+    price: 425000,
+    oldPrice: 520000,
+    tag: 'new',
+    icon: '🍓',
+    bundleItems: ['Lcv 60ml Tiramisu Freebase', 'Lcv 60ml Berry Cheesecake', 'Paradewa 60ml Apple Zeus', 'Dark Luna Salt Nic 30ml']
+  },
+  {
+    id: 'bundle-maintenance',
+    cat: 'bundle',
+    name: 'Coil Master Kit',
+    brand: 'Vapertize',
+    desc: 'Untuk DIY enthusiast: tools, wire, cotton, ohm reader.',
+    price: 395000,
+    oldPrice: 475000,
+    icon: '🔧',
+    bundleItems: ['Coil Master 521 Tab Mini V3', 'Cotton Bacon Prime', 'Kanthal A1 Wire 24g', 'DIY Toolkit (tweezers, scissors, brush)']
+  }
+];
+
+// ============================================
+// WISHLIST — localStorage based, works for guests too
+// ============================================
+function getWishlist() {
+  return JSON.parse(localStorage.getItem('vt_wishlist') || '[]');
+}
+function isInWishlist(id) {
+  return getWishlist().includes(String(id));
+}
+function toggleWishlist(id) {
+  id = String(id);
+  const list = getWishlist();
+  const idx = list.indexOf(id);
+  if (idx >= 0) list.splice(idx, 1);
+  else list.push(id);
+  localStorage.setItem('vt_wishlist', JSON.stringify(list));
+  window.dispatchEvent(new CustomEvent('vt_wishlist_changed', { detail: { id, added: idx < 0 } }));
+  return idx < 0; // true = added, false = removed
+}
+function getWishlistProducts() {
+  const ids = getWishlist();
+  const all = [...(PRODUCTS_DATA || PRODUCTS_FALLBACK), ...BUNDLES];
+  return ids.map(id => all.find(p => String(p.id) === String(id))).filter(Boolean);
+}
+
+// ============================================
+// DAILY CHECK-IN — gamification
+// ============================================
+function todayDateStr() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+function daysBetween(d1, d2) {
+  const a = new Date(d1); a.setHours(0,0,0,0);
+  const b = new Date(d2); b.setHours(0,0,0,0);
+  return Math.round((b - a) / 86400000);
+}
+function checkinStatus(user) {
+  if (!user) return { canCheckIn: false, streak: 0, lastDate: null };
+  const today = todayDateStr();
+  const last = user.lastCheckIn || null;
+  const streak = user.streak || 0;
+  if (last === today) return { canCheckIn: false, streak, lastDate: last, alreadyToday: true };
+  return { canCheckIn: true, streak, lastDate: last };
+}
+function doDailyCheckIn() {
+  const user = getCurrentUser();
+  if (!user) return { ok: false, msg: 'Login dulu' };
+  const today = todayDateStr();
+  if (user.lastCheckIn === today) return { ok: false, msg: 'Sudah check-in hari ini' };
+
+  // Calculate streak
+  let newStreak = 1;
+  if (user.lastCheckIn) {
+    const gap = daysBetween(user.lastCheckIn, today);
+    if (gap === 1) newStreak = (user.streak || 0) + 1;
+    else if (gap === 0) newStreak = user.streak || 1; // shouldn't happen due to check above
+    // else gap > 1 → reset to 1
+  }
+
+  // Calculate bonus
+  let points = 5;
+  let bonusMsg = '';
+  if (newStreak === 7) { points += 50; bonusMsg = ' (🎉 Bonus 7-hari streak +50!)'; }
+  else if (newStreak === 30) { points += 200; bonusMsg = ' (🏆 Bonus 30-hari streak +200!)'; }
+  else if (newStreak > 0 && newStreak % 30 === 0) { points += 200; bonusMsg = ` (🏆 Bonus ${newStreak}-hari streak +200!)`; }
+
+  const users = getUsers();
+  const idx = users.findIndex(u => u.id === user.id);
+  users[idx].points = (users[idx].points || 0) + points;
+  users[idx].lastCheckIn = today;
+  users[idx].streak = newStreak;
+  users[idx].history = users[idx].history || [];
+  users[idx].history.unshift({
+    type: 'add',
+    title: `Check-in harian (streak ${newStreak} hari)${bonusMsg}`,
+    date: new Date().toISOString(),
+    points
+  });
+  saveUsers(users);
+  return { ok: true, points, streak: newStreak, bonusMsg };
+}
+
+// ============================================
+// BIRTHDAY DISCOUNT — auto bonus poin di hari ulang tahun
+// ============================================
+function checkBirthdayBonus() {
+  const user = getCurrentUser();
+  if (!user || !user.birthday) return null;
+  const today = new Date();
+  const todayMD = `${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+  const bdMD = user.birthday.substring(5); // YYYY-MM-DD → MM-DD
+  if (todayMD !== bdMD) return null;
+
+  const thisYear = String(today.getFullYear());
+  if (user.lastBirthdayBonus === thisYear) return null; // already given
+
+  const users = getUsers();
+  const idx = users.findIndex(u => u.id === user.id);
+  const BONUS = 200;
+  users[idx].points = (users[idx].points || 0) + BONUS;
+  users[idx].lastBirthdayBonus = thisYear;
+  users[idx].history = users[idx].history || [];
+  users[idx].history.unshift({
+    type: 'add',
+    title: `🎂 Bonus ulang tahun! Happy birthday`,
+    date: new Date().toISOString(),
+    points: BONUS
+  });
+  saveUsers(users);
+  return { points: BONUS };
+}
+
+// ============================================
+// RECENTLY SOLD TICKER — curated social proof
+// Names + cities di Pasuruan & sekitarnya (real-ish)
+// ============================================
+const RECENT_BUYERS = [
+  { name: 'Adit', city: 'Sidoarjo' },     { name: 'Rina', city: 'Bangil' },
+  { name: 'Bayu', city: 'Pandaan' },      { name: 'Sari', city: 'Malang' },
+  { name: 'Doni', city: 'Pasuruan' },     { name: 'Maya', city: 'Surabaya' },
+  { name: 'Fajar', city: 'Probolinggo' }, { name: 'Tia', city: 'Bangil' },
+  { name: 'Reza', city: 'Pandaan' },      { name: 'Lila', city: 'Sidoarjo' },
+  { name: 'Hendra', city: 'Malang' },     { name: 'Vina', city: 'Surabaya' },
+  { name: 'Wahyu', city: 'Pasuruan' },    { name: 'Nadia', city: 'Bangil' },
+  { name: 'Yoga', city: 'Pandaan' }
+];
+
+function generateRecentSale() {
+  const all = [...(PRODUCTS_DATA || PRODUCTS_FALLBACK)].filter(p => (p.stock?.bangil || 0) + (p.stock?.pandaan || 0) > 0);
+  if (all.length === 0) return null;
+  const buyer = RECENT_BUYERS[Math.floor(Math.random() * RECENT_BUYERS.length)];
+  const product = all[Math.floor(Math.random() * all.length)];
+  const minutesAgo = Math.floor(Math.random() * 45) + 2; // 2-46 minutes
+  return { buyer, product, minutesAgo };
 }
 
 // Initialize products on page load — fire-and-forget
