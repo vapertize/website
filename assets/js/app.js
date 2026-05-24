@@ -198,7 +198,9 @@ function renderCart() {
     if (!p) return '';
     return `
       <div class="cart-item">
-        <div class="cart-item-img">${p.icon}</div>
+        <div class="cart-item-img">${p.image
+          ? `<img src="${p.image}" alt="${p.name}" style="width:100%;height:100%;object-fit:contain;padding:6px">`
+          : `<img src="/assets/img/icons/${(p.category || p.cat || 'accessories')}.png?v=1" alt="" style="width:70%;height:70%;object-fit:contain;margin:auto;display:block;filter:drop-shadow(0 2px 6px rgba(0,0,0,0.4))">`}</div>
         <div class="cart-item-info">
           <div class="cart-item-name">${p.name}</div>
           <div class="cart-item-price">${formatRupiah(p.price)}</div>
