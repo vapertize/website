@@ -2900,7 +2900,7 @@ button { cursor: pointer; font-family: inherit; border: none; }
    STATS MODERN
    ============================================ */
 .stats-modern {
-  padding: 100px 0;
+  padding: 64px 0;
 }
 
 .stats-modern-grid {
@@ -2953,7 +2953,7 @@ button { cursor: pointer; font-family: inherit; border: none; }
    SECTION HEADERS
    ============================================ */
 .bento-section, .featured-modern, .why-modern, .member-showcase, .locations-modern, .final-cta, .hub-cta {
-  padding: 120px 0;
+  padding: 80px 0;
   position: relative;
 }
 
@@ -2982,13 +2982,14 @@ button { cursor: pointer; font-family: inherit; border: none; }
 }
 
 .section-modern-title {
-  font-family: 'Inter', sans-serif;
-  font-size: clamp(40px, 5.5vw, 88px);
-  font-weight: 900;
+  font-family: var(--font-display, 'Bebas Neue'), 'Inter', sans-serif;
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 400; /* Bebas Neue ships only as one weight */
   line-height: 1;
-  letter-spacing: -0.04em;
-  margin-bottom: 24px;
-  color: #fff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--text-primary, #fff);
 }
 
 .section-modern-sub {
@@ -4067,7 +4068,7 @@ button { cursor: pointer; font-family: inherit; border: none; }
    =================================================== */
 .risa-section {
   position: relative;
-  padding: 100px 0;
+  padding: 80px 0;
   background: linear-gradient(180deg, #0a0a0c 0%, #0f0f12 50%, #0a0a0c 100%);
   overflow: hidden;
 }
@@ -4200,19 +4201,21 @@ button { cursor: pointer; font-family: inherit; border: none; }
   position: relative;
 }
 .risa-title {
-  font-size: clamp(2rem, 4.2vw, 3.4rem);
-  font-weight: 800;
-  line-height: 1.1;
-  margin: 18px 0 18px;
-  color: var(--text);
-  letter-spacing: -0.02em;
+  font-family: var(--font-display, 'Bebas Neue'), 'Inter', sans-serif;
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 16px 0 16px;
+  color: var(--text, #fff);
 }
 .risa-name-gold {
   background: linear-gradient(135deg, var(--accent), #f0d066);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: 0.04em;
+  letter-spacing: 2px;
 }
 .risa-subtitle {
   font-size: 0.55em;
@@ -4337,7 +4340,7 @@ button { cursor: pointer; font-family: inherit; border: none; }
    =================================================== */
 .promo-section {
   position: relative;
-  padding: 100px 0;
+  padding: 80px 0;
   background: linear-gradient(180deg, #0a0a0c 0%, #101015 60%, #0a0a0c 100%);
   overflow: hidden;
 }
@@ -4372,12 +4375,14 @@ button { cursor: pointer; font-family: inherit; border: none; }
 }
 .promo-text { position: relative; }
 .promo-headline {
-  font-size: clamp(2rem, 4.2vw, 3.4rem);
-  font-weight: 800;
-  line-height: 1.1;
-  margin: 18px 0 18px;
-  color: var(--text);
-  letter-spacing: -0.02em;
+  font-family: var(--font-display, 'Bebas Neue'), 'Inter', sans-serif;
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 16px 0 16px;
+  color: var(--text, #fff);
 }
 .promo-lead {
   font-size: 1.05rem;
