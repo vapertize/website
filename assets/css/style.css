@@ -4615,3 +4615,142 @@ button { cursor: pointer; font-family: inherit; border: none; }
   .promo-actions { flex-direction: column; gap: 10px; width: 100%; }
   .promo-actions .btn-modern { width: 100%; justify-content: center; }
 }
+
+/* ===================================================
+   LOYALTY CLUB TEASER (public-safe — no internal numbers)
+   =================================================== */
+.loyalty-teaser {
+  background: linear-gradient(180deg, #0d0d10 0%, #15151a 100%);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  position: relative;
+  overflow: hidden;
+}
+.loyalty-teaser::before {
+  content: '';
+  position: absolute;
+  inset: -120px -120px auto auto;
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.18) 0%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+.loyalty-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 28px;
+  z-index: 1;
+}
+.loyalty-eyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.loyalty-headline {
+  font-family: var(--font-display, 'Bebas Neue'), 'Inter', sans-serif;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0 0 10px;
+  color: #fff;
+}
+.loyalty-tagline {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+.loyalty-tagline em {
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 600;
+}
+.loyalty-tiers {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin: 0 0 28px;
+}
+.loyalty-tier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 8px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  transition: var(--transition);
+}
+.loyalty-tier:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.55);
+}
+.tier-emblem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+}
+.tier-emblem svg { display: block; }
+.tier-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.2;
+}
+.tier-spark    .tier-emblem { color: #b87333; } /* copper */
+.tier-spark    .tier-name   { color: #b87333; }
+.tier-boost    .tier-emblem { color: #b8c2cc; } /* silver */
+.tier-boost    .tier-name   { color: #b8c2cc; }
+.tier-ignite   .tier-emblem { color: #d4af37; } /* gold */
+.tier-ignite   .tier-name   { color: #d4af37; }
+.tier-legend   .tier-emblem { color: #3b82f6; } /* sapphire blue */
+.tier-legend   .tier-name   { color: #3b82f6; }
+.tier-vape-god .tier-emblem { color: #34d399; } /* emerald green */
+.tier-vape-god .tier-name   { color: #34d399; }
+
+.loyalty-cta {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.loyalty-note {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 0 14px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tablet */
+@media (max-width: 720px) {
+  .loyalty-tiers {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+  }
+  .loyalty-tier { padding: 12px 4px; }
+  .tier-emblem svg { width: 36px; height: 32px; }
+  .tier-name { font-size: 10px; letter-spacing: 0.5px; }
+}
+
+/* Mobile small */
+@media (max-width: 420px) {
+  .loyalty-tiers { gap: 4px; }
+  .loyalty-tier { padding: 10px 2px; }
+  .tier-name { font-size: 9px; }
+}
