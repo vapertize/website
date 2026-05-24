@@ -31,7 +31,7 @@ PRODUCTS_JSON = REPO_ROOT / "assets" / "data" / "products.json"
 OUT_DIR = REPO_ROOT / "p"
 SITEMAP_FRAGMENT = REPO_ROOT / "sitemap-products.xml"
 SITE = "https://vapertize.id"
-CACHE_VER = "v=19"
+CACHE_VER = "v=20"
 
 CATEGORY_LABELS = {
     "liquid": "Liquid",
