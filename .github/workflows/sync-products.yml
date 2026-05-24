@@ -6,14 +6,17 @@ on:
     - cron: '5 14 * * *'
   workflow_dispatch:
     inputs:
-      fetch_images:
-        description: 'Fetch images untuk produk baru (slower)'
+      fetch_mode:
+        description: 'Image fetch mode'
         required: false
-        default: 'false'
+        default: 'auto'
         type: choice
         options:
-          - 'true'
-          - 'false'
+          - 'auto'        # auto-detect: fetch only if there are missing in-stock products (default)
+          - 'all'         # CATCH-UP: fetch ALL missing in-stock products in one run
+          - 'skip'        # skip image fetch entirely (sync sheet only)
+          - 'limit-50'    # legacy: fetch max 50 (rate-limit friendly batch)
+          - 'limit-100'   # fetch max 100
 
 jobs:
   sync:
@@ -42,14 +45,60 @@ jobs:
           SHEET_CSV_URL: ${{ vars.SHEET_CSV_URL || secrets.SHEET_CSV_URL }}
         run: python scripts/sync_products.py
 
-      - name: Fetch images for new products (optional)
-        if: github.event.inputs.fetch_images == 'true'
+      - name: Detect missing images (opsi 3 — auto-detect)
+        id: detect
+        run: |
+          python3 <<'EOF'
+          import json, os
+          from pathlib import Path
+          data = json.load(open('assets/data/products.json'))
+          img_dir = Path('assets/img/products')
+          existing = set()
+          if img_dir.exists():
+              for f in img_dir.iterdir():
+                  if f.is_file() and f.suffix.lower() in ('.webp','.png','.jpg','.jpeg'):
+                      existing.add(f.stem)
+          missing = 0
+          for p in data['products']:
+              stock = p.get('stock', {}).get('bangil', 0) + p.get('stock', {}).get('pandaan', 0)
+              if stock > 0 and p['id'] not in existing:
+                  missing += 1
+          print(f"Missing in-stock images: {missing}")
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+              fh.write(f"missing_count={missing}\n")
+          EOF
+
+      - name: Determine fetch count
+        id: plan
+        run: |
+          MODE="${{ github.event.inputs.fetch_mode || 'auto' }}"
+          MISSING="${{ steps.detect.outputs.missing_count }}"
+          case "$MODE" in
+            skip)        COUNT=0 ;;
+            all)         COUNT=all ;;
+            limit-50)    COUNT=50 ;;
+            limit-100)   COUNT=100 ;;
+            auto|*)
+              # auto mode: fetch up to 100/day (safe for free tier quota)
+              # if missing > 0, run; else skip
+              if [ "$MISSING" -gt 0 ]; then
+                COUNT=100
+              else
+                COUNT=0
+              fi
+              ;;
+          esac
+          echo "Mode=$MODE Missing=$MISSING → fetch_count=$COUNT"
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+
+      - name: Fetch images
+        if: steps.plan.outputs.count != '0'
         env:
           BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
-        run: python scripts/fetch_images.py 50 || echo "Image fetch skipped (no API key)"
+        run: python scripts/fetch_images.py ${{ steps.plan.outputs.count }} || echo "Image fetch skipped (no API key)"
 
       - name: Re-sync products.json to register new image paths
-        if: github.event.inputs.fetch_images == 'true'
+        if: steps.plan.outputs.count != '0'
         env:
           SHEET_CSV_URL: ${{ vars.SHEET_CSV_URL || secrets.SHEET_CSV_URL }}
         run: python scripts/sync_products.py
