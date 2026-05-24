@@ -354,6 +354,7 @@ function buildNavbar(activePage = '') {
           <li><a href="index.html" class="${activePage === 'home' ? 'active' : ''}">Home</a></li>
           <li><a href="catalog.html" class="${activePage === 'catalog' ? 'active' : ''}">Katalog</a></li>
           <li><a href="member.html" class="${activePage === 'member' ? 'active' : ''}">Member</a></li>
+          <li><a href="faq.html" class="${activePage === 'faq' ? 'active' : ''}">FAQ</a></li>
           <li><a href="contact.html" class="${activePage === 'contact' ? 'active' : ''}">Kontak</a></li>
         </ul>
         <div class="nav-actions">
@@ -415,7 +416,7 @@ function buildFooter() {
               <li><a href="contact.html">Kontak Kami</a></li>
               <li><a href="contact.html">Lokasi Toko</a></li>
               <li><a href="https://wa.me/${STORE_INFO.defaultWA}" target="_blank">WhatsApp</a></li>
-              <li><a href="contact.html">FAQ</a></li>
+              <li><a href="faq.html">FAQ</a></li>
             </ul>
           </div>
         </div>
