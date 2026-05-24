@@ -3051,12 +3051,13 @@ button { cursor: pointer; font-family: inherit; border: none; }
   -webkit-backdrop-filter: blur(6px);
   border: 1px solid rgba(212,175,55,0.10);
   border-radius: 28px;
-  padding: 32px;
+  padding: 44px 36px;
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 24px;
   text-decoration: none;
   color: #fff;
   cursor: pointer;
@@ -3067,7 +3068,7 @@ button { cursor: pointer; font-family: inherit; border: none; }
    Row 2:                                    [Coil-Wire 1×1]
    Row 3:   [Cart-Cotton] [Battery] [Accessories spans 2]
 */
-.bento-large { grid-column: span 2; grid-row: span 2; padding: 48px; }
+.bento-large { grid-column: span 2; grid-row: span 2; padding: 56px 52px; }
 .bento-tall  { grid-column: span 1; grid-row: span 2; }
 .bento-small { grid-column: span 1; grid-row: span 1; }
 .bento-wide  { grid-column: span 2; grid-row: span 1; }
