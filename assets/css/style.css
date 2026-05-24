@@ -3182,7 +3182,7 @@ button { cursor: pointer; font-family: inherit; border: none; }
 .bento-large::before { opacity: 0.5; }
 .bento-large:hover::before { opacity: 1; }
 
-/* Icon wrap — subtle rounded frame untuk highlight icon */
+/* Icon wrap — transparent biar PNG icon yang dominasi */
 .bento-icon-wrap {
   position: relative;
   width: 112px;
@@ -3190,22 +3190,14 @@ button { cursor: pointer; font-family: inherit; border: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
-  background: rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(212, 175, 55, 0.18);
-  border-radius: 22px;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
   z-index: 1;
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .bento-large .bento-icon-wrap {
   width: 180px;
   height: 180px;
-  border-radius: 30px;
 }
 .bento-card:hover .bento-icon-wrap {
-  border-color: rgba(212, 175, 55, 0.45);
-  background: rgba(0, 0, 0, 0.35);
   transform: scale(1.04) rotate(-2deg);
 }
 .bento-icon {
@@ -3215,21 +3207,31 @@ button { cursor: pointer; font-family: inherit; border: none; }
 }
 .bento-large .bento-icon { font-size: 84px; }
 
-/* PNG icon variant (golden 3D icons untuk 7 kategori) */
+/* PNG icon variant (golden 3D icons untuk 7 kategori) — round the square PNG bg */
 .bento-icon-img {
-  width: 96px;
-  height: 96px;
-  object-fit: contain;
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
   display: block;
-  filter: drop-shadow(0 8px 22px rgba(0,0,0,0.5)) drop-shadow(0 0 18px rgba(212,175,55,0.35));
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+  border-radius: 22px;
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.55),
+    0 0 22px rgba(212, 175, 55, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .bento-large .bento-icon-img {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
+  border-radius: 30px;
 }
 .bento-card:hover .bento-icon-img {
-  filter: drop-shadow(0 12px 30px rgba(0,0,0,0.65)) drop-shadow(0 0 28px rgba(212,175,55,0.6));
+  border-color: rgba(212, 175, 55, 0.45);
+  box-shadow:
+    0 14px 36px rgba(0, 0, 0, 0.65),
+    0 0 32px rgba(212, 175, 55, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 /* Catalog filter chip with PNG icon */
@@ -3241,11 +3243,13 @@ button { cursor: pointer; font-family: inherit; border: none; }
   gap: 8px;
 }
 .chip-icon {
-  width: 22px;
-  height: 22px;
-  object-fit: contain;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
   flex-shrink: 0;
-  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.4));
+  border-radius: 6px;
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease;
 }
 .filter-chip.chip-with-icon:hover .chip-icon,
@@ -3259,17 +3263,24 @@ button { cursor: pointer; font-family: inherit; border: none; }
 
 /* Product card fallback — golden category PNG instead of emoji */
 .product-cat-fallback {
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
   margin: auto;
   display: block;
-  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.45)) drop-shadow(0 0 14px rgba(212,175,55,0.3));
-  transition: transform 0.4s ease, filter 0.4s ease;
+  border-radius: 20px;
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.5),
+    0 0 18px rgba(212, 175, 55, 0.22);
+  transition: all 0.4s ease;
 }
 .product-card:hover .product-cat-fallback {
-  transform: scale(1.08);
-  filter: drop-shadow(0 10px 24px rgba(0,0,0,0.6)) drop-shadow(0 0 22px rgba(212,175,55,0.5));
+  transform: scale(1.06);
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.6),
+    0 0 26px rgba(212, 175, 55, 0.4);
 }
 
 .bento-count {
