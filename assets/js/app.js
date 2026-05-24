@@ -315,11 +315,13 @@ function loginUser(email, password) {
 }
 
 function getUserTier(points) {
-  if (points >= 5000) return 'Diamond';
-  if (points >= 2000) return 'Platinum';
-  if (points >= 1000) return 'Gold';
-  if (points >= 500) return 'Silver';
-  return 'Bronze';
+  // Tier names match Vapertize Loyalty Club (5 tier cashback redemption).
+  // Display-only — actual cashback values, min purchase, & redemption rules are internal (POS-side).
+  if (points >= 2000) return 'VAPE GOD';
+  if (points >= 1500) return 'LEGEND';
+  if (points >= 1000) return 'IGNITE';
+  if (points >= 500)  return 'BOOST';
+  return 'SPARK';
 }
 
 // ============================================
