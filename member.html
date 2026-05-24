@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
   <title>Member Area - Cek Poin, Reward & Riwayat | Vapertize</title>
-  <meta name="description" content="Login member Vapertize ⭐ cek poin reward, tukar dengan voucher & produk gratis, lihat riwayat order. Daftar gratis dapat 100 poin bonus. Tier Bronze → Diamond.">
-  <meta name="keywords" content="member vape, loyalty program vape, reward vapertize, poin member, tukar voucher vape, daftar member toko vape">
+  <meta name="description" content="Login member Vapertize Loyalty Club ⭐ kumpulkan poin tiap belanja, naik tier dari SPARK sampai VAPE GOD, dapat cashback hingga Rp 120.000. Daftar gratis dapat 100 poin bonus.">
+  <meta name="keywords" content="vapertize loyalty club, member vape, loyalty program vape, reward vapertize, poin member, cashback vape, daftar member toko vape, spark boost ignite legend vape god">
   <meta name="robots" content="noindex, follow">
   <meta name="theme-color" content="#0a0a0a">
 
@@ -35,7 +35,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=23">
+  <link rel="stylesheet" href="assets/css/style.css?v=24">
 
   <script type="application/ld+json">
   {
@@ -60,24 +60,24 @@
   <div id="footerSlot"></div>
   <div id="cartSlot"></div>
 
-  <script src="assets/js/data.js?v=23"></script>
-  <script src="assets/js/app.js?v=23"></script>
+  <script src="assets/js/data.js?v=24"></script>
+  <script src="assets/js/app.js?v=24"></script>
   <script>
     function renderAuth() {
       document.getElementById('memberContent').innerHTML = `
         <div class="auth-layout">
           <div class="auth-visual">
             <div class="auth-visual-content">
-              <span class="section-eyebrow">★ Vapertize Squad</span>
+              <span class="section-eyebrow">★ Vapertize Loyalty Club</span>
               <h2>Join the Club</h2>
               <p>Daftar member Vapertize sekarang dan nikmati benefit eksklusif yang hanya untuk member.</p>
               <ul class="perks">
                 <li>100 poin gratis saat daftar</li>
                 <li>Kumpulkan poin setiap belanja</li>
-                <li>Tukar poin dengan reward menarik</li>
+                <li>5 tier reward: SPARK → VAPE GOD</li>
+                <li>Cashback hingga Rp 120.000</li>
+                <li>Special discount langsung tiap pembelian</li>
                 <li>Akses promo & event eksklusif</li>
-                <li>Tier system: Bronze → Diamond</li>
-                <li>Priority CS support</li>
               </ul>
             </div>
             <div style="font-size:13px;color:var(--text-muted);margin-top:24px">
@@ -277,23 +277,38 @@
               </div>
             </div>
 
-            <!-- Rewards -->
-            <div class="dash-card" id="poin">
-              <h3>🎁 Tukar Poin dengan Reward</h3>
-              <div class="reward-grid">
-                ${REWARDS.map(r => `
-                  <div class="reward-card">
-                    <div class="reward-icon">${r.icon}</div>
-                    <div class="reward-name">${r.name}</div>
-                    <div class="reward-cost">${r.cost} poin</div>
-                    <button class="btn ${user.points >= r.cost ? 'btn-primary' : 'btn-secondary'} btn-sm btn-block"
-                      style="margin-top:12px"
-                      onclick="claimReward('${r.name}', ${r.cost})"
-                      ${user.points < r.cost ? 'disabled' : ''}>
-                      ${user.points >= r.cost ? 'Tukar' : 'Poin Kurang'}
-                    </button>
-                  </div>
-                `).join('')}
+            <!-- Loyalty Club teaser -->
+            <div class="dash-card loyalty-teaser" id="poin">
+              <div class="loyalty-header">
+                <div class="loyalty-eyebrow">VAPERTIZE LOYALTY CLUB</div>
+                <h3 class="loyalty-headline">Cashback hingga <span class="gold-text">Rp 120.000</span></h3>
+                <p class="loyalty-tagline"><em>Every Puff Counts.</em> Naik Level, Raih Lebih, Nikmati Lebih.</p>
+              </div>
+              <div class="loyalty-tiers">
+                <div class="loyalty-tier tier-spark">
+                  <div class="tier-emblem"><svg viewBox="0 0 64 56" width="44" height="38" aria-hidden="true"><polygon points="16,0 48,0 64,28 48,56 16,56 0,28" fill="currentColor"/><polygon points="22,8 42,8 54,28 42,48 22,48 10,28" fill="rgba(0,0,0,0.25)"/></svg></div>
+                  <div class="tier-name">SPARK</div>
+                </div>
+                <div class="loyalty-tier tier-boost">
+                  <div class="tier-emblem"><svg viewBox="0 0 64 56" width="44" height="38" aria-hidden="true"><polygon points="16,0 48,0 64,28 48,56 16,56 0,28" fill="currentColor"/><polygon points="22,8 42,8 54,28 42,48 22,48 10,28" fill="rgba(0,0,0,0.25)"/></svg></div>
+                  <div class="tier-name">BOOST</div>
+                </div>
+                <div class="loyalty-tier tier-ignite">
+                  <div class="tier-emblem"><svg viewBox="0 0 64 56" width="44" height="38" aria-hidden="true"><polygon points="16,0 48,0 64,28 48,56 16,56 0,28" fill="currentColor"/><polygon points="22,8 42,8 54,28 42,48 22,48 10,28" fill="rgba(0,0,0,0.25)"/></svg></div>
+                  <div class="tier-name">IGNITE</div>
+                </div>
+                <div class="loyalty-tier tier-legend">
+                  <div class="tier-emblem"><svg viewBox="0 0 64 56" width="44" height="38" aria-hidden="true"><polygon points="16,0 48,0 64,28 48,56 16,56 0,28" fill="currentColor"/><polygon points="22,8 42,8 54,28 42,48 22,48 10,28" fill="rgba(0,0,0,0.25)"/></svg></div>
+                  <div class="tier-name">LEGEND</div>
+                </div>
+                <div class="loyalty-tier tier-vape-god">
+                  <div class="tier-emblem"><svg viewBox="0 0 64 56" width="44" height="38" aria-hidden="true"><polygon points="16,0 48,0 64,28 48,56 16,56 0,28" fill="currentColor"/><polygon points="22,8 42,8 54,28 42,48 22,48 10,28" fill="rgba(0,0,0,0.25)"/></svg></div>
+                  <div class="tier-name">VAPE GOD</div>
+                </div>
+              </div>
+              <div class="loyalty-cta">
+                <p class="loyalty-note">Status tier kamu sekarang: <strong class="gold-text">${tier}</strong>. Tukar cashback di kasir Vapertize Bangil / Pandaan saat belanja. <strong>+</strong> Special Discount Langsung tiap pembelian.</p>
+                <a href="https://wa.me/628137000110?text=Halo%20Risa%2C%20saya%20mau%20tanya%20detail%20Vapertize%20Loyalty%20Club" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">💬 Tanya Detail ke Risa</a>
               </div>
             </div>
 
