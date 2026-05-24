@@ -2,6 +2,434 @@
    VAPERTIZE - Dark Mode Modern Theme
    ============================================ */
 
+/* ============================================
+   FEATURE COMPONENTS (Batch 1: Wishlist, PWA, WA float, Ticker, Urgency, Bundle, Check-in)
+   ============================================ */
+
+/* --- Wishlist heart button on product card --- */
+.wish-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 5;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 0;
+}
+.wish-btn:hover {
+  background: rgba(0,0,0,0.8);
+  transform: scale(1.1);
+  border-color: rgba(255,255,255,0.25);
+}
+.wish-btn.active {
+  background: rgba(255, 59, 96, 0.18);
+  color: #ff3b60;
+  border-color: rgba(255, 59, 96, 0.5);
+  animation: heartPop 0.5s ease;
+}
+@keyframes heartPop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+
+/* --- Stock urgency badge --- */
+.stock-urgent {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 9px;
+  background: linear-gradient(135deg, #ff3b60, #ff6b35);
+  color: #fff;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  animation: urgentPulse 2s ease-in-out infinite;
+  white-space: nowrap;
+}
+@keyframes urgentPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 59, 96, 0.5); }
+  50%      { box-shadow: 0 0 0 6px rgba(255, 59, 96, 0); }
+}
+
+/* --- Bundle deal badge --- */
+.bundle-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 4;
+  padding: 4px 10px;
+  background: linear-gradient(135deg, var(--accent), #b8941a);
+  color: #000;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+.bundle-items {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  line-height: 1.5;
+}
+.bundle-items li {
+  list-style: none;
+  padding-left: 14px;
+  position: relative;
+  margin-bottom: 2px;
+}
+.bundle-items li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+.product-card.is-bundle {
+  border-color: rgba(212,175,55,0.3);
+  background: linear-gradient(135deg, rgba(212,175,55,0.04), transparent);
+}
+.product-card.is-bundle:hover {
+  border-color: var(--accent);
+}
+
+/* --- Floating WhatsApp Quick Chat button --- */
+.wa-float-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px 14px 18px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 100px;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4), 0 2px 8px rgba(0,0,0,0.3);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  overflow: hidden;
+}
+.wa-float-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(37, 211, 102, 0.55), 0 4px 12px rgba(0,0,0,0.4);
+  color: #fff;
+}
+.wa-float-icon {
+  font-size: 20px;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3));
+}
+.wa-float-pulse {
+  position: absolute;
+  inset: 0;
+  border-radius: 100px;
+  pointer-events: none;
+  animation: waPulse 2.4s ease-in-out infinite;
+  background: rgba(37, 211, 102, 0.5);
+  z-index: -1;
+}
+@keyframes waPulse {
+  0%   { transform: scale(1);   opacity: 0.5; }
+  100% { transform: scale(1.5); opacity: 0;   }
+}
+@media (max-width: 768px) {
+  .wa-float-btn { padding: 14px 16px; }
+  .wa-float-text { display: none; }
+}
+
+/* --- PWA Install Button --- */
+.pwa-install-btn {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 91;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px 12px 16px;
+  background: linear-gradient(135deg, var(--accent), #c9a02d);
+  color: #000;
+  border: none;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 100px;
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.35), 0 2px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: pwaSlideIn 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.pwa-install-btn:hover { transform: translateY(-2px); }
+.pwa-install-icon { font-size: 17px; }
+.pwa-install-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.15);
+  font-size: 16px;
+  line-height: 1;
+  margin-left: 4px;
+  transition: background 0.2s;
+}
+.pwa-install-close:hover { background: rgba(0,0,0,0.3); }
+@keyframes pwaSlideIn {
+  from { transform: translateY(60px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+@media (max-width: 768px) {
+  .pwa-install-btn { bottom: 90px; padding: 10px 14px; font-size: 12px; }
+  .pwa-install-text { max-width: 130px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+}
+
+/* --- Recently Sold Ticker --- */
+.sale-ticker {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 89;
+  max-width: 320px;
+  padding: 14px 16px;
+  background: rgba(15, 15, 15, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: translateY(20px) translateX(-20px);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+.sale-ticker.show {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+  pointer-events: auto;
+}
+.sale-ticker-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.sale-ticker-body {
+  flex: 1;
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.sale-ticker-body strong { color: var(--text-primary); font-weight: 600; }
+.sale-ticker-product {
+  display: block;
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 13px;
+  margin-top: 2px;
+}
+.sale-ticker-time {
+  display: block;
+  color: var(--text-muted);
+  font-size: 11px;
+  margin-top: 4px;
+}
+.sale-ticker-close {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.sale-ticker-close:hover { background: rgba(255,255,255,0.1); color: var(--text-primary); }
+/* Avoid overlap with PWA install button on left bottom */
+.pwa-install-btn ~ .sale-ticker,
+body:has(.pwa-install-btn) .sale-ticker {
+  bottom: 90px;
+}
+@media (max-width: 768px) {
+  .sale-ticker { left: 12px; right: 12px; max-width: none; bottom: 90px; }
+}
+
+/* --- Daily Check-in card (member dashboard) --- */
+.checkin-card {
+  background: linear-gradient(135deg, rgba(212,175,55,0.12), rgba(212,175,55,0.02));
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.checkin-info { flex: 1; min-width: 200px; }
+.checkin-streak {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(212,175,55,0.2);
+  border: 1px solid rgba(212,175,55,0.4);
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.checkin-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+.checkin-sub {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.checkin-btn {
+  background: linear-gradient(135deg, var(--accent), #b8941a);
+  color: #000;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+.checkin-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212,175,55,0.4);
+}
+.checkin-btn:disabled {
+  background: rgba(255,255,255,0.06);
+  color: var(--text-muted);
+  cursor: not-allowed;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* --- Birthday banner --- */
+.birthday-banner {
+  background: linear-gradient(135deg, #ff3b60, #ff6b9d);
+  border-radius: 18px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+  animation: bdayBounce 1.2s ease;
+}
+@keyframes bdayBounce {
+  0%   { transform: scale(0.8); opacity: 0; }
+  60%  { transform: scale(1.05); }
+  100% { transform: scale(1);    opacity: 1; }
+}
+.birthday-icon { font-size: 40px; }
+.birthday-text h3 { font-size: 20px; margin: 0 0 4px; font-weight: 800; }
+.birthday-text p  { font-size: 14px; margin: 0; opacity: 0.95; }
+
+/* --- Wishlist section --- */
+.wishlist-section {
+  margin-top: 24px;
+}
+.wishlist-empty {
+  text-align: center;
+  padding: 32px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+.wishlist-empty a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+.wishlist-item {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  position: relative;
+  transition: all 0.3s;
+}
+.wishlist-item:hover {
+  border-color: rgba(212,175,55,0.3);
+  transform: translateY(-2px);
+}
+.wishlist-item-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.wishlist-item-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+.wishlist-item-price {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-top: 8px;
+}
+.wishlist-item-remove {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255,255,255,0.08);
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wishlist-item-remove:hover {
+  background: rgba(255, 59, 96, 0.2);
+  color: #ff3b60;
+}
+
+
+
 :root {
   --bg-primary: #0a0a0a;
   --bg-secondary: #121212;
