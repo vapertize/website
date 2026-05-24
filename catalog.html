@@ -37,7 +37,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=30">
+  <link rel="stylesheet" href="assets/css/style.css?v=31">
 
   <script type="application/ld+json">
   {
@@ -94,13 +94,13 @@
       <div class="filter-bar">
         <button class="filter-chip active" data-cat="all"><span class="chip-dot"></span>Semua</button>
         <button class="filter-chip chip-with-icon" data-cat="bundle"><span class="chip-bundle-emoji">📦</span> Paket Hemat</button>
-        <button class="filter-chip chip-with-icon" data-cat="liquid"><img src="/assets/img/icons/liquid-128.png?v=1" class="chip-icon" alt=""> Liquid</button>
-        <button class="filter-chip chip-with-icon" data-cat="device"><img src="/assets/img/icons/device-128.png?v=1" class="chip-icon" alt=""> Device</button>
-        <button class="filter-chip chip-with-icon" data-cat="atomizer"><img src="/assets/img/icons/atomizer-128.png?v=1" class="chip-icon" alt=""> Atomizer</button>
-        <button class="filter-chip chip-with-icon" data-cat="coil-wire"><img src="/assets/img/icons/coil-wire-128.png?v=1" class="chip-icon" alt=""> Coil &amp; Wire</button>
-        <button class="filter-chip chip-with-icon" data-cat="battery-charger"><img src="/assets/img/icons/battery-charger-128.png?v=1" class="chip-icon" alt=""> Battery &amp; Charger</button>
-        <button class="filter-chip chip-with-icon" data-cat="cartridge-cotton"><img src="/assets/img/icons/cartridge-cotton-128.png?v=1" class="chip-icon" alt=""> Cartridge &amp; Cotton</button>
-        <button class="filter-chip chip-with-icon" data-cat="accessories"><img src="/assets/img/icons/accessories-128.png?v=1" class="chip-icon" alt=""> Accessories</button>
+        <button class="filter-chip chip-with-icon" data-cat="liquid"><img src="/assets/img/icons/liquid.png?v=1" class="chip-icon" alt=""> Liquid</button>
+        <button class="filter-chip chip-with-icon" data-cat="device"><img src="/assets/img/icons/device.png?v=1" class="chip-icon" alt=""> Device</button>
+        <button class="filter-chip chip-with-icon" data-cat="atomizer"><img src="/assets/img/icons/atomizer.png?v=1" class="chip-icon" alt=""> Atomizer</button>
+        <button class="filter-chip chip-with-icon" data-cat="coil-wire"><img src="/assets/img/icons/coil-wire.png?v=1" class="chip-icon" alt=""> Coil &amp; Wire</button>
+        <button class="filter-chip chip-with-icon" data-cat="battery-charger"><img src="/assets/img/icons/battery-charger.png?v=1" class="chip-icon" alt=""> Battery &amp; Charger</button>
+        <button class="filter-chip chip-with-icon" data-cat="cartridge-cotton"><img src="/assets/img/icons/cartridge-cotton.png?v=1" class="chip-icon" alt=""> Cartridge &amp; Cotton</button>
+        <button class="filter-chip chip-with-icon" data-cat="accessories"><img src="/assets/img/icons/accessories.png?v=1" class="chip-icon" alt=""> Accessories</button>
         <div class="search-box">
           <input type="text" id="searchInput" placeholder="Cari produk...">
         </div>
@@ -122,8 +122,8 @@
   <div id="footerSlot"></div>
   <div id="cartSlot"></div>
 
-  <script src="assets/js/data.js?v=30"></script>
-  <script src="assets/js/app.js?v=30"></script>
+  <script src="assets/js/data.js?v=31"></script>
+  <script src="assets/js/app.js?v=31"></script>
   <script>
     let currentCat = 'all';
     let searchQuery = '';
@@ -196,7 +196,7 @@
             ${p.tag ? `<span class="product-tag ${p.tag}">${p.tag}</span>` : stockBadge}
             ${p.image
               ? `<img src="${p.image}" alt="${p.name}" loading="lazy" style="width:100%;height:100%;object-fit:contain;padding:20px">`
-              : `<img src="/assets/img/icons/${productCat(p) || 'accessories'}.png?v=1" alt="${productCat(p) || 'product'} icon" loading="lazy" class="product-cat-fallback">`}
+              : `<img src="/assets/img/icons/${(productCat(p) === 'bundle' ? 'accessories' : (productCat(p) || 'accessories'))}.png?v=1" alt="" loading="lazy" class="product-cat-fallback">`}
           </div>
           <div class="product-info">
             <div class="product-cat">${p.brand || ''} · ${isBundle ? 'Bundle' : productCat(p)}</div>
