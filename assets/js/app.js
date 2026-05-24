@@ -30,8 +30,8 @@ const STORE_INFO = {
   defaultWA: '628137000110',  // AI Risa (instant response 24/7)
 
   stores: [
-    { name: 'Vapertize Bangil',  address: 'Ruko Hotel Amanah, Jl. Alun-Alun Tim. No.11, Wetanalon, Kersikan, Kec. Bangil, Pasuruan, Jawa Timur 67153', phone: '+62 813-7000-145', whatsapp: '628137000145', mapQuery: 'Ruko+Hotel+Amanah+Jl+Alun-Alun+Timur+No.11+Bangil+Pasuruan' },
-    { name: 'Vapertize Pandaan', address: 'Jl. Pahlawan Sunaryo No.38, RT.02/RW.06, Wringinanom, Jogosari, Kec. Pandaan, Pasuruan, Jawa Timur 67156',   phone: '+62 813-7000-165', whatsapp: '628137000165', mapQuery: 'Jl+Pahlawan+Sunaryo+No.38+Jogosari+Pandaan+Pasuruan' }
+    { name: 'Vapertize Bangil',  address: 'Ruko Hotel Amanah, Jl. Alun-Alun Tim. No.11, Wetanalon, Kersikan, Kec. Bangil, Pasuruan, Jawa Timur 67153', phone: '+62 813-7000-145', whatsapp: '628137000145', mapQuery: 'Vapertize+Bangil+Pasuruan' },
+    { name: 'Vapertize Pandaan', address: 'Jl. Pahlawan Sunaryo No.38, RT.02/RW.06, Wringinanom, Jogosari, Kec. Pandaan, Pasuruan, Jawa Timur 67156',   phone: '+62 813-7000-165', whatsapp: '628137000165', mapQuery: 'Vapertize+Pandaan+Pasuruan' }
   ]
 };
 
