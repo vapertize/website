@@ -35,7 +35,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=15">
+  <link rel="stylesheet" href="assets/css/style.css?v=16">
 
   <script type="application/ld+json">
   {
@@ -60,8 +60,8 @@
   <div id="footerSlot"></div>
   <div id="cartSlot"></div>
 
-  <script src="assets/js/data.js?v=15"></script>
-  <script src="assets/js/app.js?v=15"></script>
+  <script src="assets/js/data.js?v=16"></script>
+  <script src="assets/js/app.js?v=16"></script>
   <script>
     function renderAuth() {
       document.getElementById('memberContent').innerHTML = `
@@ -126,6 +126,10 @@
                   <input type="tel" class="form-input" id="regPhone" required placeholder="08xxxxxxxxxx">
                 </div>
                 <div class="form-group">
+                  <label class="form-label">Tanggal Lahir <span style="font-weight:400;color:var(--text-muted);font-size:12px">(dapat bonus 200 poin tiap ultah 🎂)</span></label>
+                  <input type="date" class="form-input" id="regBirthday" required>
+                </div>
+                <div class="form-group">
                   <label class="form-label">Password</label>
                   <input type="password" class="form-input" id="regPassword" required placeholder="Min. 6 karakter" minlength="6">
                 </div>
@@ -162,11 +166,19 @@
       const name = document.getElementById('regName').value;
       const email = document.getElementById('regEmail').value;
       const phone = document.getElementById('regPhone').value;
+      const birthday = document.getElementById('regBirthday').value;
       const password = document.getElementById('regPassword').value;
       const result = registerUser(name, email, phone, password);
       if (!result.ok) {
         showToast(result.msg, 'error');
         return false;
+      }
+      // Save birthday to user record
+      const users = getUsers();
+      const idx = users.findIndex(u => u.id === result.user.id);
+      if (idx >= 0) {
+        users[idx].birthday = birthday;
+        saveUsers(users);
       }
       showToast(`Registrasi berhasil! +100 poin bonus`, 'success');
       setTimeout(() => location.reload(), 800);
@@ -174,11 +186,31 @@
     }
 
     function renderDashboard(user) {
+      // 1. Check birthday — award bonus if today is user's birthday
+      const bdayBonus = checkBirthdayBonus();
+      if (bdayBonus) {
+        // refresh user data after bonus
+        user = getCurrentUser();
+        setTimeout(() => showToast(`🎂 Happy Birthday! +${bdayBonus.points} poin bonus!`, 'success'), 500);
+      }
+
       const tier = getUserTier(user.points);
       const orderCount = user.history.filter(h => h.type === 'add').length;
 
+      // Check-in status
+      const ci = checkinStatus(user);
+      const today = todayDateStr();
+      const isBirthdayToday = user.birthday && (() => {
+        const t = new Date();
+        const md = `${String(t.getMonth()+1).padStart(2,'0')}-${String(t.getDate()).padStart(2,'0')}`;
+        return user.birthday.substring(5) === md;
+      })();
+
       // Sort history newest first
       const history = [...user.history].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+      // Wishlist
+      const wishlistProducts = typeof getWishlistProducts === 'function' ? getWishlistProducts() : [];
 
       document.getElementById('memberContent').innerHTML = `
         <div class="dashboard">
@@ -189,6 +221,7 @@
             <ul class="dash-menu">
               <li><a href="#" class="active">📊 Dashboard</a></li>
               <li><a href="#poin">⭐ Poin & Reward</a></li>
+              <li><a href="#wishlist">❤️ Wishlist (${wishlistProducts.length})</a></li>
               <li><a href="#history">📜 Riwayat</a></li>
               <li><a href="catalog.html">🛍 Belanja</a></li>
               <li><a href="contact.html">💬 Bantuan</a></li>
@@ -197,6 +230,27 @@
           </aside>
 
           <div class="dash-content">
+            ${isBirthdayToday ? `
+            <div class="birthday-banner">
+              <div class="birthday-icon">🎂</div>
+              <div class="birthday-text">
+                <h3>Happy Birthday, ${user.name.split(' ')[0]}!</h3>
+                <p>Kamu dapat <strong>+200 poin bonus</strong> dari Vapertize. Semoga sehat & cuannya banyak!</p>
+              </div>
+            </div>` : ''}
+
+            <!-- Daily Check-in -->
+            <div class="checkin-card">
+              <div class="checkin-info">
+                ${ci.streak > 0 ? `<span class="checkin-streak">🔥 ${ci.streak} hari streak</span>` : ''}
+                <div class="checkin-title">${ci.canCheckIn ? 'Check-in Hari Ini' : 'Sudah Check-in Hari Ini ✓'}</div>
+                <div class="checkin-sub">${ci.canCheckIn ? 'Dapatkan 5 poin gratis tiap hari. Streak 7 hari = bonus +50 poin!' : 'Balik lagi besok untuk lanjutkan streak. Jangan sampai putus ya!'}</div>
+              </div>
+              <button class="checkin-btn" onclick="handleCheckin()" ${ci.canCheckIn ? '' : 'disabled'}>
+                ${ci.canCheckIn ? '⭐ Check-in (+5 poin)' : '✓ Sudah Check-in'}
+              </button>
+            </div>
+
             <!-- Point Card -->
             <div class="point-card">
               <div class="point-label">Total Poin Kamu</div>
@@ -243,6 +297,29 @@
               </div>
             </div>
 
+            <!-- Wishlist -->
+            <div class="dash-card wishlist-section" id="wishlist">
+              <h3>❤️ Wishlist Saya (${wishlistProducts.length})</h3>
+              ${wishlistProducts.length === 0 ? `
+                <div class="wishlist-empty">
+                  Belum ada produk di wishlist.<br>
+                  <a href="catalog.html">Mulai jelajahi katalog →</a>
+                </div>
+              ` : `
+                <div class="wishlist-grid">
+                  ${wishlistProducts.map(p => `
+                    <div class="wishlist-item">
+                      <button class="wishlist-item-remove" onclick="removeFromWishlist('${p.id}')" title="Hapus">×</button>
+                      <div class="wishlist-item-icon">${p.icon || '📦'}</div>
+                      <div class="wishlist-item-name">${p.name}</div>
+                      <div class="wishlist-item-price">${formatRupiah(p.price)}</div>
+                      <button class="btn btn-whatsapp btn-sm btn-block" style="margin-top:10px" onclick="orderProductWA('${p.id}')">💬 Order via WA</button>
+                    </div>
+                  `).join('')}
+                </div>
+              `}
+            </div>
+
             <!-- History -->
             <div class="dash-card" id="history">
               <h3>📜 Riwayat Poin</h3>
@@ -281,6 +358,22 @@
       saveUsers(users);
       showToast(`Reward berhasil ditukar! Cek WA untuk klaim.`, 'success');
       renderDashboard(users[idx]);
+    }
+
+    function handleCheckin() {
+      const r = doDailyCheckIn();
+      if (!r.ok) {
+        showToast(r.msg, 'error');
+        return;
+      }
+      showToast(`✓ Check-in berhasil! +${r.points} poin${r.bonusMsg || ''}`, 'success');
+      setTimeout(() => renderDashboard(getCurrentUser()), 500);
+    }
+
+    function removeFromWishlist(id) {
+      toggleWishlist(id);
+      showToast('Dihapus dari wishlist', 'info');
+      renderDashboard(getCurrentUser());
     }
 
     function pageInit() {
