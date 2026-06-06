@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-06T03:57:15+07:00",
-  "totalProducts": 814,
+  "updated": "2026-06-07T01:27:12+07:00",
+  "totalProducts": 805,
   "categories": [
     "accessories",
     "atomizer",
@@ -31,32 +31,6 @@
       "image": "assets/img/products/4000173.webp"
     },
     {
-      "id": "5000212",
-      "name": "Cartridge Oxva Xlim V3 - 0.4 Ohm",
-      "brand": "Cartridge Oxva",
-      "category": "cartridge-cotton",
-      "price": 40000,
-      "stock": {
-        "bangil": 8,
-        "pandaan": 14
-      },
-      "icon": "🧵",
-      "image": "assets/img/products/5000212.webp"
-    },
-    {
-      "id": "5000215",
-      "name": "Cartridge Oxva Xlim V3 (2ML) - 0.6 Ohm",
-      "brand": "Cartridge Oxva",
-      "category": "cartridge-cotton",
-      "price": 40000,
-      "stock": {
-        "bangil": 10,
-        "pandaan": 9
-      },
-      "icon": "🧵",
-      "image": "assets/img/products/5000215.webp"
-    },
-    {
       "id": "5000213",
       "name": "Cartridge Oxva Xlim V3 - 0.6 Ohm",
       "brand": "Cartridge Oxva",
@@ -64,49 +38,10 @@
       "price": 40000,
       "stock": {
         "bangil": 6,
-        "pandaan": 13
+        "pandaan": 17
       },
       "icon": "🧵",
       "image": "assets/img/products/5000213.webp"
-    },
-    {
-      "id": "4000210",
-      "name": "Coil Power Built Bright",
-      "brand": "Coil Power",
-      "category": "coil-wire",
-      "price": 65000,
-      "stock": {
-        "bangil": 9,
-        "pandaan": 10
-      },
-      "icon": "🌀",
-      "image": "assets/img/products/4000210.webp"
-    },
-    {
-      "id": "6000084",
-      "name": "Cartridge Foom X",
-      "brand": "Cartridge Foom",
-      "category": "cartridge-cotton",
-      "price": 34000,
-      "stock": {
-        "bangil": 7,
-        "pandaan": 11
-      },
-      "icon": "🧵",
-      "image": "assets/img/products/6000084.webp"
-    },
-    {
-      "id": "5000216",
-      "name": "Cartridge Oxva Xlim V3 (2ML) - 0.8 Ohm",
-      "brand": "Cartridge Oxva",
-      "category": "cartridge-cotton",
-      "price": 40000,
-      "stock": {
-        "bangil": 9,
-        "pandaan": 9
-      },
-      "icon": "🧵",
-      "image": "assets/img/products/5000216.webp"
     },
     {
       "id": "5000214",
@@ -116,49 +51,36 @@
       "price": 40000,
       "stock": {
         "bangil": 6,
-        "pandaan": 12
+        "pandaan": 16
       },
       "icon": "🧵",
       "image": "assets/img/products/5000214.webp"
     },
     {
-      "id": "5000210",
-      "name": "Cartridge E Plus Top Fill - 0.3 Ohm",
-      "brand": "Cartridge E",
+      "id": "6000084",
+      "name": "Cartridge Foom X",
+      "brand": "Cartridge Foom",
       "category": "cartridge-cotton",
-      "price": 40000,
+      "price": 34000,
       "stock": {
-        "bangil": 7,
-        "pandaan": 9
+        "bangil": 10,
+        "pandaan": 11
       },
       "icon": "🧵",
-      "image": "assets/img/products/5000210.webp"
+      "image": "assets/img/products/6000084.webp"
     },
     {
-      "id": "5000224",
-      "name": "Cartridge Vaporesso Xros ( 3ML ) - 0.6 Ohm",
-      "brand": "Cartridge",
-      "category": "cartridge-cotton",
-      "price": 40000,
-      "stock": {
-        "bangil": 6,
-        "pandaan": 9
-      },
-      "icon": "🧵",
-      "image": "assets/img/products/5000224.webp"
-    },
-    {
-      "id": "5000225",
-      "name": "Cartridge Vaporesso Xros ( 3ML ) - 0.8 Ohm",
-      "brand": "Cartridge",
+      "id": "5000212",
+      "name": "Cartridge Oxva Xlim V3 - 0.4 Ohm",
+      "brand": "Cartridge Oxva",
       "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
         "bangil": 8,
-        "pandaan": 7
+        "pandaan": 13
       },
       "icon": "🧵",
-      "image": "assets/img/products/5000225.webp"
+      "image": "assets/img/products/5000212.webp"
     },
     {
       "id": "5000197",
@@ -167,11 +89,50 @@
       "category": "cartridge-cotton",
       "price": 35000,
       "stock": {
-        "bangil": 4,
+        "bangil": 8,
         "pandaan": 10
       },
       "icon": "🧵",
       "image": "assets/img/products/5000197.webp"
+    },
+    {
+      "id": "4000210",
+      "name": "Coil Power Built Bright",
+      "brand": "Coil Power",
+      "category": "coil-wire",
+      "price": 65000,
+      "stock": {
+        "bangil": 8,
+        "pandaan": 10
+      },
+      "icon": "🌀",
+      "image": "assets/img/products/4000210.webp"
+    },
+    {
+      "id": "5000215",
+      "name": "Cartridge Oxva Xlim V3 (2ML) - 0.6 Ohm",
+      "brand": "Cartridge Oxva",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 9,
+        "pandaan": 8
+      },
+      "icon": "🧵",
+      "image": "assets/img/products/5000215.webp"
+    },
+    {
+      "id": "5000210",
+      "name": "Cartridge E Plus Top Fill - 0.3 Ohm",
+      "brand": "Cartridge E",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 6,
+        "pandaan": 8
+      },
+      "icon": "🧵",
+      "image": "assets/img/products/5000210.webp"
     },
     {
       "id": "5000209",
@@ -187,19 +148,6 @@
       "image": "assets/img/products/5000209.webp"
     },
     {
-      "id": "5000201",
-      "name": "Cartridge VSEE One Pod kit - 0.6 Ohm",
-      "brand": "Cartridge Vsee",
-      "category": "cartridge-cotton",
-      "price": 35000,
-      "stock": {
-        "bangil": 6,
-        "pandaan": 8
-      },
-      "icon": "🧵",
-      "image": "assets/img/products/5000201.webp"
-    },
-    {
       "id": "5000182",
       "name": "Cartridge Nixx Pod - 0.8 Ohm",
       "brand": "Cartridge Nixx",
@@ -213,17 +161,43 @@
       "image": "assets/img/products/5000182.webp"
     },
     {
-      "id": "5000219",
-      "name": "Cartridge E Plus Top Fill - 0.8 Ohm",
-      "brand": "Cartridge E",
+      "id": "5000188",
+      "name": "Cartridge Oxva Nexlim - 0.8 Ohm",
+      "brand": "Cartridge Oxva",
+      "category": "cartridge-cotton",
+      "price": 45000,
+      "stock": {
+        "bangil": 7,
+        "pandaan": 6
+      },
+      "icon": "🧵",
+      "image": "assets/img/products/5000188.webp"
+    },
+    {
+      "id": "5000216",
+      "name": "Cartridge Oxva Xlim V3 (2ML) - 0.8 Ohm",
+      "brand": "Cartridge Oxva",
       "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
-        "bangil": 4,
+        "bangil": 7,
+        "pandaan": 6
+      },
+      "icon": "🧵",
+      "image": "assets/img/products/5000216.webp"
+    },
+    {
+      "id": "5000201",
+      "name": "Cartridge VSEE One Pod kit - 0.6 Ohm",
+      "brand": "Cartridge Vsee",
+      "category": "cartridge-cotton",
+      "price": 35000,
+      "stock": {
+        "bangil": 5,
         "pandaan": 8
       },
       "icon": "🧵",
-      "image": "assets/img/products/5000219.webp"
+      "image": "assets/img/products/5000201.webp"
     },
     {
       "id": "5000218",
@@ -252,17 +226,17 @@
       "image": "assets/img/products/6000149.webp"
     },
     {
-      "id": "5000227",
-      "name": "Cartridge Foom X Ultra",
-      "brand": "Cartridge Foom",
+      "id": "5000194",
+      "name": "Cartridge Ursa - V3 0.8 Ohm",
+      "brand": "Cartridge Ursa",
       "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
-        "bangil": 5,
+        "bangil": 6,
         "pandaan": 6
       },
       "icon": "🧵",
-      "image": "assets/img/products/5000227.webp"
+      "image": "assets/img/products/5000194.webp"
     },
     {
       "id": "5000178",
@@ -278,30 +252,17 @@
       "image": "assets/img/products/5000178.webp"
     },
     {
-      "id": "5000188",
-      "name": "Cartridge Oxva Nexlim - 0.8 Ohm",
-      "brand": "Cartridge Oxva",
-      "category": "cartridge-cotton",
-      "price": 45000,
-      "stock": {
-        "bangil": 4,
-        "pandaan": 7
-      },
-      "icon": "🧵",
-      "image": "assets/img/products/5000188.webp"
-    },
-    {
-      "id": "5000193",
-      "name": "Cartridge Ursa - V3 0.6 Ohm",
-      "brand": "Cartridge Ursa",
+      "id": "5000225",
+      "name": "Cartridge Vaporesso Xros ( 3ML ) - 0.8 Ohm",
+      "brand": "Cartridge",
       "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
-        "bangil": 7,
-        "pandaan": 4
+        "bangil": 6,
+        "pandaan": 5
       },
       "icon": "🧵",
-      "image": "assets/img/products/5000193.webp"
+      "image": "assets/img/products/5000225.webp"
     },
     {
       "id": "5000206",
@@ -317,17 +278,69 @@
       "image": "assets/img/products/5000206.webp"
     },
     {
-      "id": "5000194",
-      "name": "Cartridge Ursa - V3 0.8 Ohm",
+      "id": "5000219",
+      "name": "Cartridge E Plus Top Fill - 0.8 Ohm",
+      "brand": "Cartridge E",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 8
+      },
+      "icon": "🧵",
+      "image": "assets/img/products/5000219.webp"
+    },
+    {
+      "id": "5000227",
+      "name": "Cartridge Foom X Ultra",
+      "brand": "Cartridge Foom",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 4,
+        "pandaan": 6
+      },
+      "icon": "🧵",
+      "image": "assets/img/products/5000227.webp"
+    },
+    {
+      "id": "5000186",
+      "name": "Cartridge Oxva VPrime - 0.2 Ohm",
+      "brand": "Cartridge Oxva",
+      "category": "cartridge-cotton",
+      "price": 50000,
+      "stock": {
+        "bangil": 6,
+        "pandaan": 4
+      },
+      "icon": "🧵",
+      "image": "assets/img/products/5000186.webp"
+    },
+    {
+      "id": "5000193",
+      "name": "Cartridge Ursa - V3 0.6 Ohm",
       "brand": "Cartridge Ursa",
       "category": "cartridge-cotton",
       "price": 40000,
       "stock": {
-        "bangil": 7,
-        "pandaan": 3
+        "bangil": 6,
+        "pandaan": 4
       },
       "icon": "🧵",
-      "image": "assets/img/products/5000194.webp"
+      "image": "assets/img/products/5000193.webp"
+    },
+    {
+      "id": "5000224",
+      "name": "Cartridge Vaporesso Xros ( 3ML ) - 0.6 Ohm",
+      "brand": "Cartridge",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 3,
+        "pandaan": 7
+      },
+      "icon": "🧵",
+      "image": "assets/img/products/5000224.webp"
     },
     {
       "id": "5000189",
@@ -408,17 +421,17 @@
       "image": "assets/img/products/6000148.webp"
     },
     {
-      "id": "5000207",
-      "name": "Cartridge TRML T-Max - 0.6 Ohm",
-      "brand": "Cartridge Trml",
+      "id": "5000200",
+      "name": "Cartridge Oxva Xlim DNA SS - 0.8 Ohm",
+      "brand": "Cartridge Oxva",
       "category": "cartridge-cotton",
-      "price": 35000,
+      "price": 45000,
       "stock": {
-        "bangil": 5,
-        "pandaan": 4
+        "bangil": 3,
+        "pandaan": 6
       },
       "icon": "🧵",
-      "image": "assets/img/products/5000207.webp"
+      "image": "assets/img/products/5000200.webp"
     },
     {
       "id": "4000201",
@@ -434,30 +447,17 @@
       "image": "assets/img/products/4000201.webp"
     },
     {
-      "id": "2000147",
-      "name": "Perfect Build x Vapertize - 0.16 Ohm",
-      "brand": "Perfect Build",
+      "id": "4000209",
+      "name": "Tack Coil - Signature Fusion Matic Single",
+      "brand": "Tack Coil",
       "category": "coil-wire",
-      "price": 80000,
-      "stock": {
-        "bangil": 9,
-        "pandaan": 0
-      },
-      "icon": "🌀",
-      "image": "assets/img/products/2000147.webp"
-    },
-    {
-      "id": "4000213",
-      "name": "The Fused Clapton AIO by Powerbuild",
-      "brand": "The Fused",
-      "category": "coil-wire",
-      "price": 40000,
+      "price": 55000,
       "stock": {
         "bangil": 5,
         "pandaan": 4
       },
       "icon": "🌀",
-      "image": "assets/img/products/4000213.webp"
+      "image": "assets/img/products/4000209.webp"
     },
     {
       "id": "2000049",
@@ -473,17 +473,17 @@
       "image": "assets/img/products/2000049.webp"
     },
     {
-      "id": "1003260",
-      "name": "Juta Freeze Salt 15ml - Purple Grape 10mg",
-      "brand": "Juta Freeze",
+      "id": "1004999",
+      "name": "Omnipod Pods Friendly 4 x 15ml - V2 Creamy 12mg",
+      "brand": "Omnipod Pods",
       "category": "liquid",
-      "price": 40000,
+      "price": 35000,
       "stock": {
         "bangil": 5,
         "pandaan": 4
       },
       "icon": "💧",
-      "image": "assets/img/products/1003260.webp"
+      "image": "assets/img/products/1004999.webp"
     },
     {
       "id": "1004438",
@@ -512,19 +512,6 @@
       "image": "assets/img/products/5000167.webp"
     },
     {
-      "id": "5000186",
-      "name": "Cartridge Oxva VPrime - 0.2 Ohm",
-      "brand": "Cartridge Oxva",
-      "category": "cartridge-cotton",
-      "price": 50000,
-      "stock": {
-        "bangil": 4,
-        "pandaan": 4
-      },
-      "icon": "🧵",
-      "image": "assets/img/products/5000186.webp"
-    },
-    {
       "id": "5000220",
       "name": "Cartridge Oxva Xlim DNA SS - 0.4 Ohm",
       "brand": "Cartridge Oxva",
@@ -551,17 +538,17 @@
       "image": "assets/img/products/2000142.webp"
     },
     {
-      "id": "4000209",
-      "name": "Tack Coil - Signature Fusion Matic Single",
+      "id": "4000211",
+      "name": "Tack Coil - Fusion Matic AIO",
       "brand": "Tack Coil",
       "category": "coil-wire",
-      "price": 55000,
+      "price": 50000,
       "stock": {
-        "bangil": 4,
-        "pandaan": 4
+        "bangil": 5,
+        "pandaan": 3
       },
       "icon": "🌀",
-      "image": "assets/img/products/4000209.webp"
+      "image": "assets/img/products/4000211.webp"
     },
     {
       "id": "2000053",
@@ -575,6 +562,45 @@
       },
       "icon": "🌀",
       "image": "assets/img/products/2000053.webp"
+    },
+    {
+      "id": "1003260",
+      "name": "Juta Freeze Salt 15ml - Purple Grape 10mg",
+      "brand": "Juta Freeze",
+      "category": "liquid",
+      "price": 40000,
+      "stock": {
+        "bangil": 4,
+        "pandaan": 4
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1003260.webp"
+    },
+    {
+      "id": "1005118",
+      "name": "Omnipod Pods Friendly 4 x 15ml - Coffee 12mg",
+      "brand": "Omnipod Pods",
+      "category": "liquid",
+      "price": 35000,
+      "stock": {
+        "bangil": 4,
+        "pandaan": 4
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005118.webp"
+    },
+    {
+      "id": "1005026",
+      "name": "Omnipod Pods Friendly 4 x 15ml - V1 Creamy 12mg",
+      "brand": "Omnipod Pods",
+      "category": "liquid",
+      "price": 35000,
+      "stock": {
+        "bangil": 4,
+        "pandaan": 4
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005026.webp"
     },
     {
       "id": "1005103",
@@ -642,30 +668,17 @@
       "image": "assets/img/products/2000030.webp"
     },
     {
-      "id": "2000031",
-      "name": "Kendo Cotton - Gold Edition",
-      "brand": "Kendo Cotton",
+      "id": "2000147",
+      "name": "Perfect Build x Vapertize - 0.16 Ohm",
+      "brand": "Perfect Build",
       "category": "coil-wire",
       "price": 80000,
       "stock": {
-        "bangil": 3,
-        "pandaan": 4
+        "bangil": 7,
+        "pandaan": 0
       },
       "icon": "🌀",
-      "image": "assets/img/products/2000031.webp"
-    },
-    {
-      "id": "4000207",
-      "name": "Tack Coil - Baby Alien",
-      "brand": "Tack Coil",
-      "category": "coil-wire",
-      "price": 50000,
-      "stock": {
-        "bangil": 3,
-        "pandaan": 4
-      },
-      "icon": "🌀",
-      "image": "assets/img/products/4000207.webp"
+      "image": "assets/img/products/2000147.webp"
     },
     {
       "id": "1004152",
@@ -679,19 +692,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1004152.webp"
-    },
-    {
-      "id": "1004609",
-      "name": "Juta Freeze Salt 15ml - Red Apple 10mg",
-      "brand": "Juta Freeze",
-      "category": "liquid",
-      "price": 40000,
-      "stock": {
-        "bangil": 3,
-        "pandaan": 4
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004609.webp"
     },
     {
       "id": "1004529",
@@ -746,30 +746,17 @@
       "image": "assets/img/products/4000127.webp"
     },
     {
-      "id": "5000211",
-      "name": "Cartridge E Plus Top Fill - 0.6 Ohm",
-      "brand": "Cartridge E",
+      "id": "5000207",
+      "name": "Cartridge TRML T-Max - 0.6 Ohm",
+      "brand": "Cartridge Trml",
       "category": "cartridge-cotton",
-      "price": 40000,
+      "price": 35000,
       "stock": {
-        "bangil": 0,
-        "pandaan": 6
+        "bangil": 4,
+        "pandaan": 2
       },
       "icon": "🧵",
-      "image": "assets/img/products/5000211.webp"
-    },
-    {
-      "id": "5000200",
-      "name": "Cartridge Oxva Xlim DNA SS - 0.8 Ohm",
-      "brand": "Cartridge Oxva",
-      "category": "cartridge-cotton",
-      "price": 45000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 6
-      },
-      "icon": "🧵",
-      "image": "assets/img/products/5000200.webp"
+      "image": "assets/img/products/5000207.webp"
     },
     {
       "id": "5000202",
@@ -811,30 +798,30 @@
       "image": "assets/img/products/2000150.webp"
     },
     {
-      "id": "4000211",
-      "name": "Tack Coil - Fusion Matic AIO",
-      "brand": "Tack Coil",
+      "id": "2000031",
+      "name": "Kendo Cotton - Gold Edition",
+      "brand": "Kendo Cotton",
       "category": "coil-wire",
-      "price": 50000,
-      "stock": {
-        "bangil": 3,
-        "pandaan": 3
-      },
-      "icon": "🌀",
-      "image": "assets/img/products/4000211.webp"
-    },
-    {
-      "id": "4000212",
-      "name": "The Fused Clapton by Powerbuild",
-      "brand": "The Fused",
-      "category": "coil-wire",
-      "price": 40000,
+      "price": 80000,
       "stock": {
         "bangil": 2,
         "pandaan": 4
       },
       "icon": "🌀",
-      "image": "assets/img/products/4000212.webp"
+      "image": "assets/img/products/2000031.webp"
+    },
+    {
+      "id": "4000207",
+      "name": "Tack Coil - Baby Alien",
+      "brand": "Tack Coil",
+      "category": "coil-wire",
+      "price": 50000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 4
+      },
+      "icon": "🌀",
+      "image": "assets/img/products/4000207.webp"
     },
     {
       "id": "1004398",
@@ -850,6 +837,19 @@
       "image": "assets/img/products/1004398.webp"
     },
     {
+      "id": "1004643",
+      "name": "Juta Freeze Salt 15ml - Lychee 10mg",
+      "brand": "Juta Freeze",
+      "category": "liquid",
+      "price": 40000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 4
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004643.webp"
+    },
+    {
       "id": "1004679",
       "name": "Juta Freeze Salt 15ml - Melon 10mg",
       "brand": "Juta Freeze",
@@ -863,17 +863,17 @@
       "image": "assets/img/products/1004679.webp"
     },
     {
-      "id": "1005026",
-      "name": "Omnipod Pods Friendly 4 x 15ml - V1 Creamy 12mg",
-      "brand": "Omnipod Pods",
+      "id": "1004609",
+      "name": "Juta Freeze Salt 15ml - Red Apple 10mg",
+      "brand": "Juta Freeze",
       "category": "liquid",
-      "price": 35000,
+      "price": 40000,
       "stock": {
-        "bangil": 6,
-        "pandaan": 0
+        "bangil": 3,
+        "pandaan": 3
       },
       "icon": "💧",
-      "image": "assets/img/products/1005026.webp"
+      "image": "assets/img/products/1004609.webp"
     },
     {
       "id": "1005104",
@@ -928,6 +928,19 @@
       "image": "assets/img/products/7000083.webp"
     },
     {
+      "id": "5000211",
+      "name": "Cartridge E Plus Top Fill - 0.6 Ohm",
+      "brand": "Cartridge E",
+      "category": "cartridge-cotton",
+      "price": 40000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 5
+      },
+      "icon": "🧵",
+      "image": "assets/img/products/5000211.webp"
+    },
+    {
       "id": "5000208",
       "name": "Cartridge Wasp Nano Pod - V2 0.6 Ohm",
       "brand": "Cartridge Wasp",
@@ -980,69 +993,17 @@
       "image": "assets/img/products/2000111.webp"
     },
     {
-      "id": "1004772",
-      "name": "Hanna Pods Friendly Bubblegum Series 30ml - Grape 15mg",
-      "brand": "Hanna Pods",
-      "category": "liquid",
-      "price": 75000,
-      "stock": {
-        "bangil": 3,
-        "pandaan": 2
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004772.webp"
-    },
-    {
-      "id": "1004697",
-      "name": "Hanna Pods Friendly Series 15ml - Berry 15mg",
-      "brand": "Hanna Pods",
-      "category": "liquid",
+      "id": "4000213",
+      "name": "The Fused Clapton AIO by Powerbuild",
+      "brand": "The Fused",
+      "category": "coil-wire",
       "price": 40000,
       "stock": {
         "bangil": 3,
         "pandaan": 2
       },
-      "icon": "💧",
-      "image": "assets/img/products/1004697.webp"
-    },
-    {
-      "id": "1004515",
-      "name": "Hanna Pods Friendly Series 30ml - Blueberry 15mg",
-      "brand": "Hanna Pods",
-      "category": "liquid",
-      "price": 75000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 3
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004515.webp"
-    },
-    {
-      "id": "1002979",
-      "name": "Hanna Pods Friendly Series 30ml - Mango 15mg",
-      "brand": "Hanna Pods",
-      "category": "liquid",
-      "price": 75000,
-      "stock": {
-        "bangil": 3,
-        "pandaan": 2
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1002979.webp"
-    },
-    {
-      "id": "1004985",
-      "name": "Juta Freeze Salt 15ml - Blackcurrant 10mg",
-      "brand": "Juta Freeze",
-      "category": "liquid",
-      "price": 40000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 3
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004985.webp"
+      "icon": "🌀",
+      "image": "assets/img/products/4000213.webp"
     },
     {
       "id": "1005194",
@@ -1136,19 +1097,6 @@
       "image": "assets/img/products/1005102.webp"
     },
     {
-      "id": "1004999",
-      "name": "Omnipod Pods Friendly 4 x 15ml - V2 Creamy 12mg",
-      "brand": "Omnipod Pods",
-      "category": "liquid",
-      "price": 35000,
-      "stock": {
-        "bangil": 5,
-        "pandaan": 0
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004999.webp"
-    },
-    {
       "id": "1004414",
       "name": "Selleragoll Coffee Pods Friendly Series 15ml - Moccacino 12mg",
       "brand": "Selleragoll Coffee",
@@ -1227,6 +1175,19 @@
       "image": "assets/img/products/6000072.webp"
     },
     {
+      "id": "5000192",
+      "name": "Cartridge Oxva VPrime - 0.6 Ohm",
+      "brand": "Cartridge Oxva",
+      "category": "cartridge-cotton",
+      "price": 50000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 2
+      },
+      "icon": "🧵",
+      "image": "assets/img/products/5000192.webp"
+    },
+    {
       "id": "6000087",
       "name": "Cartridge Poprell P1 - 1.2 Ohm",
       "brand": "Cartridge",
@@ -1292,6 +1253,19 @@
       "image": "assets/img/products/2000051.webp"
     },
     {
+      "id": "4000212",
+      "name": "The Fused Clapton by Powerbuild",
+      "brand": "The Fused",
+      "category": "coil-wire",
+      "price": 40000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 4
+      },
+      "icon": "🌀",
+      "image": "assets/img/products/4000212.webp"
+    },
+    {
       "id": "2000029",
       "name": "Voopoo Coil - 1.0 Ohm",
       "brand": "Voopoo Coil",
@@ -1305,19 +1279,6 @@
       "image": "assets/img/products/2000029.webp"
     },
     {
-      "id": "2001939",
-      "name": "Vaporesso Xros 5 Mini Muklay Bundling Pod Kit - Guitar",
-      "brand": "Vaporesso Xros",
-      "category": "device",
-      "price": 215000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 2
-      },
-      "icon": "🔋",
-      "image": "assets/img/products/2001939.webp"
-    },
-    {
       "id": "2001940",
       "name": "Vaporesso Xros 5 Mini Muklay Bundling Pod Kit - Keyboard",
       "brand": "Vaporesso Xros",
@@ -1329,19 +1290,6 @@
       },
       "icon": "🔋",
       "image": "assets/img/products/2001940.webp"
-    },
-    {
-      "id": "1005240",
-      "name": "A La Carte Ice Cream Series 60ml - Cookies and Cream 3mg",
-      "brand": "A La",
-      "category": "liquid",
-      "price": 150000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 2
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005240.webp"
     },
     {
       "id": "1005241",
@@ -1396,19 +1344,6 @@
       "image": "assets/img/products/1005244.webp"
     },
     {
-      "id": "1005245",
-      "name": "A La Carte Ice Cream Series 60ml - Taro 6mg",
-      "brand": "A La",
-      "category": "liquid",
-      "price": 150000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 2
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005245.webp"
-    },
-    {
       "id": "1004890",
       "name": "Crackz Ice Pack Saltnic 15ml - V5 Blueberry Ice Cream 25mg",
       "brand": "Crackz Ice",
@@ -1448,19 +1383,6 @@
       "image": "assets/img/products/1003502.webp"
     },
     {
-      "id": "1004955",
-      "name": "Foom Salt Slof Series 15ml - Matcha Latte 30mg",
-      "brand": "Foom Salt",
-      "category": "liquid",
-      "price": 57500,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 2
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004955.webp"
-    },
-    {
       "id": "1005061",
       "name": "Hanna Pods Friendly Bubblegum Series 15ml - Grape 15mg",
       "brand": "Hanna Pods",
@@ -1485,6 +1407,19 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1005062.webp"
+    },
+    {
+      "id": "1004772",
+      "name": "Hanna Pods Friendly Bubblegum Series 30ml - Grape 15mg",
+      "brand": "Hanna Pods",
+      "category": "liquid",
+      "price": 75000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 2
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004772.webp"
     },
     {
       "id": "1003151",
@@ -1552,17 +1487,17 @@
       "image": "assets/img/products/1004978.webp"
     },
     {
-      "id": "1003259",
-      "name": "Juta Freeze Salt 15ml - Double Mango 10mg",
+      "id": "1004985",
+      "name": "Juta Freeze Salt 15ml - Blackcurrant 10mg",
       "brand": "Juta Freeze",
       "category": "liquid",
       "price": 40000,
       "stock": {
-        "bangil": 4,
-        "pandaan": 0
+        "bangil": 1,
+        "pandaan": 3
       },
       "icon": "💧",
-      "image": "assets/img/products/1003259.webp"
+      "image": "assets/img/products/1004985.webp"
     },
     {
       "id": "1003973",
@@ -1576,19 +1511,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1003973.webp"
-    },
-    {
-      "id": "1003974",
-      "name": "Juta Freeze Salt 15ml - Taro Ice Cream Mild 10mg",
-      "brand": "Juta Freeze",
-      "category": "liquid",
-      "price": 40000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 2
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1003974.webp"
     },
     {
       "id": "1005192",
@@ -1641,6 +1563,45 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1003902.webp"
+    },
+    {
+      "id": "1005229",
+      "name": "Makna 60ml - Strawberry Milk 3mg",
+      "brand": "Makna",
+      "category": "liquid",
+      "price": 140000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 2
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005229.webp"
+    },
+    {
+      "id": "1005230",
+      "name": "Makna 60ml - Strawberry Milk 7mg",
+      "brand": "Makna",
+      "category": "liquid",
+      "price": 140000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 2
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005230.webp"
+    },
+    {
+      "id": "1005231",
+      "name": "Makna Ice Saltnic Series 30ml - Strawberry Milk 30mg",
+      "brand": "Makna Ice",
+      "category": "liquid",
+      "price": 120000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 2
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005231.webp"
     },
     {
       "id": "1005166",
@@ -1786,19 +1747,6 @@
       "image": "assets/img/products/1005198.webp"
     },
     {
-      "id": "1005224",
-      "name": "Tokyo Crepes 60ml - Original Cheese Milk 3mg",
-      "brand": "Tokyo Crepes",
-      "category": "liquid",
-      "price": 160000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 2
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005224.webp"
-    },
-    {
       "id": "7000079",
       "name": "Battery Blackcell DNA 18650 - 2500mAh",
       "brand": "Battery",
@@ -1810,19 +1758,6 @@
       },
       "icon": "⚡",
       "image": "assets/img/products/7000079.webp"
-    },
-    {
-      "id": "7000067",
-      "name": "Battery Charge Up - 3000mAh",
-      "brand": "Battery Charge",
-      "category": "battery-charger",
-      "price": 120000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 1
-      },
-      "icon": "⚡",
-      "image": "assets/img/products/7000067.webp"
     },
     {
       "id": "5000155",
@@ -1875,19 +1810,6 @@
       },
       "icon": "🧵",
       "image": "assets/img/products/6000036.webp"
-    },
-    {
-      "id": "5000164",
-      "name": "Cotton Monster Premium",
-      "brand": "Cotton",
-      "category": "cartridge-cotton",
-      "price": 50000,
-      "stock": {
-        "bangil": 3,
-        "pandaan": 0
-      },
-      "icon": "🧵",
-      "image": "assets/img/products/5000164.webp"
     },
     {
       "id": "6000044",
@@ -1968,19 +1890,6 @@
       "image": "assets/img/products/2000016.webp"
     },
     {
-      "id": "2001817",
-      "name": "Oxva Xlim Go 2 Bundling - Light Brown Shadow",
-      "brand": "Oxva Xlim",
-      "category": "device",
-      "price": 199000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 1
-      },
-      "icon": "🔋",
-      "image": "assets/img/products/2001817.webp"
-    },
-    {
       "id": "2001999",
       "name": "TRML T28 Pod Kit Bundling - Muted Pink",
       "brand": "Trml",
@@ -1992,6 +1901,45 @@
       },
       "icon": "🔋",
       "image": "assets/img/products/2001999.webp"
+    },
+    {
+      "id": "2001939",
+      "name": "Vaporesso Xros 5 Mini Muklay Bundling Pod Kit - Guitar",
+      "brand": "Vaporesso Xros",
+      "category": "device",
+      "price": 215000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 1
+      },
+      "icon": "🔋",
+      "image": "assets/img/products/2001939.webp"
+    },
+    {
+      "id": "1005240",
+      "name": "A La Carte Ice Cream Series 60ml - Cookies and Cream 3mg",
+      "brand": "A La",
+      "category": "liquid",
+      "price": 150000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 2
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005240.webp"
+    },
+    {
+      "id": "1005245",
+      "name": "A La Carte Ice Cream Series 60ml - Taro 6mg",
+      "brand": "A La",
+      "category": "liquid",
+      "price": 150000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 2
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005245.webp"
     },
     {
       "id": "1000688",
@@ -2033,8 +1981,8 @@
       "image": "assets/img/products/1003484.webp"
     },
     {
-      "id": "1002593",
-      "name": "Foom Salt 30ml - Bora Bora 30mg",
+      "id": "1002308",
+      "name": "Foom Salt 30ml - Fresh Cola 30mg",
       "brand": "Foom Salt",
       "category": "liquid",
       "price": 110000,
@@ -2043,7 +1991,20 @@
         "pandaan": 1
       },
       "icon": "💧",
-      "image": "assets/img/products/1002593.webp"
+      "image": "assets/img/products/1002308.webp"
+    },
+    {
+      "id": "1002309",
+      "name": "Foom Salt 30ml - Iced Cappucino 30mg",
+      "brand": "Foom Salt",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 2
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1002309.webp"
     },
     {
       "id": "1002310",
@@ -2059,30 +2020,17 @@
       "image": "assets/img/products/1002310.webp"
     },
     {
-      "id": "1002869",
-      "name": "Foom Salt 30ml - Icy Menthol 50mg",
+      "id": "1004955",
+      "name": "Foom Salt Slof Series 15ml - Matcha Latte 30mg",
       "brand": "Foom Salt",
       "category": "liquid",
-      "price": 110000,
+      "price": 57500,
       "stock": {
         "bangil": 2,
         "pandaan": 1
       },
       "icon": "💧",
-      "image": "assets/img/products/1002869.webp"
-    },
-    {
-      "id": "1005228",
-      "name": "Foom Salt Drink Series 30ml - Banana Milkshake 30mg",
-      "brand": "Foom Salt",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005228.webp"
+      "image": "assets/img/products/1004955.webp"
     },
     {
       "id": "1002941",
@@ -2111,32 +2059,6 @@
       "image": "assets/img/products/1004773.webp"
     },
     {
-      "id": "1004774",
-      "name": "Hanna Pods Friendly Bubblegum Series 30ml - Melon 15mg",
-      "brand": "Hanna Pods",
-      "category": "liquid",
-      "price": 75000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004774.webp"
-    },
-    {
-      "id": "1005147",
-      "name": "Hanna Pods Friendly Pudding Series 15ml - Blueberry 15mg",
-      "brand": "Hanna Pods",
-      "category": "liquid",
-      "price": 40000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 2
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005147.webp"
-    },
-    {
       "id": "1004696",
       "name": "Hanna Pods Friendly Series 15ml - Apple 15mg",
       "brand": "Hanna Pods",
@@ -2148,6 +2070,19 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1004696.webp"
+    },
+    {
+      "id": "1004697",
+      "name": "Hanna Pods Friendly Series 15ml - Berry 15mg",
+      "brand": "Hanna Pods",
+      "category": "liquid",
+      "price": 40000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004697.webp"
     },
     {
       "id": "1004700",
@@ -2176,8 +2111,8 @@
       "image": "assets/img/products/1003804.webp"
     },
     {
-      "id": "1003160",
-      "name": "Hanna Pods Friendly Series 30ml - Berry 15mg",
+      "id": "1004515",
+      "name": "Hanna Pods Friendly Series 30ml - Blueberry 15mg",
       "brand": "Hanna Pods",
       "category": "liquid",
       "price": 75000,
@@ -2186,20 +2121,20 @@
         "pandaan": 2
       },
       "icon": "💧",
-      "image": "assets/img/products/1003160.webp"
+      "image": "assets/img/products/1004515.webp"
     },
     {
-      "id": "1004771",
-      "name": "Hanna Pods Friendly Series 30ml - Flurry 15mg",
+      "id": "1002979",
+      "name": "Hanna Pods Friendly Series 30ml - Mango 15mg",
       "brand": "Hanna Pods",
       "category": "liquid",
       "price": 75000,
       "stock": {
-        "bangil": 2,
-        "pandaan": 1
+        "bangil": 1,
+        "pandaan": 2
       },
       "icon": "💧",
-      "image": "assets/img/products/1004771.webp"
+      "image": "assets/img/products/1002979.webp"
     },
     {
       "id": "1004406",
@@ -2254,17 +2189,30 @@
       "image": "assets/img/products/1004644.webp"
     },
     {
-      "id": "1003503",
-      "name": "Hanna Pods Friendly Series 30ml - Tea 15mg",
-      "brand": "Hanna Pods",
+      "id": "1003259",
+      "name": "Juta Freeze Salt 15ml - Double Mango 10mg",
+      "brand": "Juta Freeze",
       "category": "liquid",
-      "price": 75000,
+      "price": 40000,
       "stock": {
-        "bangil": 2,
-        "pandaan": 1
+        "bangil": 3,
+        "pandaan": 0
       },
       "icon": "💧",
-      "image": "assets/img/products/1003503.webp"
+      "image": "assets/img/products/1003259.webp"
+    },
+    {
+      "id": "1003974",
+      "name": "Juta Freeze Salt 15ml - Taro Ice Cream Mild 10mg",
+      "brand": "Juta Freeze",
+      "category": "liquid",
+      "price": 40000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 2
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1003974.webp"
     },
     {
       "id": "1000119",
@@ -2384,45 +2332,6 @@
       "image": "assets/img/products/1004766.webp"
     },
     {
-      "id": "1005211",
-      "name": "Liquid Dead Squad 60ml - V2 The Black Triangle 6mg",
-      "brand": "Liquid Dead",
-      "category": "liquid",
-      "price": 160000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005211.webp"
-    },
-    {
-      "id": "1000216",
-      "name": "Lunar Hexohm 60ml - Strawberry Cheesecake 6mg",
-      "brand": "Lunar Hexohm",
-      "category": "liquid",
-      "price": 155000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1000216.webp"
-    },
-    {
-      "id": "1005160",
-      "name": "Lunar Ice Cream 60ml - Rainbow 3mg",
-      "brand": "Lunar Ice",
-      "category": "liquid",
-      "price": 160000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 2
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005160.webp"
-    },
-    {
       "id": "1005161",
       "name": "Lunar Ice Cream 60ml - Rainbow 6mg",
       "brand": "Lunar Ice",
@@ -2447,32 +2356,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1005136.webp"
-    },
-    {
-      "id": "1005230",
-      "name": "Makna 60ml - Strawberry Milk 7mg",
-      "brand": "Makna",
-      "category": "liquid",
-      "price": 140000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 2
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005230.webp"
-    },
-    {
-      "id": "1002013",
-      "name": "Muffin and Xes 60ml - 3mg",
-      "brand": "Muffin And",
-      "category": "liquid",
-      "price": 150000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1002013.webp"
     },
     {
       "id": "1002254",
@@ -2527,19 +2410,6 @@
       "image": "assets/img/products/1004799.webp"
     },
     {
-      "id": "1005171",
-      "name": "Taze Saltnic 30ml - Ice Apple Punch 30mg",
-      "brand": "Taze",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005171.webp"
-    },
-    {
       "id": "1005172",
       "name": "Taze Saltnic 30ml - Ice Freezy Fruity 30mg",
       "brand": "Taze",
@@ -2553,19 +2423,6 @@
       "image": "assets/img/products/1005172.webp"
     },
     {
-      "id": "1005174",
-      "name": "Taze Saltnic 30ml - Ice Mango Blast 30mg",
-      "brand": "Taze",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005174.webp"
-    },
-    {
       "id": "1005175",
       "name": "Taze Saltnic Ice Candymilk Series 30ml - Honeydew 30mg",
       "brand": "Taze",
@@ -2577,19 +2434,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1005175.webp"
-    },
-    {
-      "id": "1005177",
-      "name": "Taze Saltnic Ice Candymilk Series 30ml - Taro 30mg",
-      "brand": "Taze",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 2
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005177.webp"
     },
     {
       "id": "1005179",
@@ -2631,17 +2475,17 @@
       "image": "assets/img/products/1005184.webp"
     },
     {
-      "id": "1005190",
-      "name": "Taze Saltnic Ice Nutri Series 30ml - Strawberry 30mg",
+      "id": "1005188",
+      "name": "Taze Saltnic Ice Nutri Series 30ml - Passion Fruit 30mg",
       "brand": "Taze",
       "category": "liquid",
       "price": 110000,
       "stock": {
-        "bangil": 2,
-        "pandaan": 1
+        "bangil": 1,
+        "pandaan": 2
       },
       "icon": "💧",
-      "image": "assets/img/products/1005190.webp"
+      "image": "assets/img/products/1005188.webp"
     },
     {
       "id": "1005232",
@@ -2683,6 +2527,19 @@
       "image": "assets/img/products/1005200.webp"
     },
     {
+      "id": "1005224",
+      "name": "Tokyo Crepes 60ml - Original Cheese Milk 3mg",
+      "brand": "Tokyo Crepes",
+      "category": "liquid",
+      "price": 160000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 2
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005224.webp"
+    },
+    {
       "id": "1005225",
       "name": "Tokyo Crepes 60ml - Original Cheese Milk 6mg",
       "brand": "Tokyo Crepes",
@@ -2694,6 +2551,19 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1005225.webp"
+    },
+    {
+      "id": "1005253",
+      "name": "Tokyo Stick Roll Saltnic 30ml - Strawberry 30mg",
+      "brand": "Tokyo Stick",
+      "category": "liquid",
+      "price": 120000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005253.webp"
     },
     {
       "id": "1005195",
@@ -2798,6 +2668,19 @@
       },
       "icon": "🔧",
       "image": "assets/img/products/3001327.webp"
+    },
+    {
+      "id": "7000067",
+      "name": "Battery Charge Up - 3000mAh",
+      "brand": "Battery Charge",
+      "category": "battery-charger",
+      "price": 120000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "⚡",
+      "image": "assets/img/products/7000067.webp"
     },
     {
       "id": "7000076",
@@ -2941,6 +2824,19 @@
       },
       "icon": "🧵",
       "image": "assets/img/products/6000032.webp"
+    },
+    {
+      "id": "5000164",
+      "name": "Cotton Monster Premium",
+      "brand": "Cotton",
+      "category": "cartridge-cotton",
+      "price": 50000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "🧵",
+      "image": "assets/img/products/5000164.webp"
     },
     {
       "id": "5000221",
@@ -3190,6 +3086,19 @@
       "image": "assets/img/products/2001816.webp"
     },
     {
+      "id": "2001817",
+      "name": "Oxva Xlim Go 2 Bundling - Light Brown Shadow",
+      "brand": "Oxva Xlim",
+      "category": "device",
+      "price": 199000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "🔋",
+      "image": "assets/img/products/2001817.webp"
+    },
+    {
       "id": "2001853",
       "name": "Oxva Xlim Pro 3 Pod Kit - Brown Leather",
       "brand": "Oxva Xlim",
@@ -3229,6 +3138,31 @@
       "image": "assets/img/products/2001857.webp"
     },
     {
+      "id": "2001763",
+      "name": "TRML T28 Pod Kit Bundling - Black Onyx",
+      "brand": "Trml",
+      "category": "device",
+      "price": 200000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "🔋"
+    },
+    {
+      "id": "2001822",
+      "name": "TRML T28 Pod Kit Bundling - Earthy Brown",
+      "brand": "Trml",
+      "category": "device",
+      "price": 200000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "🔋",
+      "image": "assets/img/products/2001822.webp"
+    },
+    {
       "id": "2001952",
       "name": "TRML T28 Pod Kit Bundling - Raw Black",
       "brand": "Trml",
@@ -3240,32 +3174,6 @@
       },
       "icon": "🔋",
       "image": "assets/img/products/2001952.webp"
-    },
-    {
-      "id": "2001985",
-      "name": "TRML T28 Pod Kit Bundling - Sage Estate",
-      "brand": "Trml",
-      "category": "device",
-      "price": 200000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "🔋",
-      "image": "assets/img/products/2001985.webp"
-    },
-    {
-      "id": "2001830",
-      "name": "VSEE One Pod Kit - Mint Green",
-      "brand": "Vsee One",
-      "category": "device",
-      "price": 99000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "🔋",
-      "image": "assets/img/products/2001830.webp"
     },
     {
       "id": "2001833",
@@ -3411,17 +3319,30 @@
       "image": "assets/img/products/1005156.webp"
     },
     {
-      "id": "1004761",
-      "name": "Bad Fellas 60ml - V4 Pinacara Pie 3mg",
-      "brand": "Bad Fellas",
+      "id": "1004863",
+      "name": "Bananalicious Saltnic 30ml - 35mg",
+      "brand": "Bananalicious",
       "category": "liquid",
-      "price": 150000,
+      "price": 120000,
       "stock": {
         "bangil": 1,
         "pandaan": 1
       },
       "icon": "💧",
-      "image": "assets/img/products/1004761.webp"
+      "image": "assets/img/products/1004863.webp"
+    },
+    {
+      "id": "1005057",
+      "name": "Bequ Saltnic Mix Series 30ml - Banana Kiwi 30mg",
+      "brand": "Bequ",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005057.webp"
     },
     {
       "id": "1003402",
@@ -3487,32 +3408,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1004735.webp"
-    },
-    {
-      "id": "1004736",
-      "name": "Besti Salt Matcha Series 30ml - Strawberry Matcha 30mg",
-      "brand": "Besti Salt",
-      "category": "liquid",
-      "price": 120000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004736.webp"
-    },
-    {
-      "id": "1002449",
-      "name": "Blondies 60ml - V3 Blueberry Cheese Cream Bake 6mg",
-      "brand": "Blondies",
-      "category": "liquid",
-      "price": 150000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1002449.webp"
     },
     {
       "id": "1004943",
@@ -3606,19 +3501,6 @@
       "image": "assets/img/products/1003896.webp"
     },
     {
-      "id": "1004240",
-      "name": "Crackz Ice 60ml - V5 Blueberry Ice Cream 6mg",
-      "brand": "Crackz Ice",
-      "category": "liquid",
-      "price": 140000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004240.webp"
-    },
-    {
       "id": "1004472",
       "name": "Crackz Ice 60ml - V6 Taro Ice Cream 3mg",
       "brand": "Crackz Ice",
@@ -3671,19 +3553,6 @@
       "image": "assets/img/products/1005201.webp"
     },
     {
-      "id": "1004838",
-      "name": "Crackz Ice Saltnic 30ml - V10 Honeydew Ice Cream 25mg",
-      "brand": "Crackz Ice",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004838.webp"
-    },
-    {
       "id": "1003897",
       "name": "Crackz Ice Saltnic 30ml - V4 Pudding Ice Cream 25mg",
       "brand": "Crackz Ice",
@@ -3697,19 +3566,6 @@
       "image": "assets/img/products/1003897.webp"
     },
     {
-      "id": "1004618",
-      "name": "Crackz Ice Saltnic 30ml - V7 Cookies Ice Cream 25mg",
-      "brand": "Crackz Ice",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004618.webp"
-    },
-    {
       "id": "1005237",
       "name": "Crackz Ice Saltnic Beverage Series 30ml - Americano 25mg",
       "brand": "Crackz Ice",
@@ -3721,32 +3577,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1005237.webp"
-    },
-    {
-      "id": "1005238",
-      "name": "Crackz Ice Saltnic Beverage Series 30ml - Berry Soda 25mg",
-      "brand": "Crackz Ice",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005238.webp"
-    },
-    {
-      "id": "1005239",
-      "name": "Crackz Ice Saltnic Beverage Series 30ml - Oat Milk 25mg",
-      "brand": "Crackz Ice",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005239.webp"
     },
     {
       "id": "1005204",
@@ -3865,6 +3695,32 @@
       "image": "assets/img/products/1004121.webp"
     },
     {
+      "id": "1002685",
+      "name": "Foom Lite Fruity Series 30ml - Honeydew 10mg",
+      "brand": "Foom Lite",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1002685.webp"
+    },
+    {
+      "id": "1002686",
+      "name": "Foom Lite Fruity Series 30ml - Mango 10mg",
+      "brand": "Foom Lite",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1002686.webp"
+    },
+    {
       "id": "1002592",
       "name": "Foom Salt 30ml - Barbados 30mg",
       "brand": "Foom Salt",
@@ -3878,17 +3734,30 @@
       "image": "assets/img/products/1002592.webp"
     },
     {
-      "id": "1002308",
-      "name": "Foom Salt 30ml - Fresh Cola 30mg",
+      "id": "1003215",
+      "name": "Foom Salt 30ml - Blueberry Cheese Ice Cream 30mg",
       "brand": "Foom Salt",
       "category": "liquid",
       "price": 110000,
       "stock": {
-        "bangil": 2,
-        "pandaan": 0
+        "bangil": 1,
+        "pandaan": 1
       },
       "icon": "💧",
-      "image": "assets/img/products/1002308.webp"
+      "image": "assets/img/products/1003215.webp"
+    },
+    {
+      "id": "1003216",
+      "name": "Foom Salt 30ml - Chocolate Ice Cream 30mg",
+      "brand": "Foom Salt",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1003216.webp"
     },
     {
       "id": "1001998",
@@ -3917,8 +3786,8 @@
       "image": "assets/img/products/1001799.webp"
     },
     {
-      "id": "1002309",
-      "name": "Foom Salt 30ml - Iced Cappucino 30mg",
+      "id": "1004544",
+      "name": "Foom Salt 30ml - Green Kiwi 30mg",
       "brand": "Foom Salt",
       "category": "liquid",
       "price": 110000,
@@ -3927,7 +3796,7 @@
         "pandaan": 1
       },
       "icon": "💧",
-      "image": "assets/img/products/1002309.webp"
+      "image": "assets/img/products/1004544.webp"
     },
     {
       "id": "1003408",
@@ -3956,6 +3825,19 @@
       "image": "assets/img/products/1004952.webp"
     },
     {
+      "id": "1002656",
+      "name": "Foom Salt 30ml - Icy Honeydew 30mg",
+      "brand": "Foom Salt",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1002656.webp"
+    },
+    {
       "id": "1003980",
       "name": "Foom Salt 30ml - Icy Lychee 30mg",
       "brand": "Foom Salt",
@@ -3967,6 +3849,32 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1003980.webp"
+    },
+    {
+      "id": "1002851",
+      "name": "Foom Salt 30ml - Icy Mango 30mg",
+      "brand": "Foom Salt",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1002851.webp"
+    },
+    {
+      "id": "1002869",
+      "name": "Foom Salt 30ml - Icy Menthol 50mg",
+      "brand": "Foom Salt",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1002869.webp"
     },
     {
       "id": "1004132",
@@ -3995,8 +3903,8 @@
       "image": "assets/img/products/1005191.webp"
     },
     {
-      "id": "1002852",
-      "name": "Foom Salt 30ml - Icy Watermelon 30mg",
+      "id": "1003981",
+      "name": "Foom Salt 30ml - Icy Strawberry 30mg",
       "brand": "Foom Salt",
       "category": "liquid",
       "price": 110000,
@@ -4005,7 +3913,7 @@
         "pandaan": 1
       },
       "icon": "💧",
-      "image": "assets/img/products/1002852.webp"
+      "image": "assets/img/products/1003981.webp"
     },
     {
       "id": "1001800",
@@ -4019,19 +3927,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1001800.webp"
-    },
-    {
-      "id": "1004352",
-      "name": "Foom Salt 30ml - Mixed Berry Ice Cream 30mg",
-      "brand": "Foom Salt",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004352.webp"
     },
     {
       "id": "1004144",
@@ -4125,6 +4020,19 @@
       "image": "assets/img/products/1004145.webp"
     },
     {
+      "id": "1003750",
+      "name": "Foom Salt BW Series 30ml - Matcha Latte 30mg",
+      "brand": "Foom Salt",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1003750.webp"
+    },
+    {
       "id": "1002456",
       "name": "Foom Salt Bubblegum Series 30ml - Pink Gummy 30mg",
       "brand": "Foom Salt",
@@ -4136,19 +4044,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1002456.webp"
-    },
-    {
-      "id": "1002457",
-      "name": "Foom Salt Bubblegum Series 30ml - Purple Gummy 30mg",
-      "brand": "Foom Salt",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1002457.webp"
     },
     {
       "id": "1002458",
@@ -4164,6 +4059,19 @@
       "image": "assets/img/products/1002458.webp"
     },
     {
+      "id": "1005228",
+      "name": "Foom Salt Drink Series 30ml - Banana Milkshake 30mg",
+      "brand": "Foom Salt",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005228.webp"
+    },
+    {
       "id": "1004629",
       "name": "Foom Salt Drink Series 30ml - Grape Apple Juice 30mg",
       "brand": "Foom Salt",
@@ -4175,6 +4083,19 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1004629.webp"
+    },
+    {
+      "id": "1002625",
+      "name": "Foom Salt Favorite Series 30ml - Corn Ice Cream 30mg",
+      "brand": "Foom Salt",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1002625.webp"
     },
     {
       "id": "1005065",
@@ -4190,6 +4111,32 @@
       "image": "assets/img/products/1005065.webp"
     },
     {
+      "id": "1004927",
+      "name": "Foom Salt Smoothies Series 30ml - Honeydew 30mg",
+      "brand": "Foom Salt",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004927.webp"
+    },
+    {
+      "id": "1004929",
+      "name": "Foom Salt Smoothies Series 30ml - Strawberry 30mg",
+      "brand": "Foom Salt",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004929.webp"
+    },
+    {
       "id": "1005037",
       "name": "Foom Salt Tangy Milk Series 30ml - Lychee 30mg",
       "brand": "Foom Salt",
@@ -4201,6 +4148,32 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1005037.webp"
+    },
+    {
+      "id": "1005038",
+      "name": "Foom Salt Tangy Milk Series 30ml - Original 30mg",
+      "brand": "Foom Salt",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005038.webp"
+    },
+    {
+      "id": "1004617",
+      "name": "Foom Salt Uus Series 30ml - Green Grape Soda 30mg",
+      "brand": "Foom Salt",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004617.webp"
     },
     {
       "id": "1004141",
@@ -4242,6 +4215,19 @@
       "image": "assets/img/products/1005063.webp"
     },
     {
+      "id": "1004774",
+      "name": "Hanna Pods Friendly Bubblegum Series 30ml - Melon 15mg",
+      "brand": "Hanna Pods",
+      "category": "liquid",
+      "price": 75000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004774.webp"
+    },
+    {
       "id": "1004775",
       "name": "Hanna Pods Friendly Bubblegum Series 30ml - Strawberry 15mg",
       "brand": "Hanna Pods",
@@ -4253,6 +4239,19 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1004775.webp"
+    },
+    {
+      "id": "1005147",
+      "name": "Hanna Pods Friendly Pudding Series 15ml - Blueberry 15mg",
+      "brand": "Hanna Pods",
+      "category": "liquid",
+      "price": 40000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 2
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005147.webp"
     },
     {
       "id": "1005069",
@@ -4268,8 +4267,21 @@
       "image": "assets/img/products/1005069.webp"
     },
     {
-      "id": "1005071",
-      "name": "Hanna Pods Friendly Pudding Series 30ml - Strawberry 15mg",
+      "id": "1003160",
+      "name": "Hanna Pods Friendly Series 30ml - Berry 15mg",
+      "brand": "Hanna Pods",
+      "category": "liquid",
+      "price": 75000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 2
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1003160.webp"
+    },
+    {
+      "id": "1004771",
+      "name": "Hanna Pods Friendly Series 30ml - Flurry 15mg",
       "brand": "Hanna Pods",
       "category": "liquid",
       "price": 75000,
@@ -4278,7 +4290,20 @@
         "pandaan": 1
       },
       "icon": "💧",
-      "image": "assets/img/products/1005071.webp"
+      "image": "assets/img/products/1004771.webp"
+    },
+    {
+      "id": "1003503",
+      "name": "Hanna Pods Friendly Series 30ml - Tea 15mg",
+      "brand": "Hanna Pods",
+      "category": "liquid",
+      "price": 75000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1003503.webp"
     },
     {
       "id": "1002196",
@@ -4333,19 +4358,6 @@
       "image": "assets/img/products/1005138.webp"
     },
     {
-      "id": "1005139",
-      "name": "Inverse Crunchy Series 60ml - Vanilla Creed 6mg",
-      "brand": "Inverse",
-      "category": "liquid",
-      "price": 160000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005139.webp"
-    },
-    {
       "id": "1003825",
       "name": "Juragan Molen 30ml",
       "brand": "Juragan Molen",
@@ -4357,19 +4369,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1003825.webp"
-    },
-    {
-      "id": "1004643",
-      "name": "Juta Freeze Salt 15ml - Lychee 10mg",
-      "brand": "Juta Freeze",
-      "category": "liquid",
-      "price": 40000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 0
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004643.webp"
     },
     {
       "id": "1000593",
@@ -4489,6 +4488,19 @@
       "image": "assets/img/products/1005210.webp"
     },
     {
+      "id": "1005211",
+      "name": "Liquid Dead Squad 60ml - V2 The Black Triangle 6mg",
+      "brand": "Liquid Dead",
+      "category": "liquid",
+      "price": 160000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005211.webp"
+    },
+    {
       "id": "1005090",
       "name": "Lunar Biscuit Series 60ml - Biscuit Cream Vanilla 6mg",
       "brand": "Lunar",
@@ -4500,6 +4512,19 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1005090.webp"
+    },
+    {
+      "id": "1000216",
+      "name": "Lunar Hexohm 60ml - Strawberry Cheesecake 6mg",
+      "brand": "Lunar Hexohm",
+      "category": "liquid",
+      "price": 155000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1000216.webp"
     },
     {
       "id": "1005143",
@@ -4554,6 +4579,19 @@
       "image": "assets/img/products/1005093.webp"
     },
     {
+      "id": "1005160",
+      "name": "Lunar Ice Cream 60ml - Rainbow 3mg",
+      "brand": "Lunar Ice",
+      "category": "liquid",
+      "price": 160000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 2
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005160.webp"
+    },
+    {
       "id": "1005002",
       "name": "Lunar Ice Cream 60ml - Strawberry Cheesecake 6mg",
       "brand": "Lunar Ice",
@@ -4580,45 +4618,6 @@
       "image": "assets/img/products/1004833.webp"
     },
     {
-      "id": "1004676",
-      "name": "Makna 60ml - Matcha Coconut Mousse 3mg",
-      "brand": "Makna",
-      "category": "liquid",
-      "price": 140000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004676.webp"
-    },
-    {
-      "id": "1005229",
-      "name": "Makna 60ml - Strawberry Milk 3mg",
-      "brand": "Makna",
-      "category": "liquid",
-      "price": 140000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 2
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005229.webp"
-    },
-    {
-      "id": "1004155",
-      "name": "Makna 60ml - Taro Cheese Milk 7mg",
-      "brand": "Makna",
-      "category": "liquid",
-      "price": 140000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004155.webp"
-    },
-    {
       "id": "1005018",
       "name": "Makna Ice Saltnic Series 30ml - Taro Cheese Milk 30mg",
       "brand": "Makna Ice",
@@ -4632,19 +4631,6 @@
       "image": "assets/img/products/1005018.webp"
     },
     {
-      "id": "1005015",
-      "name": "Makna Ice Seasalt 60ml - Caramel Latte 6mg",
-      "brand": "Makna Ice",
-      "category": "liquid",
-      "price": 140000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005015.webp"
-    },
-    {
       "id": "1004879",
       "name": "Makna Sachet Saltnic Series 6 x 15ml - Cool Mango 20mg",
       "brand": "Makna Sachet",
@@ -4656,19 +4642,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1004879.webp"
-    },
-    {
-      "id": "1004452",
-      "name": "Makna Seasalt 60ml - Caramel Latte 3mg",
-      "brand": "Makna",
-      "category": "liquid",
-      "price": 140000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004452.webp"
     },
     {
       "id": "1004453",
@@ -4723,17 +4696,17 @@
       "image": "assets/img/products/1003527.webp"
     },
     {
-      "id": "1001688",
-      "name": "Muffin and Xes 30ml - V1 Strawberry Cream Muffin 12mg",
+      "id": "1002013",
+      "name": "Muffin and Xes 60ml - 3mg",
       "brand": "Muffin And",
       "category": "liquid",
-      "price": 110000,
+      "price": 150000,
       "stock": {
         "bangil": 1,
         "pandaan": 1
       },
       "icon": "💧",
-      "image": "assets/img/products/1001688.webp"
+      "image": "assets/img/products/1002013.webp"
     },
     {
       "id": "1002014",
@@ -4762,32 +4735,6 @@
       "image": "assets/img/products/1001965.webp"
     },
     {
-      "id": "1000544",
-      "name": "NYC Hero57 Edition 60ml - Perfect Cheese 3mg",
-      "brand": "Nyc",
-      "category": "liquid",
-      "price": 155000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1000544.webp"
-    },
-    {
-      "id": "1002270",
-      "name": "Nikmat 30ml - V1 Puff Pastry Rolls Cream 15mg",
-      "brand": "Nikmat",
-      "category": "liquid",
-      "price": 95000,
-      "stock": {
-        "bangil": 2,
-        "pandaan": 0
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1002270.webp"
-    },
-    {
       "id": "1002714",
       "name": "Nikmat 60ml - V2 Blueberry Rolls Pastry 6mg",
       "brand": "Nikmat",
@@ -4799,6 +4746,45 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1002714.webp"
+    },
+    {
+      "id": "1001873",
+      "name": "Oat Drips 60ml - V1 Milk Cereal 3mg",
+      "brand": "Oat Drips",
+      "category": "liquid",
+      "price": 155000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1001873.webp"
+    },
+    {
+      "id": "1001874",
+      "name": "Oat Drips 60ml - V1 Milk Cereal 6mg",
+      "brand": "Oat Drips",
+      "category": "liquid",
+      "price": 150000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1001874.webp"
+    },
+    {
+      "id": "1000263",
+      "name": "Oat Drips Pod Friendly 30ml - Milk Cereal 15mg",
+      "brand": "Oat Drips",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1000263.webp"
     },
     {
       "id": "1003737",
@@ -4825,32 +4811,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1004232.webp"
-    },
-    {
-      "id": "1003920",
-      "name": "Ox Passion 30ml - Ice Strawberry 30mg",
-      "brand": "Ox",
-      "category": "liquid",
-      "price": 100000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1003920.webp"
-    },
-    {
-      "id": "1005220",
-      "name": "Ox Passion Saltnic Premium Series 30ml - Green Kiwi 30mg",
-      "brand": "Ox",
-      "category": "liquid",
-      "price": 105000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005220.webp"
     },
     {
       "id": "1005221",
@@ -4890,19 +4850,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1005223.webp"
-    },
-    {
-      "id": "1000077",
-      "name": "Paradewa 60ml - Apple Zeus 3mg",
-      "brand": "Paradewa",
-      "category": "liquid",
-      "price": 140000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1000077.webp"
     },
     {
       "id": "1004506",
@@ -4955,19 +4902,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1002264.webp"
-    },
-    {
-      "id": "1004875",
-      "name": "R99 Cream 60ml - Pistachio Cheesecake 3mg",
-      "brand": "R99 Cream",
-      "category": "liquid",
-      "price": 155000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004875.webp"
     },
     {
       "id": "1004795",
@@ -5243,19 +5177,6 @@
       "image": "assets/img/products/1004686.webp"
     },
     {
-      "id": "1004687",
-      "name": "Suxx Xeed 60ml - Puff Strawberry Froyo 6mg",
-      "brand": "Suxx Xeed",
-      "category": "liquid",
-      "price": 160000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004687.webp"
-    },
-    {
       "id": "1004830",
       "name": "Suxx Xeed 60ml - Vanilla Vibora 3mg",
       "brand": "Suxx Xeed",
@@ -5502,8 +5423,34 @@
       "image": "assets/img/products/1004660.webp"
     },
     {
-      "id": "1005173",
-      "name": "Taze Saltnic 30ml - Ice Fresh Oat Milk 30mg",
+      "id": "1005171",
+      "name": "Taze Saltnic 30ml - Ice Apple Punch 30mg",
+      "brand": "Taze",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005171.webp"
+    },
+    {
+      "id": "1005174",
+      "name": "Taze Saltnic 30ml - Ice Mango Blast 30mg",
+      "brand": "Taze",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 2,
+        "pandaan": 0
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005174.webp"
+    },
+    {
+      "id": "1005177",
+      "name": "Taze Saltnic Ice Candymilk Series 30ml - Taro 30mg",
       "brand": "Taze",
       "category": "liquid",
       "price": 110000,
@@ -5512,7 +5459,7 @@
         "pandaan": 1
       },
       "icon": "💧",
-      "image": "assets/img/products/1005173.webp"
+      "image": "assets/img/products/1005177.webp"
     },
     {
       "id": "1005181",
@@ -5554,43 +5501,30 @@
       "image": "assets/img/products/1005185.webp"
     },
     {
-      "id": "1005188",
-      "name": "Taze Saltnic Ice Nutri Series 30ml - Passion Fruit 30mg",
+      "id": "1005254",
+      "name": "Taze Saltnic Ice Nutri Series 30ml - Jeruk Nipis 30mg",
       "brand": "Taze",
       "category": "liquid",
       "price": 110000,
       "stock": {
-        "bangil": 0,
-        "pandaan": 2
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005188.webp"
-    },
-    {
-      "id": "1005249",
-      "name": "Tema 60ml - Creamy Coconut Biscuit 9mg",
-      "brand": "Tema",
-      "category": "liquid",
-      "price": 140000,
-      "stock": {
         "bangil": 1,
         "pandaan": 1
       },
       "icon": "💧",
-      "image": "assets/img/products/1005249.webp"
+      "image": "assets/img/products/1005254.webp"
     },
     {
-      "id": "1005234",
-      "name": "The Lazy 60ml - V3 Vanilla Butter Cream 9mg",
-      "brand": "The Lazy",
+      "id": "1005190",
+      "name": "Taze Saltnic Ice Nutri Series 30ml - Strawberry 30mg",
+      "brand": "Taze",
       "category": "liquid",
-      "price": 155000,
+      "price": 110000,
       "stock": {
-        "bangil": 1,
-        "pandaan": 1
+        "bangil": 2,
+        "pandaan": 0
       },
       "icon": "💧",
-      "image": "assets/img/products/1005234.webp"
+      "image": "assets/img/products/1005190.webp"
     },
     {
       "id": "1004563",
@@ -5669,19 +5603,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1005159.webp"
-    },
-    {
-      "id": "1004228",
-      "name": "The O Rama Pods Friendly 30ml - V4 Yubari Melon 15mg",
-      "brand": "The O",
-      "category": "liquid",
-      "price": 95000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004228.webp"
     },
     {
       "id": "1005235",
@@ -5788,17 +5709,30 @@
       "image": "assets/img/products/1005095.webp"
     },
     {
-      "id": "1005226",
-      "name": "Tokyo Crepes Saltnic 30ml - Original Cheese Milk 30mg",
-      "brand": "Tokyo Crepes",
+      "id": "1005251",
+      "name": "Tokyo Stick Roll 60ml - Strawberry 3mg",
+      "brand": "Tokyo Stick",
       "category": "liquid",
-      "price": 120000,
+      "price": 160000,
       "stock": {
         "bangil": 1,
         "pandaan": 1
       },
       "icon": "💧",
-      "image": "assets/img/products/1005226.webp"
+      "image": "assets/img/products/1005251.webp"
+    },
+    {
+      "id": "1005252",
+      "name": "Tokyo Stick Roll 60ml - Strawberry 6mg",
+      "brand": "Tokyo Stick",
+      "category": "liquid",
+      "price": 160000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005252.webp"
     },
     {
       "id": "1005196",
@@ -5824,45 +5758,6 @@
         "pandaan": 1
       },
       "icon": "💧"
-    },
-    {
-      "id": "1004492",
-      "name": "Tokyo Wafer Taro 60ml - Crunchy Creamy Tokyo 3mg",
-      "brand": "Tokyo Wafer",
-      "category": "liquid",
-      "price": 160000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004492.webp"
-    },
-    {
-      "id": "1004493",
-      "name": "Tokyo Wafer Taro 60ml - Crunchy Creamy Tokyo 6mg",
-      "brand": "Tokyo Wafer",
-      "category": "liquid",
-      "price": 160000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004493.webp"
-    },
-    {
-      "id": "1004850",
-      "name": "Tokyo Wafer Taro Saltnic 30ml - Crunchy Creamy Tokyo 30mg",
-      "brand": "Tokyo Wafer",
-      "category": "liquid",
-      "price": 120000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004850.webp"
     },
     {
       "id": "1004719",
@@ -6164,19 +6059,6 @@
       "image": "assets/img/products/3001354.webp"
     },
     {
-      "id": "3001361",
-      "name": "Dead Rabbit RTA V4 28MM - Matte Full Black",
-      "brand": "Dead Rabbit",
-      "category": "atomizer",
-      "price": 375000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "🔧",
-      "image": "assets/img/products/3001361.webp"
-    },
-    {
       "id": "8000239",
       "name": "Dead Rabbit Solo RDA - Gunmetal",
       "brand": "Dead Rabbit",
@@ -6458,7 +6340,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/6000088.webp"
     },
     {
       "id": "6000089",
@@ -6470,7 +6353,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/6000089.webp"
     },
     {
       "id": "6000090",
@@ -6482,7 +6366,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "🧵"
+      "icon": "🧵",
+      "image": "assets/img/products/6000090.webp"
     },
     {
       "id": "6000091",
@@ -6730,19 +6615,6 @@
       },
       "icon": "🔋",
       "image": "assets/img/products/2001827.webp"
-    },
-    {
-      "id": "2001954",
-      "name": "Foom Pod X Bundling - Ocean Sand",
-      "brand": "Foom Pod",
-      "category": "device",
-      "price": 200000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "🔋",
-      "image": "assets/img/products/2001954.webp"
     },
     {
       "id": "2001955",
@@ -7004,19 +6876,6 @@
       "image": "assets/img/products/2001740.webp"
     },
     {
-      "id": "2001743",
-      "name": "Oxva Xlim Pro 2 DNA Pod Kit - Silk Brown",
-      "brand": "Oxva Xlim",
-      "category": "device",
-      "price": 465000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "🔋",
-      "image": "assets/img/products/2001743.webp"
-    },
-    {
       "id": "2001863",
       "name": "S101 Mod - Gunmetal",
       "brand": "S101 Mod",
@@ -7082,19 +6941,6 @@
       "image": "assets/img/products/2001998.webp"
     },
     {
-      "id": "2001822",
-      "name": "TRML T28 Pod Kit Bundling - Earthy Brown",
-      "brand": "Trml",
-      "category": "device",
-      "price": 200000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "🔋",
-      "image": "assets/img/products/2001822.webp"
-    },
-    {
       "id": "2001823",
       "name": "TRML T28 Pod Kit Bundling - Emerald Green",
       "brand": "Trml",
@@ -7108,6 +6954,44 @@
       "image": "assets/img/products/2001823.webp"
     },
     {
+      "id": "2001764",
+      "name": "TRML T28 Pod Kit Bundling - Midnight Blue",
+      "brand": "Trml",
+      "category": "device",
+      "price": 200000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "🔋",
+      "image": "assets/img/products/2001764.webp"
+    },
+    {
+      "id": "2001765",
+      "name": "TRML T28 Pod Kit Bundling - Rich Brown",
+      "brand": "Trml",
+      "category": "device",
+      "price": 200000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 0
+      },
+      "icon": "🔋"
+    },
+    {
+      "id": "2001985",
+      "name": "TRML T28 Pod Kit Bundling - Sage Estate",
+      "brand": "Trml",
+      "category": "device",
+      "price": 200000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "🔋",
+      "image": "assets/img/products/2001985.webp"
+    },
+    {
       "id": "2001926",
       "name": "TRML T88 Mod Kit - Black Panther",
       "brand": "Trml",
@@ -7119,19 +7003,6 @@
       },
       "icon": "🔋",
       "image": "assets/img/products/2001926.webp"
-    },
-    {
-      "id": "2001663",
-      "name": "TRML T99 Mod - Black Panther",
-      "brand": "Trml",
-      "category": "device",
-      "price": 500000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "🔋",
-      "image": "assets/img/products/2001663.webp"
     },
     {
       "id": "2001672",
@@ -7199,17 +7070,17 @@
       "image": "assets/img/products/3001272.webp"
     },
     {
-      "id": "2001831",
-      "name": "VSEE One Pod Kit - Mist Pink",
+      "id": "2001830",
+      "name": "VSEE One Pod Kit - Mint Green",
       "brand": "Vsee One",
       "category": "device",
       "price": 99000,
       "stock": {
-        "bangil": 1,
-        "pandaan": 0
+        "bangil": 0,
+        "pandaan": 1
       },
       "icon": "🔋",
-      "image": "assets/img/products/2001831.webp"
+      "image": "assets/img/products/2001830.webp"
     },
     {
       "id": "2001479",
@@ -7238,19 +7109,6 @@
       "image": "assets/img/products/2001749.webp"
     },
     {
-      "id": "2001750",
-      "name": "Vaporesso Xros 5 Mini Bundling Pod Kit - Carbon Black",
-      "brand": "Vaporesso Xros",
-      "category": "device",
-      "price": 190000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 1
-      },
-      "icon": "🔋",
-      "image": "assets/img/products/2001750.webp"
-    },
-    {
       "id": "2001753",
       "name": "Vaporesso Xros 5 Mini Bundling Pod Kit - Flowing Pink",
       "brand": "Vaporesso Xros",
@@ -7262,19 +7120,6 @@
       },
       "icon": "🔋",
       "image": "assets/img/products/2001753.webp"
-    },
-    {
-      "id": "2001914",
-      "name": "Vaporesso Xros 5 Mini Bundling Pod Kit - Retro Orange",
-      "brand": "Vaporesso Xros",
-      "category": "device",
-      "price": 190000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 1
-      },
-      "icon": "🔋",
-      "image": "assets/img/products/2001914.webp"
     },
     {
       "id": "2001756",
@@ -7433,19 +7278,6 @@
       "image": "assets/img/products/1003228.webp"
     },
     {
-      "id": "1001261",
-      "name": "American Fruity Pod Friendly 30ml - Melon 12mg",
-      "brand": "American Fruity",
-      "category": "liquid",
-      "price": 100000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1001261.webp"
-    },
-    {
       "id": "1005216",
       "name": "American Ice Cream 60ml - Salted Caramel 3mg",
       "brand": "American Ice",
@@ -7537,6 +7369,19 @@
       "image": "assets/img/products/1004139.webp"
     },
     {
+      "id": "1004761",
+      "name": "Bad Fellas 60ml - V4 Pinacara Pie 3mg",
+      "brand": "Bad Fellas",
+      "category": "liquid",
+      "price": 150000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004761.webp"
+    },
+    {
       "id": "1004762",
       "name": "Bad Fellas 60ml - V4 Pinacara Pie 6mg",
       "brand": "Bad Fellas",
@@ -7548,32 +7393,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1004762.webp"
-    },
-    {
-      "id": "1004863",
-      "name": "Bananalicious Saltnic 30ml - 35mg",
-      "brand": "Bananalicious",
-      "category": "liquid",
-      "price": 120000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004863.webp"
-    },
-    {
-      "id": "1004759",
-      "name": "Bequ Mix Series 60ml - Banana Kiwi 3mg",
-      "brand": "Bequ Mix",
-      "category": "liquid",
-      "price": 135000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004759.webp"
     },
     {
       "id": "1004760",
@@ -7600,19 +7419,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1004911.webp"
-    },
-    {
-      "id": "1005057",
-      "name": "Bequ Saltnic Mix Series 30ml - Banana Kiwi 30mg",
-      "brand": "Bequ",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005057.webp"
     },
     {
       "id": "1004913",
@@ -7652,6 +7458,32 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1002821.webp"
+    },
+    {
+      "id": "1004736",
+      "name": "Besti Salt Matcha Series 30ml - Strawberry Matcha 30mg",
+      "brand": "Besti Salt",
+      "category": "liquid",
+      "price": 120000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004736.webp"
+    },
+    {
+      "id": "1002449",
+      "name": "Blondies 60ml - V3 Blueberry Cheese Cream Bake 6mg",
+      "brand": "Blondies",
+      "category": "liquid",
+      "price": 150000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1002449.webp"
     },
     {
       "id": "1004781",
@@ -7914,6 +7746,19 @@
       "image": "assets/img/products/1004239.webp"
     },
     {
+      "id": "1004240",
+      "name": "Crackz Ice 60ml - V5 Blueberry Ice Cream 6mg",
+      "brand": "Crackz Ice",
+      "category": "liquid",
+      "price": 140000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004240.webp"
+    },
+    {
       "id": "1004631",
       "name": "Crackz Ice 60ml - V7 Cookies Ice Cream 3mg",
       "brand": "Crackz Ice",
@@ -8005,17 +7850,17 @@
       "image": "assets/img/products/1004755.webp"
     },
     {
-      "id": "1003290",
-      "name": "Crackz Ice Saltnic 30ml - Strawberry Cheese Ice Cream 25mg",
+      "id": "1004838",
+      "name": "Crackz Ice Saltnic 30ml - V10 Honeydew Ice Cream 25mg",
       "brand": "Crackz Ice",
       "category": "liquid",
       "price": 110000,
       "stock": {
-        "bangil": 1,
-        "pandaan": 0
+        "bangil": 0,
+        "pandaan": 1
       },
       "icon": "💧",
-      "image": "assets/img/products/1003290.webp"
+      "image": "assets/img/products/1004838.webp"
     },
     {
       "id": "1005115",
@@ -8031,19 +7876,6 @@
       "image": "assets/img/products/1005115.webp"
     },
     {
-      "id": "1005214",
-      "name": "Crackz Ice Saltnic 30ml - V12 White Chocolate Ice Cream 25mg",
-      "brand": "Crackz Ice",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005214.webp"
-    },
-    {
       "id": "1004474",
       "name": "Crackz Ice Saltnic 30ml - V6 Taro Ice Cream 25mg",
       "brand": "Crackz Ice",
@@ -8055,6 +7887,19 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1004474.webp"
+    },
+    {
+      "id": "1005239",
+      "name": "Crackz Ice Saltnic Beverage Series 30ml - Oat Milk 25mg",
+      "brand": "Crackz Ice",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005239.webp"
     },
     {
       "id": "1005208",
@@ -8092,7 +7937,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005205.webp"
     },
     {
       "id": "1004862",
@@ -8106,18 +7952,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1004862.webp"
-    },
-    {
-      "id": "1004822",
-      "name": "Crackz Ice Saltnic Fruity Series 30ml - Muscat 25mg",
-      "brand": "Crackz Ice",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "💧"
     },
     {
       "id": "1005207",
@@ -8144,19 +7978,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1005024.webp"
-    },
-    {
-      "id": "1005142",
-      "name": "Crackz Saltnic Series 30ml - Strawberry Banana Cream 25mg",
-      "brand": "Crackz",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005142.webp"
     },
     {
       "id": "1004580",
@@ -8341,8 +8162,8 @@
       "image": "assets/img/products/1002415.webp"
     },
     {
-      "id": "1003215",
-      "name": "Foom Salt 30ml - Blueberry Cheese Ice Cream 30mg",
+      "id": "1002593",
+      "name": "Foom Salt 30ml - Bora Bora 30mg",
       "brand": "Foom Salt",
       "category": "liquid",
       "price": 110000,
@@ -8351,20 +8172,7 @@
         "pandaan": 1
       },
       "icon": "💧",
-      "image": "assets/img/products/1003215.webp"
-    },
-    {
-      "id": "1004544",
-      "name": "Foom Salt 30ml - Green Kiwi 30mg",
-      "brand": "Foom Salt",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004544.webp"
+      "image": "assets/img/products/1002593.webp"
     },
     {
       "id": "1002594",
@@ -8399,15 +8207,15 @@
       "category": "liquid",
       "price": 110000,
       "stock": {
-        "bangil": 0,
-        "pandaan": 1
+        "bangil": 1,
+        "pandaan": 0
       },
       "icon": "💧",
       "image": "assets/img/products/1003979.webp"
     },
     {
-      "id": "1002656",
-      "name": "Foom Salt 30ml - Icy Honeydew 30mg",
+      "id": "1002852",
+      "name": "Foom Salt 30ml - Icy Watermelon 30mg",
       "brand": "Foom Salt",
       "category": "liquid",
       "price": 110000,
@@ -8416,20 +8224,20 @@
         "pandaan": 0
       },
       "icon": "💧",
-      "image": "assets/img/products/1002656.webp"
+      "image": "assets/img/products/1002852.webp"
     },
     {
-      "id": "1002851",
-      "name": "Foom Salt 30ml - Icy Mango 30mg",
+      "id": "1004352",
+      "name": "Foom Salt 30ml - Mixed Berry Ice Cream 30mg",
       "brand": "Foom Salt",
       "category": "liquid",
       "price": 110000,
       "stock": {
-        "bangil": 1,
-        "pandaan": 0
+        "bangil": 0,
+        "pandaan": 1
       },
       "icon": "💧",
-      "image": "assets/img/products/1002851.webp"
+      "image": "assets/img/products/1004352.webp"
     },
     {
       "id": "1004865",
@@ -8445,17 +8253,17 @@
       "image": "assets/img/products/1004865.webp"
     },
     {
-      "id": "1003750",
-      "name": "Foom Salt BW Series 30ml - Matcha Latte 30mg",
+      "id": "1002457",
+      "name": "Foom Salt Bubblegum Series 30ml - Purple Gummy 30mg",
       "brand": "Foom Salt",
       "category": "liquid",
       "price": 110000,
       "stock": {
-        "bangil": 0,
-        "pandaan": 1
+        "bangil": 1,
+        "pandaan": 0
       },
       "icon": "💧",
-      "image": "assets/img/products/1003750.webp"
+      "image": "assets/img/products/1002457.webp"
     },
     {
       "id": "1005066",
@@ -8469,32 +8277,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1005066.webp"
-    },
-    {
-      "id": "1004929",
-      "name": "Foom Salt Smoothies Series 30ml - Strawberry 30mg",
-      "brand": "Foom Salt",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004929.webp"
-    },
-    {
-      "id": "1005038",
-      "name": "Foom Salt Tangy Milk Series 30ml - Original 30mg",
-      "brand": "Foom Salt",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1005038.webp"
     },
     {
       "id": "1004273",
@@ -8521,32 +8303,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1004275.webp"
-    },
-    {
-      "id": "1004617",
-      "name": "Foom Salt Uus Series 30ml - Green Grape Soda 30mg",
-      "brand": "Foom Salt",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1004617.webp"
-    },
-    {
-      "id": "1002863",
-      "name": "Foom Salt Zodiac Series 30ml - Gemini 30mg",
-      "brand": "Foom Salt",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 1
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1002863.webp"
     },
     {
       "id": "1004818",
@@ -8679,6 +8435,19 @@
       "image": "assets/img/products/1005070.webp"
     },
     {
+      "id": "1005071",
+      "name": "Hanna Pods Friendly Pudding Series 30ml - Strawberry 15mg",
+      "brand": "Hanna Pods",
+      "category": "liquid",
+      "price": 75000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005071.webp"
+    },
+    {
       "id": "1005150",
       "name": "Hanna Pods Friendly Series 15ml - Pineapple 15mg",
       "brand": "Hanna Pods",
@@ -8809,6 +8578,19 @@
       "image": "assets/img/products/1004725.webp"
     },
     {
+      "id": "1005139",
+      "name": "Inverse Crunchy Series 60ml - Vanilla Creed 6mg",
+      "brand": "Inverse",
+      "category": "liquid",
+      "price": 160000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 0
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005139.webp"
+    },
+    {
       "id": "1004533",
       "name": "Jackpot 60ml - Bolu Susu Blueberry Cake 3mg",
       "brand": "Jackpot",
@@ -8872,19 +8654,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1004117.webp"
-    },
-    {
-      "id": "1002782",
-      "name": "Ketan Jinak 60ml - 3mg",
-      "brand": "Ketan Jinak",
-      "category": "liquid",
-      "price": 130000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "💧",
-      "image": "assets/img/products/1002782.webp"
     },
     {
       "id": "1002784",
@@ -9039,7 +8808,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005020.webp"
     },
     {
       "id": "1004765",
@@ -9051,7 +8821,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004765.webp"
     },
     {
       "id": "1005072",
@@ -9063,7 +8834,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005072.webp"
     },
     {
       "id": "1005073",
@@ -9075,7 +8847,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005073.webp"
     },
     {
       "id": "1005074",
@@ -9100,7 +8873,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004588.webp"
     },
     {
       "id": "1004328",
@@ -9112,7 +8886,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004328.webp"
     },
     {
       "id": "1005134",
@@ -9124,7 +8899,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005134.webp"
     },
     {
       "id": "1005135",
@@ -9136,7 +8912,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005135.webp"
     },
     {
       "id": "1005089",
@@ -9161,7 +8938,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004598.webp"
     },
     {
       "id": "1004916",
@@ -9173,7 +8951,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004916.webp"
     },
     {
       "id": "1004917",
@@ -9185,7 +8964,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004917.webp"
     },
     {
       "id": "1004918",
@@ -9197,20 +8977,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
-    },
-    {
-      "id": "1002671",
-      "name": "Lunar HexOhm Salt 30ml - Strawberry Cheesecake 30mg",
-      "brand": "Lunar Hexohm",
-      "category": "liquid",
-      "price": 125000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 1
-      },
       "icon": "💧",
-      "image": "assets/img/products/1002671.webp"
+      "image": "assets/img/products/1004918.webp"
     },
     {
       "id": "1000215",
@@ -9261,7 +9029,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004926.webp"
     },
     {
       "id": "1003458",
@@ -9273,7 +9042,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003458.webp"
     },
     {
       "id": "1004689",
@@ -9285,7 +9055,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004689.webp"
     },
     {
       "id": "1003826",
@@ -9297,7 +9068,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003826.webp"
     },
     {
       "id": "1003058",
@@ -9309,7 +9081,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003058.webp"
     },
     {
       "id": "1004645",
@@ -9321,7 +9094,21 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004645.webp"
+    },
+    {
+      "id": "1004676",
+      "name": "Makna 60ml - Matcha Coconut Mousse 3mg",
+      "brand": "Makna",
+      "category": "liquid",
+      "price": 140000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004676.webp"
     },
     {
       "id": "1004154",
@@ -9337,6 +9124,19 @@
       "image": "assets/img/products/1004154.webp"
     },
     {
+      "id": "1004155",
+      "name": "Makna 60ml - Taro Cheese Milk 7mg",
+      "brand": "Makna",
+      "category": "liquid",
+      "price": 140000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004155.webp"
+    },
+    {
       "id": "1005016",
       "name": "Makna Ice Saltnic Series 30ml - Berry Dough 30mg",
       "brand": "Makna Ice",
@@ -9346,7 +9146,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005016.webp"
     },
     {
       "id": "1005017",
@@ -9358,7 +9159,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005017.webp"
     },
     {
       "id": "1005014",
@@ -9370,7 +9172,34 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005014.webp"
+    },
+    {
+      "id": "1005015",
+      "name": "Makna Ice Seasalt 60ml - Caramel Latte 6mg",
+      "brand": "Makna Ice",
+      "category": "liquid",
+      "price": 140000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 0
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005015.webp"
+    },
+    {
+      "id": "1004452",
+      "name": "Makna Seasalt 60ml - Caramel Latte 3mg",
+      "brand": "Makna",
+      "category": "liquid",
+      "price": 140000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004452.webp"
     },
     {
       "id": "1003155",
@@ -9395,7 +9224,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1001297.webp"
     },
     {
       "id": "1002707",
@@ -9407,7 +9237,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002707.webp"
     },
     {
       "id": "1002735",
@@ -9419,7 +9250,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002735.webp"
     },
     {
       "id": "1003278",
@@ -9431,7 +9263,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003278.webp"
     },
     {
       "id": "1002794",
@@ -9443,7 +9276,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002794.webp"
     },
     {
       "id": "1003280",
@@ -9455,7 +9289,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003280.webp"
     },
     {
       "id": "1003281",
@@ -9467,7 +9302,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003281.webp"
     },
     {
       "id": "1004111",
@@ -9479,7 +9315,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004111.webp"
     },
     {
       "id": "1005107",
@@ -9491,7 +9328,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005107.webp"
     },
     {
       "id": "1004612",
@@ -9503,7 +9341,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004612.webp"
     },
     {
       "id": "1003929",
@@ -9515,7 +9354,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003929.webp"
     },
     {
       "id": "1002875",
@@ -9527,7 +9367,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002875.webp"
     },
     {
       "id": "1001964",
@@ -9539,7 +9380,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1001964.webp"
     },
     {
       "id": "1002253",
@@ -9551,7 +9393,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002253.webp"
     },
     {
       "id": "1003093",
@@ -9563,7 +9406,34 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003093.webp"
+    },
+    {
+      "id": "1000544",
+      "name": "NYC Hero57 Edition 60ml - Perfect Cheese 3mg",
+      "brand": "Nyc",
+      "category": "liquid",
+      "price": 155000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1000544.webp"
+    },
+    {
+      "id": "1002270",
+      "name": "Nikmat 30ml - V1 Puff Pastry Rolls Cream 15mg",
+      "brand": "Nikmat",
+      "category": "liquid",
+      "price": 95000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 0
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1002270.webp"
     },
     {
       "id": "1002272",
@@ -9575,7 +9445,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002272.webp"
     },
     {
       "id": "1002713",
@@ -9587,32 +9458,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
-    },
-    {
-      "id": "1001873",
-      "name": "Oat Drips 60ml - V1 Milk Cereal 3mg",
-      "brand": "Oat Drips",
-      "category": "liquid",
-      "price": 155000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "💧"
-    },
-    {
-      "id": "1001874",
-      "name": "Oat Drips 60ml - V1 Milk Cereal 6mg",
-      "brand": "Oat Drips",
-      "category": "liquid",
-      "price": 150000,
-      "stock": {
-        "bangil": 0,
-        "pandaan": 1
-      },
       "icon": "💧",
-      "image": "assets/img/products/1001874.webp"
+      "image": "assets/img/products/1002713.webp"
     },
     {
       "id": "1002122",
@@ -9624,20 +9471,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
-    },
-    {
-      "id": "1000263",
-      "name": "Oat Drips Pod Friendly 30ml - Milk Cereal 15mg",
-      "brand": "Oat Drips",
-      "category": "liquid",
-      "price": 110000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
       "icon": "💧",
-      "image": "assets/img/products/1000263.webp"
+      "image": "assets/img/products/1002122.webp"
     },
     {
       "id": "1004968",
@@ -9649,7 +9484,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004968.webp"
     },
     {
       "id": "1004345",
@@ -9674,7 +9510,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003918.webp"
     },
     {
       "id": "1004545",
@@ -9686,7 +9523,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004545.webp"
     },
     {
       "id": "1003919",
@@ -9698,7 +9536,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003919.webp"
     },
     {
       "id": "1004346",
@@ -9710,7 +9549,21 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004346.webp"
+    },
+    {
+      "id": "1003920",
+      "name": "Ox Passion 30ml - Ice Strawberry 30mg",
+      "brand": "Ox",
+      "category": "liquid",
+      "price": 100000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1003920.webp"
     },
     {
       "id": "1005130",
@@ -9722,7 +9575,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005130.webp"
     },
     {
       "id": "1004683",
@@ -9734,7 +9588,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004683.webp"
     },
     {
       "id": "1005131",
@@ -9759,7 +9614,34 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005133.webp"
+    },
+    {
+      "id": "1005220",
+      "name": "Ox Passion Saltnic Premium Series 30ml - Green Kiwi 30mg",
+      "brand": "Ox",
+      "category": "liquid",
+      "price": 105000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005220.webp"
+    },
+    {
+      "id": "1000077",
+      "name": "Paradewa 60ml - Apple Zeus 3mg",
+      "brand": "Paradewa",
+      "category": "liquid",
+      "price": 140000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1000077.webp"
     },
     {
       "id": "1005032",
@@ -9771,7 +9653,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005032.webp"
     },
     {
       "id": "1002265",
@@ -9783,7 +9666,21 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002265.webp"
+    },
+    {
+      "id": "1004875",
+      "name": "R99 Cream 60ml - Pistachio Cheesecake 3mg",
+      "brand": "R99 Cream",
+      "category": "liquid",
+      "price": 155000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004875.webp"
     },
     {
       "id": "1005164",
@@ -9795,7 +9692,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005164.webp"
     },
     {
       "id": "1005078",
@@ -9807,7 +9705,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005078.webp"
     },
     {
       "id": "1005076",
@@ -9819,7 +9718,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005076.webp"
     },
     {
       "id": "1005081",
@@ -9831,7 +9731,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005081.webp"
     },
     {
       "id": "1005080",
@@ -9843,7 +9744,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005080.webp"
     },
     {
       "id": "1004167",
@@ -9855,7 +9757,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004167.webp"
     },
     {
       "id": "1004556",
@@ -9867,7 +9770,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004556.webp"
     },
     {
       "id": "1005121",
@@ -9879,7 +9783,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005121.webp"
     },
     {
       "id": "1004288",
@@ -9891,7 +9796,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004288.webp"
     },
     {
       "id": "1004590",
@@ -9903,7 +9809,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004590.webp"
     },
     {
       "id": "1004990",
@@ -9915,19 +9822,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
-    },
-    {
-      "id": "1004991",
-      "name": "Robacks Monster Ice Cream Line 60ml - Salted Caramel 3mg",
-      "brand": "Robacks",
-      "category": "liquid",
-      "price": 155000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004990.webp"
     },
     {
       "id": "1001781",
@@ -9939,7 +9835,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1001781.webp"
     },
     {
       "id": "1001782",
@@ -9951,7 +9848,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1001782.webp"
     },
     {
       "id": "1001727",
@@ -9963,7 +9861,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1001727.webp"
     },
     {
       "id": "1002781",
@@ -9975,7 +9874,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002781.webp"
     },
     {
       "id": "1004543",
@@ -9987,7 +9887,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004543.webp"
     },
     {
       "id": "1001588",
@@ -9999,7 +9900,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1001588.webp"
     },
     {
       "id": "1002984",
@@ -10011,7 +9913,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002984.webp"
     },
     {
       "id": "1005035",
@@ -10023,7 +9926,21 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005035.webp"
+    },
+    {
+      "id": "1004687",
+      "name": "Suxx Xeed 60ml - Puff Strawberry Froyo 6mg",
+      "brand": "Suxx Xeed",
+      "category": "liquid",
+      "price": 160000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004687.webp"
     },
     {
       "id": "1004638",
@@ -10035,7 +9952,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004638.webp"
     },
     {
       "id": "1004639",
@@ -10047,7 +9965,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004639.webp"
     },
     {
       "id": "1004930",
@@ -10072,19 +9991,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
-    },
-    {
-      "id": "1004883",
-      "name": "Takis Saltnic Series 30ml - Blueberry Kiwi 30mg",
-      "brand": "Takis",
-      "category": "liquid",
-      "price": 69000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004707.webp"
     },
     {
       "id": "1004931",
@@ -10098,18 +10006,6 @@
       },
       "icon": "💧",
       "image": "assets/img/products/1004931.webp"
-    },
-    {
-      "id": "1005011",
-      "name": "Takis Saltnic Series 30ml - Guava Strawberry 30mg",
-      "brand": "Takis",
-      "category": "liquid",
-      "price": 69000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "💧"
     },
     {
       "id": "1004884",
@@ -10134,7 +10030,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005168.webp"
     },
     {
       "id": "1005169",
@@ -10146,7 +10043,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005169.webp"
     },
     {
       "id": "1005048",
@@ -10171,7 +10069,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005049.webp"
     },
     {
       "id": "1003937",
@@ -10183,7 +10082,21 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1003937.webp"
+    },
+    {
+      "id": "1005173",
+      "name": "Taze Saltnic 30ml - Ice Fresh Oat Milk 30mg",
+      "brand": "Taze",
+      "category": "liquid",
+      "price": 110000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005173.webp"
     },
     {
       "id": "1005183",
@@ -10195,7 +10108,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005183.webp"
     },
     {
       "id": "1005186",
@@ -10207,7 +10121,21 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005186.webp"
+    },
+    {
+      "id": "1005249",
+      "name": "Tema 60ml - Creamy Coconut Biscuit 9mg",
+      "brand": "Tema",
+      "category": "liquid",
+      "price": 140000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 0
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1005249.webp"
     },
     {
       "id": "1005233",
@@ -10259,6 +10187,19 @@
       "icon": "💧"
     },
     {
+      "id": "1004228",
+      "name": "The O Rama Pods Friendly 30ml - V4 Yubari Melon 15mg",
+      "brand": "The O",
+      "category": "liquid",
+      "price": 95000,
+      "stock": {
+        "bangil": 1,
+        "pandaan": 0
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004228.webp"
+    },
+    {
       "id": "1005096",
       "name": "Tokyo Bun Saltnic Series 30ml - Original 30mg",
       "brand": "Tokyo Bun",
@@ -10271,16 +10212,17 @@
       "icon": "💧"
     },
     {
-      "id": "1005197",
-      "name": "Tokyo Toast Saltnic 30ml - Strawberry Butter Toast 30mg",
-      "brand": "Tokyo Toast",
+      "id": "1005226",
+      "name": "Tokyo Crepes Saltnic 30ml - Original Cheese Milk 30mg",
+      "brand": "Tokyo Crepes",
       "category": "liquid",
       "price": 120000,
       "stock": {
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005226.webp"
     },
     {
       "id": "1005124",
@@ -10329,6 +10271,45 @@
         "pandaan": 1
       },
       "icon": "💧"
+    },
+    {
+      "id": "1004492",
+      "name": "Tokyo Wafer Taro 60ml - Crunchy Creamy Tokyo 3mg",
+      "brand": "Tokyo Wafer",
+      "category": "liquid",
+      "price": 160000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004492.webp"
+    },
+    {
+      "id": "1004493",
+      "name": "Tokyo Wafer Taro 60ml - Crunchy Creamy Tokyo 6mg",
+      "brand": "Tokyo Wafer",
+      "category": "liquid",
+      "price": 160000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004493.webp"
+    },
+    {
+      "id": "1004850",
+      "name": "Tokyo Wafer Taro Saltnic 30ml - Crunchy Creamy Tokyo 30mg",
+      "brand": "Tokyo Wafer",
+      "category": "liquid",
+      "price": 120000,
+      "stock": {
+        "bangil": 0,
+        "pandaan": 1
+      },
+      "icon": "💧",
+      "image": "assets/img/products/1004850.webp"
     },
     {
       "id": "1002267",
@@ -10408,18 +10389,6 @@
       "brand": "Yelo",
       "category": "liquid",
       "price": 100000,
-      "stock": {
-        "bangil": 1,
-        "pandaan": 0
-      },
-      "icon": "💧"
-    },
-    {
-      "id": "1004729",
-      "name": "Yelo 60ml - Matcha Milk Cheese 3mg",
-      "brand": "Yelo",
-      "category": "liquid",
-      "price": 95000,
       "stock": {
         "bangil": 1,
         "pandaan": 0
