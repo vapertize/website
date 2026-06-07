@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-07T01:27:12+07:00",
+  "updated": "2026-06-08T00:58:06+07:00",
   "totalProducts": 805,
   "categories": [
     "accessories",
@@ -3147,7 +3147,8 @@
         "bangil": 1,
         "pandaan": 1
       },
-      "icon": "🔋"
+      "icon": "🔋",
+      "image": "assets/img/products/2001763.webp"
     },
     {
       "id": "2001822",
@@ -5407,7 +5408,8 @@
         "bangil": 1,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005047.webp"
     },
     {
       "id": "1004660",
@@ -5757,7 +5759,8 @@
         "bangil": 1,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005004.webp"
     },
     {
       "id": "1004719",
@@ -6678,7 +6681,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "🔋"
+      "icon": "🔋",
+      "image": "assets/img/products/2001974.webp"
     },
     {
       "id": "2001990",
@@ -6976,7 +6980,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "🔋"
+      "icon": "🔋",
+      "image": "assets/img/products/2001765.webp"
     },
     {
       "id": "2001985",
@@ -10160,7 +10165,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004564.webp"
     },
     {
       "id": "1005158",
@@ -10172,7 +10178,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005158.webp"
     },
     {
       "id": "1004131",
@@ -10184,7 +10191,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004131.webp"
     },
     {
       "id": "1004228",
@@ -10209,7 +10217,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005096.webp"
     },
     {
       "id": "1005226",
@@ -10234,7 +10243,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005124.webp"
     },
     {
       "id": "1004949",
@@ -10246,7 +10256,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004949.webp"
     },
     {
       "id": "1005122",
@@ -10258,7 +10269,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005122.webp"
     },
     {
       "id": "1004950",
@@ -10270,7 +10282,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004950.webp"
     },
     {
       "id": "1004492",
@@ -10321,7 +10334,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1002267.webp"
     },
     {
       "id": "1004770",
@@ -10333,7 +10347,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004770.webp"
     },
     {
       "id": "1005050",
@@ -10345,7 +10360,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005050.webp"
     },
     {
       "id": "1005051",
@@ -10357,7 +10373,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005051.webp"
     },
     {
       "id": "1005053",
@@ -10369,7 +10386,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1005053.webp"
     },
     {
       "id": "1004727",
@@ -10381,7 +10399,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004727.webp"
     },
     {
       "id": "1004728",
@@ -10393,7 +10412,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004728.webp"
     },
     {
       "id": "1004730",
@@ -10405,7 +10425,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004730.webp"
     },
     {
       "id": "1004731",
@@ -10417,7 +10438,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004731.webp"
     },
     {
       "id": "1004732",
@@ -10429,7 +10451,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004732.webp"
     },
     {
       "id": "1004906",
@@ -10441,7 +10464,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004906.webp"
     },
     {
       "id": "1004969",
@@ -10453,7 +10477,8 @@
         "bangil": 0,
         "pandaan": 1
       },
-      "icon": "💧"
+      "icon": "💧",
+      "image": "assets/img/products/1004969.webp"
     }
   ]
 }
