@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-02T22:12:44+07:00",
+  "updated": "2026-08-03T23:34:43+07:00",
   "totalProducts": 792,
   "categories": [
     "accessories",
@@ -6046,7 +6046,8 @@
         "bangil": 1,
         "pandaan": 0
       },
-      "icon": "🔧"
+      "icon": "🔧",
+      "image": "assets/img/products/8000301.webp"
     },
     {
       "id": "3001352",
